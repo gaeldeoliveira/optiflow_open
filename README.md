@@ -1,5 +1,7 @@
 # Optiflow
 
+ 10.5281/zenodo.3520280
+
 Optiflow started as a tool for optimising wind turbine airfoils and hydrofoils. It mains applications include:
 
 * Routines for rotor planform optimization applicable to conceptual design of wind (and tidal) turbines
