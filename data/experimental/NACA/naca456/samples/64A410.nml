@@ -1,0 +1,13 @@
+   NACA 64A410
+First three characters: 64A series thickness
+Fourth character: CL design=0.4
+  (always use a=0.8 for 64A airfoils)
+Last two digits: 10 percent t/c
+ 
+&NACA
+  name    = 'NACA 64A410',
+  profile = '64A',
+  toc     = 0.1,  
+  camber  = '6M',
+  cl      = 0.4/
+

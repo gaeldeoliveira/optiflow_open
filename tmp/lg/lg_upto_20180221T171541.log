@@ -1,0 +1,35 @@
+STD:20180221T151748:lg> ---- START NEW LOG BOOK AFTER REQUEST ----
+STD:20180221T151748:lg> ---- request issuer: Ola! Gael
+STD:20180221T151754:lg> Size of reference  dataset : 509 datapoints over 10 experimental cases
+STD:20180221T151754:lg> Size of training   dataset : 317 datapoints over 6 experimental cases
+STD:20180221T151754:lg> Size of validation dataset : 192 datapoints over 4 experimental cases
+STD:20180221T152530:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T152530:global_function_wrapper>                   n_log = 3
+STD:20180221T152530:global_function_wrapper>                     n_x = 1
+STD:20180221T152530:global_function_wrapper>  scalar_accuracy_metric = 2.9273
+STD:20180221T152530:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180221T152530:global_function_wrapper>             k_minibatch = 4
+STD:20180221T153246:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T153246:global_function_wrapper>                   n_log = 4
+STD:20180221T153246:global_function_wrapper>                     n_x = 1
+STD:20180221T153246:global_function_wrapper>  scalar_accuracy_metric = 2.9273
+STD:20180221T153246:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180221T153246:global_function_wrapper>             k_minibatch = 4
+STD:20180221T163739:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T163739:global_function_wrapper>                   n_log = 5
+STD:20180221T163739:global_function_wrapper>                     n_x = 1
+STD:20180221T163739:global_function_wrapper>  scalar_accuracy_metric = 2.9273
+STD:20180221T163739:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180221T163739:global_function_wrapper>             k_minibatch = 4
+STD:20180221T164016:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T164016:global_function_wrapper>                   n_log = 6
+STD:20180221T164016:global_function_wrapper>                     n_x = 1
+STD:20180221T164016:global_function_wrapper>  scalar_accuracy_metric = 1.732
+STD:20180221T164016:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180221T164423:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T164423:global_function_wrapper>                   n_log = 7
+STD:20180221T164423:global_function_wrapper>                     n_x = 1
+STD:20180221T164423:global_function_wrapper>  scalar_accuracy_metric = 2.1271
+STD:20180221T164423:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180221T164423:global_function_wrapper>             k_minibatch = 6
+STD:20180221T170851:lg> A new way o sending messages

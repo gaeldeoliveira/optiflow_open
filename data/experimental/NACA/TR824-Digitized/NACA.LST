@@ -1,0 +1,125 @@
+ naca.lst   naca.txt   naca.zip
+
+ NACA TR 824  lists these page numbers as being for the following 
+ airfoils
+
+  file     airfoil
+---------------------
+ 131.all  NACA  0006
+ 132.all  NACA  0009
+ 133.all  NACA  1408
+ 134.all  NACA  1410
+ 135.all  NACA  1412
+ 136.all  NACA  2412
+ 137.all  NACA  2415
+ 138.all  NACA  2418
+ 139.all  NACA  2421
+ 140.all  NACA  2424
+ 141.all  NACA  4412
+ 142.all  NACA  4415
+ 143.all  NACA  4418
+ 144.all  NACA  4421
+ 145.all  NACA  4424
+ 146.all  NACA  23012
+ 147.all  NACA  23015
+ 148.all  NACA  23018
+ 149.all  NACA  23021
+ 150.all  NACA  23024
+ 151.all  NACA  63,4-240
+ 155.all  NACA  63,4-240, a = 0.3
+ 156.all  NACA  63(420)-422
+ 157.all  NACA  63(420)-517
+ 158.all  NACA  63-006
+ 159.all  NACA  63-009
+ 160.all  NACA  63-206
+ 161.all  NACA  63-209
+ 162.all  NACA  63-210
+ 163.all  NACA  63(sub)1-012
+ 164.all  NACA  63(sub)1-212
+ 165.all  NACA  63(sub)1-412
+ 166.all  NACA  63(sub)2-015
+ 167.all  NACA  63(sub)2-215
+ 168.all  NACA  63(sub)2-415
+ 169.all  NACA  63(sub)2-615
+ 170.all  NACA  63(sub)3-018
+ 171.all  NACA  63(sub)3-218
+ 172.all  NACA  63(sub)3-418
+ 173.all  NACA  63(sub)3-618
+ 174.all  NACA  63(sub)4-021
+ 175.all  NACA  63(sub)4-221
+ 176.all  NACA  63(sub)4-421
+ 177.all  NACA  64-006
+ 178.all  NACA  64-009
+ 179.all  NACA  64-108
+ 180.all  NACA  64-110
+ 181.all  NACA  64-206
+ 182.all  NACA  64-208
+ 183.all  NACA  64-209
+ 184.all  NACA  64-210
+ 185.all  NACA  64(sub)1-012
+ 186.all  NACA  64(sub)1-112
+ 187.all  NACA  64(sub)1-212
+ 188.all  NACA  64(sub)1-412
+ 189.all  NACA  64(sub)2-015
+ 190.all  NACA  64(sub)2-215
+ 191.all  NACA  64(sub)2-415
+ 192.all  NACA  64(sub)3-018
+ 193.all  NACA  64(sub)3-218
+ 194.all  NACA  64(sub)3-418
+ 195.all  NACA  64(sub)3-618
+ 196.all  NACA  64(sub)4-021
+ 197.all  NACA  64(sub)4-221
+ 198.all  NACA  64(sub)4-421
+ 199.all  NACA  65,3-018
+ 200.all  NACA  65,3-418, a = 0.8
+ 201.all  NACA  65,3-618
+ 203.all  NACA  65(216)-415, a = 0.5
+ 204.all  NACA  65-006
+ 205.all  NACA  65-009
+ 206.all  NACA  65-206
+ 207.all  NACA  65-209
+ 208.all  NACA  65-210
+ 209.all  NACA  65-410
+ 210.all  NACA  65(sub)1-012
+ 211.all  NACA  65(sub)1-212
+ 213.all  NACA  65(sub)1-212, a = 0.6
+ 214.all  NACA  65(sub)1-412
+ 215.all  NACA  65(sub)2-015
+ 216.all  NACA  65(sub)2-215
+ 217.all  NACA  65(sub)2-415
+ 218.all  NACA  65(sub)2-415, a = 0.5
+ 219.all  NACA  65(sub)3-018
+ 222.all  NACA  65(sub)3-218
+ 223.all  NACA  65(sub)3-418
+ 224.all  NACA  65(sub)3-418, a = 0.5
+ 225.all  NACA  65(sub)3-618
+ 226.all  NACA  65(sub)3-618, a = 0.5
+ 227.all  NACA  65(sub)4-021
+ 228.all  NACA  65(sub)4-221
+ 229.all  NACA  65(sub)4-421
+ 230.all  NACA  65(sub)4-421, a = 0.5
+ 231.all  NACA  65(215)-114
+ 232.all  NACA  65(421)-420
+ 233.all  NACA  66,1-212
+ 235.all  NACA  66(215)-016
+ 236.all  NACA  66(215)-216
+ 239.all  NACA  66(215)-216, a = 0.6
+ 246.all  NACA  66(215)-416
+ 247.all  NACA  66-006
+ 248.all  NACA  66-009
+ 249.all  NACA  66-206
+ 250.all  NACA  66-209
+ 251.all  NACA  66-210
+ 252.all  NACA  66(sub)1-012
+ 253.all  NACA  66(sub)1-212
+ 254.all  NACA  66(sub)2-015
+ 255.all  NACA  66(sub)2-215
+ 256.all  NACA  66(sub)2-415
+ 257.all  NACA  66(sub)3-018
+ 258.all  NACA  66(sub)3-218
+ 259.all  NACA  66(sub)3-418
+ 260.all  NACA  66(sub)4-021
+ 261.all  NACA  66(sub)4-221
+ 262.all  NACA  67,1-215
+ 263.all  NACA  747A315
+ 264.all  NACA  747A415

@@ -1,0 +1,12 @@
+NACA 65-021 Airfoil
+The basic 65 series thickness profile, scaled to 21 percent
+First two digits: 65 series thickness
+Middle digit: no camber (CL-design=0)
+Last two digits: max t/c = 21%
+Abbott & von Doenhoff, page 366
+&NACA
+  name    = 'NACA 65-021',
+  profile = '65',
+  toc     = 0.21,  
+  camber  = '0'/
+

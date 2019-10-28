@@ -1,0 +1,11 @@
+NACA 63A415
+First three characters: 63A series thickness
+Fourth character: (CL design=0.4)
+Last two digits: 15 percent t/c
+&NACA
+  NAME    = 'NACA 63A415',
+  PROFILE = '63A',
+  TOC     = 0.15,
+  CAMBER  = '6M',
+  CL      = 0.4/
+

@@ -1,0 +1,11 @@
+   NACA 6412
+This is a 0012 thickness (four digit) with a 64 camber line. 
+A 64 camber line has 6% max camber at 40% chord.
+ 
+&NACA 
+  name = 'NACA 6412',
+  profile = '4',
+  toc = 0.12,
+  camber  = '2',
+  cmax = 0.06,
+  xmaxc = 0.4/

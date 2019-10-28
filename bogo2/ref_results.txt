@@ -1,0 +1,29 @@
+BR.P_rotor_annuli    = -4076149.4143
+BR.P_rotor_segments  = -4076149.4143
+BR.CP_rotor_annuli   = -0.48918
+BR.CP_rotor_segments = -0.48918
+BR.CT_rotor_annuli   = 0.7522
+BR.CT_rotor_segments = 0.7522
+BR.CQ_axi_RBM        = 0.49739
+BR.CQ_tan_RBM        = -0.065224
+BR.RES_axi           = 2.1828e-11
+BR.RES_tan           = 2.3283e-10
+Elapsed time is 12.716819 seconds.
+
+======================================================
+==== BOGO2 with GAM ==================================
+============= Welcome ================================
+============================== Gael de Oliveira ======
+======================================================
+==== Compute reference case : 07-Sep-2018 01:58:07 ====
+BR.P_rotor_annuli    = -4076154.74
+BR.P_rotor_segments  = -4076154.74
+BR.CP_rotor_annuli   = -0.48918
+BR.CP_rotor_segments = -0.48918
+BR.CT_rotor_annuli   = 0.7522
+BR.CT_rotor_segments = 0.7522
+BR.CQ_axi_RBM        = 0.49739
+BR.CQ_tan_RBM        = -0.065224
+BR.RES_axi           = 1.0914e-11
+BR.RES_tan           = 2.3283e-10
+Elapsed time is 9.695809 seconds.

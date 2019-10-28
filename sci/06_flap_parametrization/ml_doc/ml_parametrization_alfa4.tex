@@ -1,0 +1,260 @@
+%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+
+\section{Quantification of code accuracy}
+
+The accuracy of numerical predictions is quantified with a Least Squares
+norm regularized for the extent of data coverage. Here is an example
+for lift polars, where $C_{l}^{exp}$ denotes the measured lift coefficient
+and $C_{l}^{sim}$ denotes the simulated value:
+\[
+\epsilon_{i}^{C_{l}}=\left(\alpha_{max}-\alpha_{min}\right)^{-1}\left(\int_{\alpha_{min}}^{\alpha_{max}}\left(C_{l}^{sim}-C_{l}^{exp}\right)^{2}d\alpha\right)^{\frac{1}{2}}
+\]
+The same approach is adopted for drag and moment coefficient polars,
+when available. A similar norm is adopted for boundary layer runs,
+but the integration proceeds along the streamwise coordinate until
+the end of the dataset at $x=L$:
+\[
+\epsilon_{i}^{\theta}=\frac{1}{L}\left(\int_{0}^{L}\left(\theta_{\left(x\right)}^{sim}-\theta_{\left(x\right)}^{exp}\right)^{2}dx\right)^{\frac{1}{2}}
+\]
+Error measures for each quantity are then defined 
+
+\section{Parametrization of the Skin Friction Relation}
+
+The skin friction closure relation is a function of the form:
+\[
+C_{f}=f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}
+\]
+This function has three key features:
+\begin{enumerate}
+\item It tends to infinity as H approaches one:
+\[
+\lim_{H\rightarrow1}C_{f}=+\infty
+\]
+\item It is positive for share factors below separation $H<H_{sep}$ and
+negative afterwards:
+\[
+\exists H_{sep}=f_{\left(Re_{\theta}\right)}\::\:\begin{cases}
+C_{f}>0 & H<H_{sep}\\
+C_{f}<0 & H>H_{sep}
+\end{cases}
+\]
+\item And it tends to a nearly constant value in deep separation:
+\[
+\exists C_{f}^{dsep}=f_{\left(Re_{\theta}\right)}\::\:\lim_{H\rightarrow\infty}C_{f\left(H,Re_{\theta}\right)}=C_{f}^{dsep}
+\]
+\end{enumerate}
+Values of the shape factor at which separation occurs $\left(H_{sep}\right)$
+and the skin friction in deeply separated $C_{f}^{dsep}$ flows are
+not precisely known. A good parametrization must let them be varied
+by the minimization algorithm, and that is indirectly achieved by
+the following  expression:
+\[
+C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}=S_{\left(H,Re_{\theta},A_{i}\right)}^{dim}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}+\delta^{C_{f}}\right)-\delta^{C_{f}}\text{\qquad,\quad\ensuremath{\delta^{C_{f}}\in\mathbb{R}}}
+\]
+Where $\delta^{C_{f}}$ is a constant property of the parametrization
+that enables variations in the shape factor at which the onset of
+separation occurs, whereas the general shape of the closure relation
+is taylored by the $S_{\left(\right)}^{dim}$. The dimensional shape
+function maps the region for which the closure relation is being taylored
+into a unit square, over which shape of the curve is taylored with
+a classic Bernstein polynomial approach. 
+\[
+S_{\left(H,Re_{\theta},A_{i}\right)}^{dim}=B_{\left(\eta_{\left(H\right)}^{H},\eta_{\left(Re_{\theta}\right)}^{RT},A_{i}\right)}^{dxx}
+\]
+\[
+\qquad with\quad\eta^{H}=\begin{cases}
+0 & H<u_{ub}\\
+\frac{H-H_{lb}}{H_{ub}-H_{lb}} & otherwise\\
+1 & H>u_{ub}
+\end{cases}\qquad and\quad\eta^{Re_{\theta}}=\begin{cases}
+0 & Re<u_{ub}\\
+\ln\left(\frac{Re}{Re_{min}}\right)/\ln\left(\frac{Re_{max}}{Re_{min}}\right) & otherwise\\
+1 & H>u_{ub}
+\end{cases}
+\]
+
+\section{Bernstein polynomials}
+
+In the future, we will use Bernstein polynomials of arbitrary order.
+However, for this early phase of the work we will restrict our study
+to Bernstein polynomials of order 6 and degree 5. The basis of Bernstein
+polynomials of order 6 and degree 5 is written as:
+\[
+\begin{array}{rl}
+B_{\left(x\right)}^{d5r0} & =x^{5}\\
+B_{\left(x\right)}^{d5r1} & =5x^{4}\left(1-x\right)\\
+B_{\left(x\right)}^{d5r2} & =10x^{3}\left(1-x\right)^{2}\\
+B_{\left(x\right)}^{d5r3} & =10x^{2}\left(1-x\right)^{3}\\
+B_{\left(x\right)}^{d5r4} & =5x\left(1-x\right)^{4}\\
+B_{\left(x\right)}^{d5r5} & =\left(1-x\right)^{5}
+\end{array}\qquad\qquad\begin{array}{rl}
+\frac{\partial}{\partial x}\left(B^{d5r0}\right) & =5x^{4}\\
+\frac{\partial}{\partial x}\left(B^{d5r1}\right) & =5\left(4x^{3}\left(1-x\right)-x^{4}\right)\\
+\frac{\partial}{\partial x}\left(B^{d5r2}\right) & =10\left(3x^{2}\left(1-x\right)^{2}-2x^{3}\left(1-x\right)\right)\\
+\frac{\partial}{\partial x}\left(B^{d5r3}\right) & =10\left(2x\left(1-x\right)^{3}-3x^{2}\left(1-x\right)^{2}\right)\\
+\frac{\partial}{\partial x}\left(B^{d5r4}\right) & =5\left(\left(1-x\right)^{4}-4x\left(1-x\right)^{3}\right)\\
+\frac{\partial}{\partial x}\left(B^{d5r5}\right) & =-5\left(1-x\right)^{4}
+\end{array}
+\]
+Let us now define the 6 bernstein polynomial (shape) coefficients:
+\[
+A_{1},A_{2},A_{3},A_{4},A_{5},A_{6}
+\]
+Used to construct arbitrary polynomials by linear combination of the
+Bernstein basis:
+\[
+B_{\left(x,A_{i}\right)}^{d5}=A_{1}B_{\left(x\right)}^{d5r0}+A_{2}B_{\left(x\right)}^{d5r1}+A_{3}B_{\left(x\right)}^{d5r2}+A_{4}B_{\left(x\right)}^{d5r3}+A_{5}B_{\left(x\right)}^{d5r4}+A_{6}B_{\left(x\right)}^{d5r5}
+\]
+The derivative of $B^{d5}$ to the $x$-coordinate is written as:
+\[
+\frac{\partial}{\partial x}\left(B_{\left(x,A_{i}\right)}^{d5}\right)=A_{1}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r0}\right)+A_{2}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r1}\right)+A_{3}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r2}\right)+A_{4}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r3}\right)+A_{5}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r4}\right)+A_{6}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r5}\right)
+\]
+
+\section{Shape Function}
+
+For now, we will only apply changes as a function of the shape factor
+$H$. Let us then write:
+\[
+S_{\left(H,Re_{\theta},A_{i}\right)}^{dim}=B_{\left(\eta_{\left(H\right)}^{H},A_{i}\right)}^{d5}\qquad with\qquad\qquad with\quad\eta^{H}=\begin{cases}
+0 & H<u_{ub}\\
+\frac{H-H_{lb}}{H_{ub}-H_{lb}} & otherwise\\
+1 & H>u_{ub}
+\end{cases}
+\]
+So that we can write:
+\[
+\frac{\partial S}{\partial H}=\frac{\partial}{\partial H}\left(B_{\left(\eta_{\left(H\right)}^{H},A_{i}\right)}^{d5}\right)=\frac{\partial}{\partial\eta}\left(B_{\left(\eta_{\left(H\right)}^{H},A_{i}\right)}^{d5}\right)\frac{\partial\eta}{\partial H}\qquad with\qquad x=\eta^{H}
+\]
+So:
+\[
+\frac{\partial}{\partial\eta}\left(B_{\left(\eta_{\left(H\right)}^{H},A_{i}\right)}^{d5}\right)=\frac{\partial}{\partial x}\left(B_{\left(x,A_{i}\right)}^{d5}\right)
+\]
+And:
+\[
+\frac{\partial\eta}{\partial H}=\begin{cases}
+\frac{\partial}{\partial H}\left(0\right) & H<u_{ub}\\
+\frac{\partial}{\partial H}\left(\frac{H-H_{lb}}{H_{ub}-H_{lb}}\right) & otherwise\\
+\frac{\partial}{\partial H}\left(1\right) & H>u_{ub}
+\end{cases}=\begin{cases}
+0 & H<u_{ub}\\
+\frac{1}{H_{ub}-H_{lb}} & otherwise\\
+0 & H>u_{ub}
+\end{cases}
+\]
+Whereby:
+\[
+\frac{\partial S}{\partial H}=\frac{\partial}{\partial x}\left(B_{\left(x,A_{i}\right)}^{d5}\right)\frac{\partial\eta}{\partial H}
+\]
+
+\section{Cf Parametrization Summary}
+
+The bernstein polynomials are given as:
+\[
+B_{\left(x,A_{i}\right)}^{d5}=A_{1}B_{\left(x\right)}^{d5r0}+A_{2}B_{\left(x\right)}^{d5r1}+A_{3}B_{\left(x\right)}^{d5r2}+A_{4}B_{\left(x\right)}^{d5r3}+A_{5}B_{\left(x\right)}^{d5r4}+A_{6}B_{\left(x\right)}^{d5r5}
+\]
+Their derivatives come as:
+\[
+\frac{\partial}{\partial x}\left(B_{\left(x,A_{i}\right)}^{d5}\right)=A_{1}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r0}\right)+A_{2}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r1}\right)+A_{3}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r2}\right)+A_{4}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r3}\right)+A_{5}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r4}\right)+A_{6}\frac{\partial}{\partial x}\left(B_{\left(x\right)}^{d5r5}\right)
+\]
+The map from x to H is given as:
+\[
+x=\begin{cases}
+0 & H<u_{ub}\\
+\frac{H-H_{lb}}{H_{ub}-H_{lb}} & otherwise\\
+1 & H>u_{ub}
+\end{cases}
+\]
+The jacobian of the transformation is given as:
+\[
+\frac{\partial x}{\partial H}=\begin{cases}
+0 & H<u_{ub}\\
+\frac{1}{H_{ub}-H_{lb}} & otherwise\\
+0 & H>u_{ub}
+\end{cases}
+\]
+The dimensional shape function is given as:
+\[
+S_{\left(H,A_{i}\right)}^{d5}=B_{\left(\eta_{\left(H\right)}^{H},A_{i}\right)}^{d5}
+\]
+And it derivative is given as:
+\[
+\frac{\partial S^{d5}}{\partial H}=\frac{\partial}{\partial x}\left(B_{\left(x,A_{i}\right)}^{d5}\right)\frac{\partial x}{\partial H}
+\]
+The new skin friction correlation is given as:
+\[
+C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}=S_{\left(H,A_{i}\right)}^{d5}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}+\delta^{C_{f}}\right)-\delta^{C_{f}}\text{\qquad,\quad\ensuremath{\delta^{C_{f}}\in\mathbb{R}}}
+\]
+Its derivative to H is given as:
+\[
+\frac{\partial}{\partial H}\left(C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}\right)=\frac{\partial S^{d5}}{\partial H}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}+\delta^{C_{f}}\right)+S_{\left(H,A_{i}\right)}^{d5}\frac{\partial}{\partial H}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}\right)
+\]
+Derivatives to other variables are simpler. Here, the example for
+$Re_{\theta}$:
+\[
+\frac{\partial}{\partial Re_{\theta}}\left(C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}\right)=S_{\left(H,A_{i}\right)}^{d5}\frac{\partial}{\partial Re_{\theta}}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}\right)
+\]
+Done!
+
+\subsection{For paper}
+
+The skin friction correlation is parametrized by combining the original
+correlation $\left(C_{f\left(H,Re_{\theta}\right)}^{0}\right)$ with
+a shape function $\left(S_{\left(H,A_{i}\right)}^{dM}\right)$ whose
+shape depends on a set of coefficients $\left(A_{i}\right)$ that
+are varied by the optimization algorithm:
+\[
+C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}=S_{\left(H,A_{i}\right)}^{dM}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}+\delta^{C_{f}}\right)-\delta^{C_{f}}\text{\qquad,\quad\ensuremath{\delta^{C_{f}}\in\mathbb{R}}}
+\]
+The shape function consists of a linear combination of 5th degree
+Bernstein polynomials and $\left(\delta^{C_{f}},\,H_{lb},\,H_{ub}\right)$
+are constants that affect the parametrization scope:
+\[
+B_{\left(x,A_{i}\right)}^{dM}=\sum_{i=0}^{i=M}A_{i+1}B_{\left(x\right)}^{5i}\qquad with\qquad\left\{ \begin{array}{l}
+B_{\left(x\right)}^{Mi}=\left(\begin{array}{c}
+M\\
+i
+\end{array}\right)x^{i}\left(1-x\right)^{M-i}\\
+x=\frac{H-H_{lb}}{H_{ub}-H_{lb}}
+\end{array}\right.
+\]
+Setting all shape coefficients to unity yields the original closure
+relation and the $H_{\left(H,Re_{\theta}\right)}^{*}$ correlation
+was parametrized with a similar procedure.
+
+\section{Hstar Parametrization}
+
+The key feature here is to preserve the limit value for a collapsing
+boundary layer:
+\[
+\lim_{H\rightarrow1}H^{*}=2
+\]
+This is easily by setting the lower limit of the $H$ intervention
+region at $H_{min}=1$ (which we would do anyway), fixing the first
+Bernstein coefficient of to $A_{1}^{H}=1$ (it is simply not provided
+as a free parameter to the optimizer) and making a classic CST approach
+(no offset needed here). So we write:
+\[
+H_{\left(H,Re_{\theta},A_{i}\right)}^{*mod}=S_{\left(H,A_{i}\right)}^{d5}\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)
+\]
+Whereby the derivative to $H$ comes from the chain rule:
+\[
+\frac{\partial}{\partial H}\left(H_{\left(H,Re_{\theta},A_{i}\right)}^{*mod}\right)=\frac{\partial}{\partial H}\left(S_{\left(H,A_{i}\right)}^{d5}\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)\right)
+\]
+\[
+=\frac{\partial}{\partial H}\left(S_{\left(H,A_{i}\right)}^{d5}\right)\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)+S_{\left(H,A_{i}\right)}^{d5}\frac{\partial}{\partial H}\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)
+\]
+And the other derivatives come more simply, here the example for $Re_{\theta}$:
+\[
+\frac{\partial}{\partial Re_{\theta}}\left(H_{\left(H,Re_{\theta},A_{i}\right)}^{*mod}\right)=\frac{\partial}{\partial Re_{\theta}}\left(S_{\left(H,A_{i}\right)}^{d5}\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)\right)=S_{\left(H,A_{i}\right)}^{d5}\frac{\partial}{\partial Re_{\theta}}\left(f_{\left(H,Re_{\theta}\right)}^{H^{*0}}\right)
+\]
+
+\subsection{For paper}
+\end{document}

@@ -1,0 +1,2343 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Modelling airfoil flaps with an orthogonal curvilinear coordinate transformation
+\end_layout
+
+\begin_layout Author
+Gael de Oliveira
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+We follow Goldstein (1938) in our exploration of Lamé's (1859) formidable
+ work on curvilinear coordinate systems to define an conformal (angle-preserving
+) airfoil transformation parametrized by an arbitrary chordline deformation
+ interpolant.
+ There is nothing fundamentally new in this work, but the author hopes this
+ piece will serve as advocacy material for the formidable potential of orthogona
+l curvilinear coordinate tranformations.
+\end_layout
+
+\begin_layout Abstract
+We propose an hybrid analytical-numerical implementation which works as
+ a prototyping code to support many of our short term activities: continuous
+ flap modelling for VI-code (e.g.
+ R/Xfoil) analysis and airfoil optimization, generation of equivalent shapes
+ to account for inhomogeneous inflow cases in standard panel codes (e.g.
+ curved inflow in a VAWT case), thin mesh generation and deformation for
+ hybrid Lagrangian-Eulerian approaches (e.g.
+ PhyFLOW) or dynamic differential operator modification in ALE FV codes
+ applied to fluid-structure interaction (in the longer term!).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Flap rotation
+\end_layout
+
+\begin_layout Subsection
+Hinge line deformation 
+\end_layout
+
+\begin_layout Subsubsection
+Solid Body Rotation
+\end_layout
+
+\begin_layout Standard
+Consider a flap rotated as a rigid body by an angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ around its hinge.
+ The deformed hinge line will be given as a piecewise linear function inflected
+ at the hinge position 
+\begin_inset Formula $x_{h}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{\left(x\right)}=\begin{cases}
+c & \quad,\quad0<x<x_{h}\\
+c+m\left(x-x_{hinge}\right) & \quad,\quad x_{h}\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $m$
+\end_inset
+
+ is the slope of the deformed hinge line, directly related to the flap angle
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+m=\tan\theta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the first derivative of the hinge line will written:
+\begin_inset Formula 
+\[
+\frac{df}{dx}=\begin{cases}
+0 & \quad,\quad x<x_{hinge}\\
+m & \quad,\quad x\geq x_{hinge}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+clearly showing that the "pure" solid body rotation introduces a first derivativ
+e discontinuity, and hence a 
+\begin_inset Quotes eld
+\end_inset
+
+corner
+\begin_inset Quotes erd
+\end_inset
+
+ in the hinge line.
+\end_layout
+
+\begin_layout Subsubsection
+Smoothing Solid Body Rotation
+\end_layout
+
+\begin_layout Standard
+To eliminate 
+\begin_inset Formula $1^{st}$
+\end_inset
+
+ derivative discontinuities we will start by developping a softened , 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ continuous form of the hingeline deformation function 
+\begin_inset Formula $f$
+\end_inset
+
+ whose softness will depend on a knee parameter
+\begin_inset Formula $\delta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f_{\left(x\right)}=\begin{cases}
+c & \quad,\quad x<x_{h}-\delta\\
+p_{\left(x\right)} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+c+m\left(x-x_{h}\right) & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $p_{\left(x\right)}$
+\end_inset
+
+ will be chosen to be a smooth function such that 
+\begin_inset Formula $f$
+\end_inset
+
+ preserves 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ continuity.
+ For this purpose, we set that 
+\begin_inset Formula $p_{\left(x\right)}$
+\end_inset
+
+ will abide to the following boundary conditions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{dp}{dx}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{d\text{²}p}{dx\text{²}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{h}-\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{h}+\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c+m\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+g-eta-x function boundary conditions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Looking for a C2-smooth knee function
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $p$
+\end_inset
+
+ function can also be written in terms of a 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ smooth function 
+\begin_inset Formula $g$
+\end_inset
+
+, a scaling 
+\begin_inset Formula $\delta m$
+\end_inset
+
+, and a coordinate tranformation 
+\begin_inset Formula $\eta_{\left(x\right)}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+p_{\left(x\right)}=2\delta mg_{\left(\eta_{\left(x\right)}\right)}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the coordinate transformation 
+\begin_inset Formula $\eta_{\left(x\right)}$
+\end_inset
+
+ defined as:
+\begin_inset Formula 
+\[
+\eta_{\left(x\right)}=\frac{x-\left(x_{h}-\delta\right)}{\left(x_{h}+\delta\right)-\left(x_{h}-\delta\right)}=\frac{x-x_{h}}{2\delta}+\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in which case the boundary conditions can be restated as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\partial g}{\partial\eta}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\partial^{2}g}{\partial\eta^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{h}-\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{h}+\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+g-eta-x function boundary conditions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considering these boundary conditions, we decide to look for a suitable
+ expression for 
+\begin_inset Formula $g$
+\end_inset
+
+ in the form a polynomial
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Other forms could also be chosen: trigonometric function series, exponentials,
+ and many others.
+ But my intuition tells me polynomials are usually a good starting point
+ for this sort of problems!
+\end_layout
+
+\end_inset
+
+.
+ The 6 boundary conditions produce 6 equations binding the 
+\begin_inset Formula $g$
+\end_inset
+
+ function, and so, assuming the conditions are independent, there will be
+ one and only on 6th order, 5th degree, polynomial satisfying all six boundary
+ conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/scaled_knee_function.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The g-eta knee function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To look for that polynomial, we will first write it as a dot product between
+ its six coefficients and the canonical polynomial base elements:
+\begin_inset Formula 
+\[
+g_{\left(\eta\right)}=\sum_{i=0}^{5}a_{i}\eta^{i}=\left[\begin{array}{cccccc}
+1 & \eta & \eta^{2} & \eta^{3} & \eta^{4} & \eta^{5}\end{array}\right]\left[\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}\\
+a_{3}\\
+a_{4}\\
+a_{5}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can now write the 
+\begin_inset Formula $1^{st}$
+\end_inset
+
+ and 
+\begin_inset Formula $2^{nd}$
+\end_inset
+
+ derivatives of 
+\begin_inset Formula $g$
+\end_inset
+
+ in a similar form:
+\begin_inset Formula 
+\[
+\frac{\partial g}{\partial\eta}=\frac{\partial}{\partial\eta}\left(\sum_{i=0}^{5}a_{i}\eta^{i}\right)=\sum_{i=0}^{5}a_{i}\frac{\partial}{\partial\eta}\left(\eta^{i}\right)=\left[\begin{array}{cccccc}
+0 & 1 & 2\eta & 3\eta^{2} & 4\eta^{3} & 5\eta^{4}\end{array}\right]\left[\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}\\
+a_{3}\\
+a_{4}\\
+a_{5}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\partial^{2}g_{\left(\eta\right)}}{\partial\eta^{2}}=\sum_{i=0}^{5}a_{i}\frac{\partial^{2}}{\partial\eta^{2}}\left(\eta^{i}\right)=\left[\begin{array}{cccccc}
+0 & 0 & 2 & 6\eta & 12\eta^{2} & 20\eta^{3}\end{array}\right]\left[\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}\\
+a_{3}\\
+a_{4}\\
+a_{5}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+providing us for a straightforward way to write a linear system :
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+\left[g_{\left(\eta=0\right)}\right]\\
+\left[\frac{\partial g}{\partial\eta}_{\left(\eta=0\right)}\right]\\
+\left[\frac{\partial^{2}g}{\partial\eta^{2}}_{\left(\eta=0\right)}\right]\\
+\left[g_{\left(\eta=1\right)}\right]\\
+\left[\frac{\partial g}{\partial\eta}_{\left(\eta=1\right)}\right]\\
+\left[\frac{\partial^{2}g}{\partial\eta^{2}}_{\left(\eta=1\right)}\right]
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+0\\
+\nicefrac{1}{2}\\
+1\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and  express it in matrix form in terms of the coefficients: 
+\begin_inset Formula 
+\[
+\left[M\right]\left\{ A\right\} =\left\{ B\right\} \qquad\Leftrightarrow\qquad\left[\begin{array}{cccccc}
+1 & 0 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 2 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 1 & 1\\
+0 & 1 & 2 & 3 & 4 & 5\\
+0 & 0 & 2 & 6 & 12 & 20
+\end{array}\right]\left[\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}\\
+a_{3}\\
+a_{4}\\
+a_{5}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+0\\
+\nicefrac{1}{2}\\
+1\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fortunately, the matrix has rank 6, and this means that:
+\end_layout
+
+\begin_layout Enumerate
+The boundary conditions are indeed independent from each other
+\end_layout
+
+\begin_layout Enumerate
+The matrix is invertible and the linear system has a unique solution
+\end_layout
+
+\begin_layout Standard
+The solution is obtained by inverting the matrix numerically
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Manual gaussian elimination would also work on this system!
+\end_layout
+
+\end_inset
+
+, and has a very clean form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+a_{0}\\
+a_{1}\\
+a_{2}\\
+a_{3}\\
+a_{4}\\
+a_{5}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+0\\
+1\\
+-\nicefrac{1}{2}\\
+0
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write the 
+\begin_inset Formula $g$
+\end_inset
+
+ function and its derivatives explicitly as:
+\begin_inset Formula 
+\[
+g_{\left(\eta\right)}=\eta^{3}-\frac{\eta^{4}}{2}\qquad,\qquad\frac{\partial g}{\partial\eta}=3\eta^{2}-2\eta^{3}\qquad,\qquad\frac{\partial^{2}g}{\partial\eta^{2}}=6\eta-6\eta^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So that the curvature of the 
+\begin_inset Formula $g-\eta$
+\end_inset
+
+'s graphline is written as:
+\begin_inset Formula 
+\[
+\kappa_{g}=\frac{\frac{\partial^{2}g}{\partial\eta^{2}}}{\left(1+\left(\frac{\partial g}{\partial\eta}\right)^{2}\right)^{\frac{3}{2}}}=\frac{6\eta-6\eta^{2}}{\left(\left(3\eta^{2}-2\eta^{3}\right)^{2}+1\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for which there exists an analytical primitive in 
+\begin_inset Formula $\eta$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\int\kappa_{g}d\eta=\frac{\left(3\eta^{2}-2\eta^{3}\right)\sqrt{\left(3\eta^{2}-2\eta^{3}\right)^{2}+1}}{4\eta^{6}-12\eta^{5}+9\eta^{4}+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which will facilitate the construction of an orthogonal curvilinear coordinate
+ transformation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/deformed_grid.pdf
+	width 90text%
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+An orthogonal curvilienear transformation defined from the g-eta knee function
+ curvature primitive in eta 
+\emph on
+(not renormalized) 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:An-orthogonal-curvilienear"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Scaling the smooth knee function
+\end_layout
+
+\begin_layout Standard
+We recall the definition of the 
+\begin_inset Formula $\eta$
+\end_inset
+
+ coordinate transformation to write its jacobian
+\begin_inset Formula 
+\[
+\frac{\partial\eta}{\partial x}=\frac{1}{2\delta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so that we can state the dimensional 
+\begin_inset Formula $p$
+\end_inset
+
+ function and its 
+\begin_inset Formula $1^{st}$
+\end_inset
+
+ derivative in terms of 
+\begin_inset Formula $g's$
+\end_inset
+
+ derivatives:
+\begin_inset Formula 
+\[
+p_{\left(x\right)}=2\delta mg_{\left(\eta_{\left(x\right)}\right)}+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial p}{\partial x}=\frac{\partial p}{\partial\eta}\frac{\partial\eta}{\partial x}=2\delta m\frac{\partial g}{\partial\eta}\frac{1}{2\delta}=m\frac{\partial g}{\partial\eta}\qquad,\quad m,\delta\perp x,\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and for the 
+\begin_inset Formula $2^{nd}$
+\end_inset
+
+ derivative we get:
+\begin_inset Formula 
+\[
+\frac{\partial^{2}p}{\partial x^{2}}=\frac{\partial}{\partial x}\left(m\frac{\partial g}{\partial\eta}\right)=m\frac{\partial}{\partial x}\left(\frac{\partial g}{\partial\eta}\right)=m\frac{\partial^{2}g}{\partial\eta^{2}}\frac{\partial\eta}{\partial x}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{m}{2\delta}\frac{\partial^{2}g}{\partial\eta^{2}}=\frac{m}{2\delta}\left(6\eta-6\eta^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the curvature of the 
+\begin_inset Formula $p-x$
+\end_inset
+
+ graphline will be given as:
+\begin_inset Formula 
+\[
+\kappa_{\left(x\right)}^{p}=\frac{\frac{\partial^{2}p}{\partial x^{2}}}{\left(1+\left(\frac{\partial p}{\partial x}\right)^{2}\right)^{\frac{3}{2}}}=\frac{\frac{m}{2\delta}\frac{\partial^{2}g}{\partial\eta^{2}}}{\left(1+\left(m\frac{\partial g}{\partial\eta}\right)^{2}\right)^{\frac{3}{2}}}=\frac{1}{2\delta}\frac{m\frac{\partial^{2}g}{\partial\eta^{2}}}{\left(1+\left(m\frac{\partial g}{\partial\eta}\right)^{2}\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2\delta}\frac{m\left(6\eta-6\eta^{2}\right)}{\left(m^{2}\left(3\eta^{2}-2\eta^{3}\right)^{2}+1\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Before we take the 
+\begin_inset Formula $x$
+\end_inset
+
+ primitive of 
+\begin_inset Formula $\kappa_{p}$
+\end_inset
+
+ we observe that:
+\begin_inset Formula 
+\[
+d\eta=d\left(\frac{x-x_{1}}{2\delta}\right)=\frac{dx}{2\delta}\quad\Leftrightarrow\quad dx=2\delta d\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So that we can write:
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{p}=\int\kappa^{p}dx=\int\kappa^{p}2\delta d\eta=\int\frac{1}{2\delta}\frac{m\frac{\partial^{2}g}{\partial\eta^{2}}}{\left(1+\left(m\frac{\partial g}{\partial\eta}\right)^{2}\right)^{\frac{3}{2}}}2\delta d\eta=\int\frac{m\frac{\partial^{2}g}{\partial\eta^{2}}}{\left(1+\left(m\frac{\partial g}{\partial\eta}\right)^{2}\right)^{\frac{3}{2}}}d\eta
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and find an analytical primitive
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+With the symbolic toolbox!
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{p}=\int\kappa^{p}dx=\frac{m\left(3\eta^{2}-2\eta^{3}\right)\sqrt{m^{2}\left(3\eta^{2}-2\eta^{3}\right)^{2}+1}}{4m^{2}\eta^{6}-12m^{2}\eta^{5}+9m^{2}\eta^{4}+1}+C_{kp}\qquad,\quad\eta=\eta_{\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The smoothed hinge line deformation function
+\end_layout
+
+\begin_layout Standard
+Following our definition for the smoothed hinge line deformation function
+ 
+\begin_inset Formula $f\in C^{2}$
+\end_inset
+
+ we can write:
+\begin_inset Formula 
+\[
+f_{\left(x\right)}=\begin{cases}
+c & \quad,\quad x<x_{h}-\delta\\
+2\delta mg_{\left(\eta_{\left(x\right)}\right)}+c & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+c+m\left(x-x_{hinge}\right) & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+together with its first derivative:
+\begin_inset Formula 
+\[
+\frac{df}{dx}=\begin{cases}
+0 & \quad,\quad x<x_{h}-\delta\\
+m\left.\frac{\partial g}{\partial\eta}\right|_{\eta_{\left(x\right)}} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+m & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and its second derivative:
+\begin_inset Formula 
+\[
+\frac{d^{2}f}{dx}=\begin{cases}
+0 & \quad,\quad x<x_{h}-\delta\\
+\frac{m}{2\delta}\left.\frac{\partial^{2}g}{\partial\eta^{2}}\right|_{\eta_{\left(x\right)}} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+0 & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which implies that the curvate of the 
+\begin_inset Formula $f-x$
+\end_inset
+
+ line will be null everywhere except in the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left[x_{h}-\delta\,,\, x_{h}+\delta\right]$
+\end_inset
+
+ interval, so that we can write:
+\begin_inset Formula 
+\[
+\kappa_{\left(x\right)}^{f}=\begin{cases}
+0 & \quad,\quad x<x_{h}-\delta\\
+\kappa_{\left(x\right)}^{p} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+0 & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which therefore admits a straightforward analytical primitive:
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{f}=\begin{cases}
+0 & \quad,\quad x<x_{h}-\delta\\
+K_{\left(x\right)}^{p} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+K_{\left(x_{h}+\delta\right)}^{p} & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the constant 
+\begin_inset Formula $C_{kp}$
+\end_inset
+
+ of the 
+\begin_inset Formula $K_{\left(x\right)}^{p}$
+\end_inset
+
+ function will be chosen such that:
+\begin_inset Formula 
+\[
+K_{\left(x_{h}-\delta\right)}^{p}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+whereby we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\eta_{\left(x_{h}-\delta\right)}=0\quad\Rightarrow\quad K_{\left(x_{h}-\delta\right)}^{p}=0+C_{kp}\quad\Rightarrow\quad C_{kp}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+so 
+\begin_inset Formula $K^{p}$
+\end_inset
+
+ is explicitly written as:
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{p}=\frac{m\left(3\eta^{2}-2\eta^{3}\right)\sqrt{m^{2}\left(3\eta^{2}-2\eta^{3}\right)^{2}+1}}{4m^{2}\eta^{6}-12m^{2}\eta^{5}+9m^{2}\eta^{4}+1}\qquad,\quad\eta=\eta_{\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Orthogonal Curvilinear Transformation 
+\end_layout
+
+\begin_layout Standard
+We follow Goldstein (1938) in our exploration of Lamé's (1859) formidable
+ work on curvilinear coordinate systems, to define a transformation:
+\begin_inset Formula 
+\[
+T:\left(x,y\right)\rightarrow\left(s,n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+from it's Jacobian:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ds=h_{1}dx\qquad,\qquad dn=h_{2}dy
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+ds\\
+dn
+\end{array}\right]=\left[\begin{array}{cc}
+h_{1} & 0\\
+0 & h_{2}
+\end{array}\right]\left[\begin{array}{c}
+dx\\
+dy
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the 
+\begin_inset Formula $h$
+\end_inset
+
+ functions given in terms of the reference line curvature:
+\begin_inset Formula 
+\[
+h_{1}=h_{1\left(x\right)}=1+\kappa y\qquad\qquad h_{2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will now try to find an explicit expression for the transformation 
+\begin_inset Formula $T$
+\end_inset
+
+ by integrating the above definition in terms of differential elements.
+ This is easier for the second coordinate so that is where we will start
+ to illustrate the procedure:
+\begin_inset Formula 
+\[
+n=\int dn=\int h_{2}dy\qquad\Rightarrow n=y+C_{yn}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $C_{yn}$
+\end_inset
+
+is a constant such that:
+\begin_inset Formula 
+\[
+\left(n=0\Leftrightarrow y=0\right)\quad\Rightarrow\quad C_{yn}=0\quad\Rightarrow\quad n=y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we are now ready to attack the first coordinate:
+\begin_inset Formula 
+\[
+ds=h_{1}dx=\left(1+\kappa y\right)dx\quad\Leftrightarrow\quad\int ds=\int\left(1+\kappa y\right)dx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Leftrightarrow\quad s=x+y\int\kappa dx\qquad,\quad y\perp x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Defining 
+\begin_inset Formula 
+\[
+K_{\left(x\right)}=\int\kappa dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we can write: 
+\begin_inset Formula 
+\[
+s_{\left(x,y\right)}=x+yK_{\left(x\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the 
+\begin_inset Formula $T$
+\end_inset
+
+ transformation can be written as:
+\begin_inset Formula 
+\[
+\left[\begin{array}{c}
+s\\
+n
+\end{array}\right]\equiv T_{\left(x,y\right)}=\left[\begin{array}{c}
+x+yK_{\left(x\right)}\\
+y
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+For the particular case of a flapped airfoil
+\end_layout
+
+\begin_layout Standard
+In this case we can use the expression for 
+\begin_inset Formula $K_{\left(x\right)}^{f}$
+\end_inset
+
+ of the deformed hingeline:
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{f}=\begin{cases}
+0 & \quad,\quad x<x_{h}-\delta\\
+K_{\left(x\right)}^{p} & \quad,\quad x_{h}-\delta\leq x<x_{h}+\delta\\
+K_{\left(x_{h}+\delta\right)}^{p} & \quad,\quad x_{h}+\delta\leq x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+K_{\left(x\right)}^{p}=\frac{m\left(3\eta^{2}-2\eta^{3}\right)\sqrt{m^{2}\left(3\eta^{2}-2\eta^{3}\right)^{2}+1}}{4m^{2}\eta^{6}-12m^{2}\eta^{5}+9m^{2}\eta^{4}+1}\qquad,\quad\eta=\eta_{\left(x\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta_{\left(x\right)}=\frac{x-x_{h}}{2\delta}+\frac{1}{2}\qquad,\qquad m=\tan\theta\qquad,\qquad\delta=\mbox{chosen!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which provides an effective way to deform airfoil shapes and meshes to account
+ for airfoil flapping, as shown on figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Original-and-Deformed"
+
+\end_inset
+
+, generated with our first code implementation, which is fully vectorized,
+ and therefore fast for a Matlab code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/original_airfoil_on_grid.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/deformed_airfoil_on_grid.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Original and Deformed airfoils on Mesh (not renormalized, purely afine transform
+ation)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Original-and-Deformed"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Towards a general approach
+\end_layout
+
+\begin_layout Standard
+In general, the curvature of a graph line for any function 
+\begin_inset Formula $f$
+\end_inset
+
+ is written as:
+\begin_inset Formula 
+\[
+\kappa_{g}=\frac{\frac{\partial^{2}f}{\partial x^{2}}}{\left(1+\left(\frac{\partial f}{\partial x}\right)^{2}\right)^{\frac{3}{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and this expression has a general primitive in 
+\begin_inset Formula $x$
+\end_inset
+
+ given as
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Computed with Wolfram Alpha, even though it would not be impossible to see
+ it by hand!
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+K=\int\kappa dx=\int\frac{\frac{\partial^{2}f}{\partial x^{2}}}{\left(1+\left(\frac{\partial f}{\partial x}\right)^{2}\right)^{\frac{3}{2}}}dx=\frac{\frac{\partial f}{\partial x}}{\left(1+\left(\frac{\partial f}{\partial x}\right)^{2}\right)^{\frac{1}{2}}}+C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And this opens many possibilities, namely to calculate transformations along
+ arbitrarly defined 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ continuous lines for which we have the first and second derivatives
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In fact, the 1st derivative will be sufficient whenever the constant can
+ be calculated otherwise, for example by matching two points of the T transforma
+tion.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In fact, arbitrary deformations can be defined based on a set of points
+ describing an arbitraty.
+\end_layout
+
+\begin_layout Section
+Renormalizing the Hinge Line
+\end_layout
+
+\begin_layout Standard
+The hinge line depicted in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:An-orthogonal-curvilienear"
+
+\end_inset
+
+ does not have the same lenght as the original hingeline.
+ However, on a real flapping airfoil the hinge line retains its lenght and
+ the chord may change slightly 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+if we define it as the distance from the trailing edge to the leading edge,
+ which becomes debatable!
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It is therefore desirable to enhance our transformation by renormalizing
+ the hinge line.
+ Our last code implementation incorporates an approximate renormalization
+ of the hinge line, and the details are described in the code comments.
+ 
+\end_layout
+
+\begin_layout Standard
+The current implementation is very simple, but has some limitations from
+ an analytical standpoint:
+\end_layout
+
+\begin_layout Itemize
+The purely affine character is lost, but the renormalized transformation
+ remains quasi afine
+\end_layout
+
+\begin_layout Itemize
+The renormalized transformation introduces a single 2nd derivative discontinuiti
+e at the hinge point.
+\end_layout
+
+\begin_layout Standard
+As such, that the current implementation is only accurate for moderate flap
+ angles:
+\end_layout
+
+\begin_layout Enumerate
+Errors are negligible at 10degrees
+\end_layout
+
+\begin_layout Enumerate
+Noticeable but small at 20degrees
+\end_layout
+
+\begin_layout Enumerate
+Relevant at 45 degrees
+\end_layout
+
+\begin_layout Standard
+A generalized, fully 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ version valid for large flapping angles may could be developped later.
+ We have ideas on how to do that while implementing an adaptative smoothing
+ parameter to deal with very thick airfoils, but that did not seem necessary
+ at this stage.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/original_airfoil_on_grid.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/deformed_airfoil_on_grid_renormalized.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Original and Deformed airfoils on Mesh (not renormalized, purely afine transform
+ation)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Original-and-Deformed-renormalized"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/renormalized_airfoil_flapping.pdf
+	width 90line%
+	BoundingBox 0bp 80bp 445bp 421bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Renormalized Quasi Affine Flapping Airfoil Transformation, a practical example
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Renormalized-Quasi-Affine"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Original-and-Deformed-renormalized"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Renormalized-Quasi-Affine"
+
+\end_inset
+
+ show the the renormalized transformation.
+ The circle of figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Renormalized-Quasi-Affine"
+
+\end_inset
+
+ highlights that the Trailing Edge position moves in the same way as it
+ would with a real flap, because the lenght of the total chordline is preserved.
+ 
+\end_layout
+
+\begin_layout Standard
+The purely afine transformation did not preserve this important feature,
+ nor the smooth transformations that are currently in use!
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1708 @@
+STD:20180222T131924:lg> ---- START NEW LOG BOOK AFTER REQUEST ----
+STD:20180222T131924:lg> ---- request issuer: run_over_database_alfa20
+STD:20180222T133005:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T133005:global_function_wrapper>                   n_log = 1
+STD:20180222T133005:global_function_wrapper>                     n_x = 1
+STD:20180222T133005:global_function_wrapper>  scalar_accuracy_metric = 1.7321
+STD:20180222T133005:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180222T133647:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T133647:global_function_wrapper>                   n_log = 2
+STD:20180222T133647:global_function_wrapper>                     n_x = 2
+STD:20180222T133647:global_function_wrapper>  scalar_accuracy_metric = 5.4152
+STD:20180222T133647:global_function_wrapper>                       x = 1.3         1.3         1.3         1.3         1.1         1.1         1.1         1.1
+STD:20180222T133648:lg> Saved intialization to file : run_over_database_alfa20_initialization_20180222T133647.mat
+STD:20180222T133648:lg> Saved RNG state to file : run_over_database_alfa20_rngstate_20180222T133648.mat
+STD:20180222T133648:lg> Enter deteministic gradient module. Split reference dataset
+STD:20180222T133648:lg> Size of reference  dataset : 11976 datapoints over 194 experimental cases
+STD:20180222T133648:lg> Size of training   dataset : 7157 datapoints over 117 experimental cases
+STD:20180222T133648:lg> Size of validation dataset : 4819 datapoints over 77 experimental cases
+STD:20180222T133648:lg> Test innacuracy norm on training and validation set.
+STD:20180222T133649:lg> Start solution of minimization problem.
+STD:20180222T133957:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T133957:global_function_wrapper>                   n_log = 3
+STD:20180222T133957:global_function_wrapper>                     n_x = 1
+STD:20180222T133957:global_function_wrapper>  scalar_accuracy_metric = 1.781
+STD:20180222T133957:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1
+STD:20180222T133957:global_function_wrapper>             k_minibatch = 117
+STD:20180222T134333:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T134333:global_function_wrapper>                   n_log = 4
+STD:20180222T134333:global_function_wrapper>                     n_x = 1
+STD:20180222T134333:global_function_wrapper>  scalar_accuracy_metric = 1.7842
+STD:20180222T134333:global_function_wrapper>                       x = 0.9999           1           1           1           1           1           1           1
+STD:20180222T134333:global_function_wrapper>             k_minibatch = 117
+STD:20180222T134652:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T134652:global_function_wrapper>                   n_log = 5
+STD:20180222T134652:global_function_wrapper>                     n_x = 1
+STD:20180222T134652:global_function_wrapper>  scalar_accuracy_metric = 1.8035
+STD:20180222T134652:global_function_wrapper>                       x = 1.0001           1           1           1           1           1           1           1
+STD:20180222T134652:global_function_wrapper>             k_minibatch = 117
+STD:20180222T135017:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T135017:global_function_wrapper>                   n_log = 6
+STD:20180222T135017:global_function_wrapper>                     n_x = 1
+STD:20180222T135017:global_function_wrapper>  scalar_accuracy_metric = 1.7846
+STD:20180222T135017:global_function_wrapper>                       x = 1      0.9999           1           1           1           1           1           1
+STD:20180222T135017:global_function_wrapper>             k_minibatch = 117
+STD:20180222T135352:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T135352:global_function_wrapper>                   n_log = 7
+STD:20180222T135352:global_function_wrapper>                     n_x = 1
+STD:20180222T135352:global_function_wrapper>  scalar_accuracy_metric = 1.7796
+STD:20180222T135352:global_function_wrapper>                       x = 1      1.0001           1           1           1           1           1           1
+STD:20180222T135352:global_function_wrapper>             k_minibatch = 117
+STD:20180222T135708:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T135708:global_function_wrapper>                   n_log = 8
+STD:20180222T135708:global_function_wrapper>                     n_x = 1
+STD:20180222T135708:global_function_wrapper>  scalar_accuracy_metric = 1.7824
+STD:20180222T135708:global_function_wrapper>                       x = 1           1      0.9999           1           1           1           1           1
+STD:20180222T135708:global_function_wrapper>             k_minibatch = 117
+STD:20180222T140019:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T140019:global_function_wrapper>                   n_log = 9
+STD:20180222T140019:global_function_wrapper>                     n_x = 1
+STD:20180222T140019:global_function_wrapper>  scalar_accuracy_metric = 1.8452
+STD:20180222T140019:global_function_wrapper>                       x = 1           1      1.0001           1           1           1           1           1
+STD:20180222T140019:global_function_wrapper>             k_minibatch = 117
+STD:20180222T140356:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T140356:global_function_wrapper>                   n_log = 10
+STD:20180222T140356:global_function_wrapper>                     n_x = 1
+STD:20180222T140356:global_function_wrapper>  scalar_accuracy_metric = 1.9011
+STD:20180222T140356:global_function_wrapper>                       x = 1           1           1      0.9999           1           1           1           1
+STD:20180222T140356:global_function_wrapper>             k_minibatch = 117
+STD:20180222T140716:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T140716:global_function_wrapper>                   n_log = 11
+STD:20180222T140716:global_function_wrapper>                     n_x = 1
+STD:20180222T140716:global_function_wrapper>  scalar_accuracy_metric = 1.7855
+STD:20180222T140716:global_function_wrapper>                       x = 1           1           1      1.0001           1           1           1           1
+STD:20180222T140716:global_function_wrapper>             k_minibatch = 117
+STD:20180222T141057:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T141057:global_function_wrapper>                   n_log = 12
+STD:20180222T141057:global_function_wrapper>                     n_x = 1
+STD:20180222T141057:global_function_wrapper>  scalar_accuracy_metric = 1.7721
+STD:20180222T141057:global_function_wrapper>                       x = 1           1           1           1      0.9999           1           1           1
+STD:20180222T141057:global_function_wrapper>             k_minibatch = 117
+STD:20180222T141456:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T141456:global_function_wrapper>                   n_log = 13
+STD:20180222T141456:global_function_wrapper>                     n_x = 1
+STD:20180222T141456:global_function_wrapper>  scalar_accuracy_metric = 1.7798
+STD:20180222T141456:global_function_wrapper>                       x = 1           1           1           1      1.0001           1           1           1
+STD:20180222T141456:global_function_wrapper>             k_minibatch = 117
+STD:20180222T141820:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T141820:global_function_wrapper>                   n_log = 14
+STD:20180222T141820:global_function_wrapper>                     n_x = 1
+STD:20180222T141820:global_function_wrapper>  scalar_accuracy_metric = 1.8063
+STD:20180222T141820:global_function_wrapper>                       x = 1           1           1           1           1      0.9999           1           1
+STD:20180222T141820:global_function_wrapper>             k_minibatch = 117
+STD:20180222T142140:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T142140:global_function_wrapper>                   n_log = 15
+STD:20180222T142140:global_function_wrapper>                     n_x = 1
+STD:20180222T142140:global_function_wrapper>  scalar_accuracy_metric = 1.7773
+STD:20180222T142140:global_function_wrapper>                       x = 1           1           1           1           1      1.0001           1           1
+STD:20180222T142140:global_function_wrapper>             k_minibatch = 117
+STD:20180222T142445:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T142445:global_function_wrapper>                   n_log = 16
+STD:20180222T142445:global_function_wrapper>                     n_x = 1
+STD:20180222T142445:global_function_wrapper>  scalar_accuracy_metric = 1.7808
+STD:20180222T142445:global_function_wrapper>                       x = 1           1           1           1           1           1      0.9999           1
+STD:20180222T142445:global_function_wrapper>             k_minibatch = 117
+STD:20180222T142804:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T142804:global_function_wrapper>                   n_log = 17
+STD:20180222T142804:global_function_wrapper>                     n_x = 1
+STD:20180222T142804:global_function_wrapper>  scalar_accuracy_metric = 1.7785
+STD:20180222T142804:global_function_wrapper>                       x = 1           1           1           1           1           1      1.0001           1
+STD:20180222T142804:global_function_wrapper>             k_minibatch = 117
+STD:20180222T143123:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T143123:global_function_wrapper>                   n_log = 18
+STD:20180222T143123:global_function_wrapper>                     n_x = 1
+STD:20180222T143123:global_function_wrapper>  scalar_accuracy_metric = 1.7868
+STD:20180222T143123:global_function_wrapper>                       x = 1           1           1           1           1           1           1      0.9999
+STD:20180222T143123:global_function_wrapper>             k_minibatch = 117
+STD:20180222T143439:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T143439:global_function_wrapper>                   n_log = 19
+STD:20180222T143439:global_function_wrapper>                     n_x = 1
+STD:20180222T143439:global_function_wrapper>  scalar_accuracy_metric = 1.7765
+STD:20180222T143439:global_function_wrapper>                       x = 1           1           1           1           1           1           1      1.0001
+STD:20180222T143439:global_function_wrapper>             k_minibatch = 117
+STD:20180222T143738:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T143738:global_function_wrapper>                   n_log = 20
+STD:20180222T143738:global_function_wrapper>                     n_x = 1
+STD:20180222T143738:global_function_wrapper>  scalar_accuracy_metric = 2.1046
+STD:20180222T143738:global_function_wrapper>                       x = 0.9121       1.254     0.91124      1.2985     0.94565      1.0586      1.0444      1.0558
+STD:20180222T143738:global_function_wrapper>             k_minibatch = 117
+STD:20180222T144022:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T144022:global_function_wrapper>                   n_log = 21
+STD:20180222T144022:global_function_wrapper>                     n_x = 1
+STD:20180222T144022:global_function_wrapper>  scalar_accuracy_metric = 1.8735
+STD:20180222T144022:global_function_wrapper>                       x = 0.95605       1.127     0.95562      1.1492     0.97283      1.0293      1.0222      1.0279
+STD:20180222T144022:global_function_wrapper>             k_minibatch = 117
+STD:20180222T144409:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T144409:global_function_wrapper>                   n_log = 22
+STD:20180222T144409:global_function_wrapper>                     n_x = 1
+STD:20180222T144409:global_function_wrapper>  scalar_accuracy_metric = 1.8029
+STD:20180222T144409:global_function_wrapper>                       x = 0.97802      1.0635     0.97781      1.0746     0.98641      1.0147      1.0111      1.0139
+STD:20180222T144409:global_function_wrapper>             k_minibatch = 117
+STD:20180222T144744:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T144744:global_function_wrapper>                   n_log = 23
+STD:20180222T144744:global_function_wrapper>                     n_x = 1
+STD:20180222T144744:global_function_wrapper>  scalar_accuracy_metric = 1.7852
+STD:20180222T144744:global_function_wrapper>                       x = 0.98901      1.0317      0.9889      1.0373     0.99321      1.0073      1.0055       1.007
+STD:20180222T144744:global_function_wrapper>             k_minibatch = 117
+STD:20180222T145059:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T145059:global_function_wrapper>                   n_log = 24
+STD:20180222T145059:global_function_wrapper>                     n_x = 1
+STD:20180222T145059:global_function_wrapper>  scalar_accuracy_metric = 2.221
+STD:20180222T145059:global_function_wrapper>                       x = 0.95026      1.0129     0.83806      1.2985     0.99636      1.0138      1.0011      1.0049
+STD:20180222T145059:global_function_wrapper>             k_minibatch = 117
+STD:20180222T145402:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T145402:global_function_wrapper>                   n_log = 25
+STD:20180222T145402:global_function_wrapper>                     n_x = 1
+STD:20180222T145402:global_function_wrapper>  scalar_accuracy_metric = 1.902
+STD:20180222T145402:global_function_wrapper>                       x = 0.97513      1.0065     0.91903      1.1492     0.99818      1.0069      1.0006      1.0024
+STD:20180222T145402:global_function_wrapper>             k_minibatch = 117
+STD:20180222T145713:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T145713:global_function_wrapper>                   n_log = 26
+STD:20180222T145713:global_function_wrapper>                     n_x = 1
+STD:20180222T145713:global_function_wrapper>  scalar_accuracy_metric = 1.8318
+STD:20180222T145713:global_function_wrapper>                       x = 0.98756      1.0032     0.95951      1.0746     0.99909      1.0035      1.0003      1.0012
+STD:20180222T145713:global_function_wrapper>             k_minibatch = 117
+STD:20180222T150011:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T150011:global_function_wrapper>                   n_log = 27
+STD:20180222T150011:global_function_wrapper>                     n_x = 1
+STD:20180222T150011:global_function_wrapper>  scalar_accuracy_metric = 1.8678
+STD:20180222T150011:global_function_wrapper>                       x = 0.99378      1.0016     0.97976      1.0373     0.99954      1.0017      1.0001      1.0006
+STD:20180222T150011:global_function_wrapper>             k_minibatch = 117
+STD:20180222T150346:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T150346:global_function_wrapper>                   n_log = 28
+STD:20180222T150346:global_function_wrapper>                     n_x = 1
+STD:20180222T150346:global_function_wrapper>  scalar_accuracy_metric = 1.7897
+STD:20180222T150346:global_function_wrapper>                       x = 0.99689      1.0008     0.98988      1.0187     0.99977      1.0009      1.0001      1.0003
+STD:20180222T150346:global_function_wrapper>             k_minibatch = 117
+STD:20180222T150732:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T150732:global_function_wrapper>                   n_log = 29
+STD:20180222T150732:global_function_wrapper>                     n_x = 1
+STD:20180222T150732:global_function_wrapper>  scalar_accuracy_metric = 1.7856
+STD:20180222T150732:global_function_wrapper>                       x = 0.99845      1.0004     0.99494      1.0093     0.99989      1.0004           1      1.0002
+STD:20180222T150732:global_function_wrapper>             k_minibatch = 117
+STD:20180222T151105:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T151105:global_function_wrapper>                   n_log = 30
+STD:20180222T151105:global_function_wrapper>                     n_x = 1
+STD:20180222T151105:global_function_wrapper>  scalar_accuracy_metric = 1.7762
+STD:20180222T151105:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T151105:global_function_wrapper>             k_minibatch = 117
+STD:20180222T151424:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T151424:global_function_wrapper>                   n_log = 31
+STD:20180222T151424:global_function_wrapper>                     n_x = 1
+STD:20180222T151424:global_function_wrapper>  scalar_accuracy_metric = 1.794
+STD:20180222T151424:global_function_wrapper>                       x = 0.99912      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T151424:global_function_wrapper>             k_minibatch = 117
+STD:20180222T151739:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T151739:global_function_wrapper>                   n_log = 32
+STD:20180222T151739:global_function_wrapper>                     n_x = 1
+STD:20180222T151739:global_function_wrapper>  scalar_accuracy_metric = 1.7892
+STD:20180222T151739:global_function_wrapper>                       x = 0.99932      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T151739:global_function_wrapper>             k_minibatch = 117
+STD:20180222T152049:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T152049:global_function_wrapper>                   n_log = 33
+STD:20180222T152049:global_function_wrapper>                     n_x = 1
+STD:20180222T152049:global_function_wrapper>  scalar_accuracy_metric = 1.8804
+STD:20180222T152049:global_function_wrapper>                       x = 0.99922      1.0001     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T152049:global_function_wrapper>             k_minibatch = 117
+STD:20180222T152404:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T152404:global_function_wrapper>                   n_log = 34
+STD:20180222T152404:global_function_wrapper>                     n_x = 1
+STD:20180222T152404:global_function_wrapper>  scalar_accuracy_metric = 1.7831
+STD:20180222T152404:global_function_wrapper>                       x = 0.99922      1.0003     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T152404:global_function_wrapper>             k_minibatch = 117
+STD:20180222T152743:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T152743:global_function_wrapper>                   n_log = 35
+STD:20180222T152743:global_function_wrapper>                     n_x = 1
+STD:20180222T152743:global_function_wrapper>  scalar_accuracy_metric = 1.7877
+STD:20180222T152743:global_function_wrapper>                       x = 0.99922      1.0002     0.99737      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T152743:global_function_wrapper>             k_minibatch = 117
+STD:20180222T153125:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T153125:global_function_wrapper>                   n_log = 36
+STD:20180222T153125:global_function_wrapper>                     n_x = 1
+STD:20180222T153125:global_function_wrapper>  scalar_accuracy_metric = 1.7979
+STD:20180222T153125:global_function_wrapper>                       x = 0.99922      1.0002     0.99757      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T153125:global_function_wrapper>             k_minibatch = 117
+STD:20180222T153441:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T153441:global_function_wrapper>                   n_log = 37
+STD:20180222T153441:global_function_wrapper>                     n_x = 1
+STD:20180222T153441:global_function_wrapper>  scalar_accuracy_metric = 1.8424
+STD:20180222T153441:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0046     0.99994      1.0002           1      1.0001
+STD:20180222T153441:global_function_wrapper>             k_minibatch = 117
+STD:20180222T153753:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T153753:global_function_wrapper>                   n_log = 38
+STD:20180222T153753:global_function_wrapper>                     n_x = 1
+STD:20180222T153753:global_function_wrapper>  scalar_accuracy_metric = 1.7899
+STD:20180222T153753:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0048     0.99994      1.0002           1      1.0001
+STD:20180222T153753:global_function_wrapper>             k_minibatch = 117
+STD:20180222T154059:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T154059:global_function_wrapper>                   n_log = 39
+STD:20180222T154059:global_function_wrapper>                     n_x = 1
+STD:20180222T154059:global_function_wrapper>  scalar_accuracy_metric = 1.7832
+STD:20180222T154059:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99984      1.0002           1      1.0001
+STD:20180222T154059:global_function_wrapper>             k_minibatch = 117
+STD:20180222T154424:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T154424:global_function_wrapper>                   n_log = 40
+STD:20180222T154424:global_function_wrapper>                     n_x = 1
+STD:20180222T154424:global_function_wrapper>  scalar_accuracy_metric = 1.7843
+STD:20180222T154424:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047           1      1.0002           1      1.0001
+STD:20180222T154424:global_function_wrapper>             k_minibatch = 117
+STD:20180222T154745:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T154745:global_function_wrapper>                   n_log = 41
+STD:20180222T154745:global_function_wrapper>                     n_x = 1
+STD:20180222T154745:global_function_wrapper>  scalar_accuracy_metric = 1.7805
+STD:20180222T154745:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0001           1      1.0001
+STD:20180222T154745:global_function_wrapper>             k_minibatch = 117
+STD:20180222T155145:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T155145:global_function_wrapper>                   n_log = 42
+STD:20180222T155145:global_function_wrapper>                     n_x = 1
+STD:20180222T155145:global_function_wrapper>  scalar_accuracy_metric = 1.767
+STD:20180222T155145:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0003           1      1.0001
+STD:20180222T155145:global_function_wrapper>             k_minibatch = 117
+STD:20180222T155451:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T155451:global_function_wrapper>                   n_log = 43
+STD:20180222T155451:global_function_wrapper>                     n_x = 1
+STD:20180222T155451:global_function_wrapper>  scalar_accuracy_metric = 1.7948
+STD:20180222T155451:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002     0.99992      1.0001
+STD:20180222T155451:global_function_wrapper>             k_minibatch = 117
+STD:20180222T155805:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T155805:global_function_wrapper>                   n_log = 44
+STD:20180222T155805:global_function_wrapper>                     n_x = 1
+STD:20180222T155805:global_function_wrapper>  scalar_accuracy_metric = 1.7906
+STD:20180222T155805:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002      1.0001      1.0001
+STD:20180222T155805:global_function_wrapper>             k_minibatch = 117
+STD:20180222T160154:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T160154:global_function_wrapper>                   n_log = 45
+STD:20180222T160154:global_function_wrapper>                     n_x = 1
+STD:20180222T160154:global_function_wrapper>  scalar_accuracy_metric = 1.7733
+STD:20180222T160154:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1     0.99998
+STD:20180222T160154:global_function_wrapper>             k_minibatch = 117
+STD:20180222T160537:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T160537:global_function_wrapper>                   n_log = 46
+STD:20180222T160537:global_function_wrapper>                     n_x = 1
+STD:20180222T160537:global_function_wrapper>  scalar_accuracy_metric = 1.7781
+STD:20180222T160537:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0002
+STD:20180222T160537:global_function_wrapper>             k_minibatch = 117
+STD:20180222T160845:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T160845:global_function_wrapper>                   n_log = 47
+STD:20180222T160845:global_function_wrapper>                     n_x = 1
+STD:20180222T160845:global_function_wrapper>  scalar_accuracy_metric = 2.4657
+STD:20180222T160845:global_function_wrapper>                       x = 1.1096      1.2509     0.87356      1.2985      0.9477      1.0597      1.0449     0.96769
+STD:20180222T160845:global_function_wrapper>             k_minibatch = 117
+STD:20180222T161202:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T161202:global_function_wrapper>                   n_log = 48
+STD:20180222T161202:global_function_wrapper>                     n_x = 1
+STD:20180222T161202:global_function_wrapper>  scalar_accuracy_metric = 1.7916
+STD:20180222T161202:global_function_wrapper>                       x = 1.0005       1.003     0.99606       1.008     0.99935      1.0009      1.0005     0.99971
+STD:20180222T161202:global_function_wrapper>             k_minibatch = 117
+STD:20180222T161607:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T161607:global_function_wrapper>                   n_log = 49
+STD:20180222T161607:global_function_wrapper>                     n_x = 1
+STD:20180222T161607:global_function_wrapper>  scalar_accuracy_metric = 1.817
+STD:20180222T161607:global_function_wrapper>                       x = 0.99985      1.0016     0.99677      1.0063     0.99965      1.0006      1.0003     0.99989
+STD:20180222T161607:global_function_wrapper>             k_minibatch = 117
+STD:20180222T161921:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T161921:global_function_wrapper>                   n_log = 50
+STD:20180222T161921:global_function_wrapper>                     n_x = 1
+STD:20180222T161921:global_function_wrapper>  scalar_accuracy_metric = 1.7888
+STD:20180222T161921:global_function_wrapper>                       x = 0.99954      1.0009     0.99712      1.0055     0.99979      1.0004      1.0001     0.99998
+STD:20180222T161921:global_function_wrapper>             k_minibatch = 117
+STD:20180222T162238:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T162238:global_function_wrapper>                   n_log = 51
+STD:20180222T162238:global_function_wrapper>                     n_x = 1
+STD:20180222T162238:global_function_wrapper>  scalar_accuracy_metric = 1.7886
+STD:20180222T162238:global_function_wrapper>                       x = 0.99945      1.0049     0.99698      1.0072     0.99993      1.0003      1.0001           1
+STD:20180222T162239:global_function_wrapper>             k_minibatch = 117
+STD:20180222T162556:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T162556:global_function_wrapper>                   n_log = 52
+STD:20180222T162556:global_function_wrapper>                     n_x = 1
+STD:20180222T162556:global_function_wrapper>  scalar_accuracy_metric = 1.8087
+STD:20180222T162556:global_function_wrapper>                       x = 0.99934      1.0026     0.99723       1.006     0.99994      1.0003           1      1.0001
+STD:20180222T162556:global_function_wrapper>             k_minibatch = 117
+STD:20180222T162948:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T162948:global_function_wrapper>                   n_log = 53
+STD:20180222T162949:global_function_wrapper>                     n_x = 1
+STD:20180222T162949:global_function_wrapper>  scalar_accuracy_metric = 1.8574
+STD:20180222T162949:global_function_wrapper>                       x = 0.99928      1.0014     0.99735      1.0053     0.99994      1.0002           1      1.0001
+STD:20180222T162949:global_function_wrapper>             k_minibatch = 117
+STD:20180222T163313:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T163313:global_function_wrapper>                   n_log = 54
+STD:20180222T163313:global_function_wrapper>                     n_x = 1
+STD:20180222T163313:global_function_wrapper>  scalar_accuracy_metric = 1.7896
+STD:20180222T163313:global_function_wrapper>                       x = 0.99925      1.0008     0.99741       1.005     0.99994      1.0002           1      1.0001
+STD:20180222T163313:global_function_wrapper>             k_minibatch = 117
+STD:20180222T163623:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T163623:global_function_wrapper>                   n_log = 55
+STD:20180222T163623:global_function_wrapper>                     n_x = 1
+STD:20180222T163623:global_function_wrapper>  scalar_accuracy_metric = 1.7853
+STD:20180222T163623:global_function_wrapper>                       x = 0.99924      1.0005     0.99744      1.0048     0.99994      1.0002           1      1.0001
+STD:20180222T163623:global_function_wrapper>             k_minibatch = 117
+STD:20180222T163943:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T163943:global_function_wrapper>                   n_log = 56
+STD:20180222T163943:global_function_wrapper>                     n_x = 1
+STD:20180222T163943:global_function_wrapper>  scalar_accuracy_metric = 1.8236
+STD:20180222T163943:global_function_wrapper>                       x = 0.99923      1.0003     0.99745      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T163943:global_function_wrapper>             k_minibatch = 117
+STD:20180222T164330:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T164330:global_function_wrapper>                   n_log = 57
+STD:20180222T164330:global_function_wrapper>                     n_x = 1
+STD:20180222T164330:global_function_wrapper>  scalar_accuracy_metric = 1.7771
+STD:20180222T164330:global_function_wrapper>                       x = 0.99923      1.0003     0.99746      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T164330:global_function_wrapper>             k_minibatch = 117
+STD:20180222T164651:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T164651:global_function_wrapper>                   n_log = 58
+STD:20180222T164651:global_function_wrapper>                     n_x = 1
+STD:20180222T164651:global_function_wrapper>  scalar_accuracy_metric = 1.7737
+STD:20180222T164651:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T164651:global_function_wrapper>             k_minibatch = 117
+STD:20180222T165036:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T165036:global_function_wrapper>                   n_log = 59
+STD:20180222T165036:global_function_wrapper>                     n_x = 1
+STD:20180222T165036:global_function_wrapper>  scalar_accuracy_metric = 1.7732
+STD:20180222T165036:global_function_wrapper>                       x = 0.99912      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T165036:global_function_wrapper>             k_minibatch = 117
+STD:20180222T165425:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T165425:global_function_wrapper>                   n_log = 60
+STD:20180222T165425:global_function_wrapper>                     n_x = 1
+STD:20180222T165425:global_function_wrapper>  scalar_accuracy_metric = 1.7687
+STD:20180222T165425:global_function_wrapper>                       x = 0.99932      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T165425:global_function_wrapper>             k_minibatch = 117
+STD:20180222T165746:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T165746:global_function_wrapper>                   n_log = 61
+STD:20180222T165746:global_function_wrapper>                     n_x = 1
+STD:20180222T165746:global_function_wrapper>  scalar_accuracy_metric = 1.7783
+STD:20180222T165746:global_function_wrapper>                       x = 0.99922      1.0001     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T165746:global_function_wrapper>             k_minibatch = 117
+STD:20180222T170134:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T170134:global_function_wrapper>                   n_log = 62
+STD:20180222T170134:global_function_wrapper>                     n_x = 1
+STD:20180222T170134:global_function_wrapper>  scalar_accuracy_metric = 1.7965
+STD:20180222T170134:global_function_wrapper>                       x = 0.99922      1.0003     0.99747      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T170134:global_function_wrapper>             k_minibatch = 117
+STD:20180222T170453:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T170453:global_function_wrapper>                   n_log = 63
+STD:20180222T170453:global_function_wrapper>                     n_x = 1
+STD:20180222T170453:global_function_wrapper>  scalar_accuracy_metric = 1.7814
+STD:20180222T170453:global_function_wrapper>                       x = 0.99922      1.0002     0.99737      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T170453:global_function_wrapper>             k_minibatch = 117
+STD:20180222T170803:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T170803:global_function_wrapper>                   n_log = 64
+STD:20180222T170803:global_function_wrapper>                     n_x = 1
+STD:20180222T170803:global_function_wrapper>  scalar_accuracy_metric = 1.7807
+STD:20180222T170803:global_function_wrapper>                       x = 0.99922      1.0002     0.99757      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T170803:global_function_wrapper>             k_minibatch = 117
+STD:20180222T171141:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T171141:global_function_wrapper>                   n_log = 65
+STD:20180222T171141:global_function_wrapper>                     n_x = 1
+STD:20180222T171141:global_function_wrapper>  scalar_accuracy_metric = 1.7658
+STD:20180222T171141:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0046     0.99994      1.0002           1      1.0001
+STD:20180222T171141:global_function_wrapper>             k_minibatch = 117
+STD:20180222T171523:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T171523:global_function_wrapper>                   n_log = 66
+STD:20180222T171523:global_function_wrapper>                     n_x = 1
+STD:20180222T171523:global_function_wrapper>  scalar_accuracy_metric = 1.785
+STD:20180222T171523:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0048     0.99994      1.0002           1      1.0001
+STD:20180222T171523:global_function_wrapper>             k_minibatch = 117
+STD:20180222T171844:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T171844:global_function_wrapper>                   n_log = 67
+STD:20180222T171844:global_function_wrapper>                     n_x = 1
+STD:20180222T171844:global_function_wrapper>  scalar_accuracy_metric = 1.8037
+STD:20180222T171844:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99984      1.0002           1      1.0001
+STD:20180222T171844:global_function_wrapper>             k_minibatch = 117
+STD:20180222T172147:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T172147:global_function_wrapper>                   n_log = 68
+STD:20180222T172147:global_function_wrapper>                     n_x = 1
+STD:20180222T172147:global_function_wrapper>  scalar_accuracy_metric = 1.7891
+STD:20180222T172147:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047           1      1.0002           1      1.0001
+STD:20180222T172147:global_function_wrapper>             k_minibatch = 117
+STD:20180222T172455:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T172455:global_function_wrapper>                   n_log = 69
+STD:20180222T172455:global_function_wrapper>                     n_x = 1
+STD:20180222T172455:global_function_wrapper>  scalar_accuracy_metric = 1.7825
+STD:20180222T172455:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0001           1      1.0001
+STD:20180222T172455:global_function_wrapper>             k_minibatch = 117
+STD:20180222T172804:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T172804:global_function_wrapper>                   n_log = 70
+STD:20180222T172804:global_function_wrapper>                     n_x = 1
+STD:20180222T172804:global_function_wrapper>  scalar_accuracy_metric = 1.7849
+STD:20180222T172804:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0003           1      1.0001
+STD:20180222T172804:global_function_wrapper>             k_minibatch = 117
+STD:20180222T173129:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T173129:global_function_wrapper>                   n_log = 71
+STD:20180222T173129:global_function_wrapper>                     n_x = 1
+STD:20180222T173129:global_function_wrapper>  scalar_accuracy_metric = 1.806
+STD:20180222T173129:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002     0.99992      1.0001
+STD:20180222T173129:global_function_wrapper>             k_minibatch = 117
+STD:20180222T173448:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T173448:global_function_wrapper>                   n_log = 72
+STD:20180222T173448:global_function_wrapper>                     n_x = 1
+STD:20180222T173448:global_function_wrapper>  scalar_accuracy_metric = 1.7852
+STD:20180222T173448:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002      1.0001      1.0001
+STD:20180222T173448:global_function_wrapper>             k_minibatch = 117
+STD:20180222T173805:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T173805:global_function_wrapper>                   n_log = 73
+STD:20180222T173805:global_function_wrapper>                     n_x = 1
+STD:20180222T173805:global_function_wrapper>  scalar_accuracy_metric = 1.7825
+STD:20180222T173805:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1     0.99998
+STD:20180222T173805:global_function_wrapper>             k_minibatch = 117
+STD:20180222T174205:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T174205:global_function_wrapper>                   n_log = 74
+STD:20180222T174205:global_function_wrapper>                     n_x = 1
+STD:20180222T174205:global_function_wrapper>  scalar_accuracy_metric = 1.7755
+STD:20180222T174205:global_function_wrapper>                       x = 0.99922      1.0002     0.99747      1.0047     0.99994      1.0002           1      1.0002
+STD:20180222T174205:global_function_wrapper>             k_minibatch = 117
+STD:20180222T174505:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T174505:global_function_wrapper>                   n_log = 75
+STD:20180222T174505:global_function_wrapper>                     n_x = 1
+STD:20180222T174505:global_function_wrapper>  scalar_accuracy_metric = 1.8747
+STD:20180222T174505:global_function_wrapper>                       x = 1.2153       1.011     0.80099     0.97907      1.0389      1.0065       1.042      1.0317
+STD:20180222T174505:global_function_wrapper>             k_minibatch = 117
+STD:20180222T174843:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T174843:global_function_wrapper>                   n_log = 76
+STD:20180222T174843:global_function_wrapper>                     n_x = 1
+STD:20180222T174843:global_function_wrapper>  scalar_accuracy_metric = 1.794
+STD:20180222T174843:global_function_wrapper>                       x = 0.99925      1.0002     0.99744      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T174843:global_function_wrapper>             k_minibatch = 117
+STD:20180222T175222:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T175222:global_function_wrapper>                   n_log = 77
+STD:20180222T175222:global_function_wrapper>                     n_x = 1
+STD:20180222T175222:global_function_wrapper>  scalar_accuracy_metric = 1.7761
+STD:20180222T175222:global_function_wrapper>                       x = 0.99924      1.0002     0.99745      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T175222:global_function_wrapper>             k_minibatch = 117
+STD:20180222T175607:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T175607:global_function_wrapper>                   n_log = 78
+STD:20180222T175607:global_function_wrapper>                     n_x = 1
+STD:20180222T175607:global_function_wrapper>  scalar_accuracy_metric = 1.7904
+STD:20180222T175607:global_function_wrapper>                       x = 0.99923      1.0002     0.99746      1.0047     0.99994      1.0002           1      1.0001
+STD:20180222T175607:global_function_wrapper>             k_minibatch = 117
+STD:20180222T175940:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T175940:global_function_wrapper>                   n_log = 79
+STD:20180222T175940:global_function_wrapper>                     n_x = 1
+STD:20180222T175940:global_function_wrapper>  scalar_accuracy_metric = 1.7648
+STD:20180222T175940:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T175940:global_function_wrapper>             k_minibatch = 117
+STD:20180222T180311:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T180311:global_function_wrapper>                   n_log = 80
+STD:20180222T180311:global_function_wrapper>                     n_x = 1
+STD:20180222T180311:global_function_wrapper>  scalar_accuracy_metric = 1.8185
+STD:20180222T180311:global_function_wrapper>                       x = 0.99914      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T180311:global_function_wrapper>             k_minibatch = 117
+STD:20180222T180652:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T180652:global_function_wrapper>                   n_log = 81
+STD:20180222T180652:global_function_wrapper>                     n_x = 1
+STD:20180222T180652:global_function_wrapper>  scalar_accuracy_metric = 1.7769
+STD:20180222T180652:global_function_wrapper>                       x = 0.99934      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T180652:global_function_wrapper>             k_minibatch = 117
+STD:20180222T181009:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T181009:global_function_wrapper>                   n_log = 82
+STD:20180222T181009:global_function_wrapper>                     n_x = 1
+STD:20180222T181009:global_function_wrapper>  scalar_accuracy_metric = 1.7913
+STD:20180222T181009:global_function_wrapper>                       x = 0.99924      1.0001     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T181009:global_function_wrapper>             k_minibatch = 117
+STD:20180222T181323:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T181323:global_function_wrapper>                   n_log = 83
+STD:20180222T181323:global_function_wrapper>                     n_x = 1
+STD:20180222T181323:global_function_wrapper>  scalar_accuracy_metric = 1.7802
+STD:20180222T181323:global_function_wrapper>                       x = 0.99924      1.0003     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T181323:global_function_wrapper>             k_minibatch = 117
+STD:20180222T181658:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T181658:global_function_wrapper>                   n_log = 84
+STD:20180222T181658:global_function_wrapper>                     n_x = 1
+STD:20180222T181658:global_function_wrapper>  scalar_accuracy_metric = 1.7727
+STD:20180222T181658:global_function_wrapper>                       x = 0.99924      1.0002     0.99736      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T181658:global_function_wrapper>             k_minibatch = 117
+STD:20180222T182015:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T182015:global_function_wrapper>                   n_log = 85
+STD:20180222T182015:global_function_wrapper>                     n_x = 1
+STD:20180222T182015:global_function_wrapper>  scalar_accuracy_metric = 1.7941
+STD:20180222T182015:global_function_wrapper>                       x = 0.99924      1.0002     0.99756      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T182015:global_function_wrapper>             k_minibatch = 117
+STD:20180222T182324:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T182324:global_function_wrapper>                   n_log = 86
+STD:20180222T182324:global_function_wrapper>                     n_x = 1
+STD:20180222T182324:global_function_wrapper>  scalar_accuracy_metric = 1.7825
+STD:20180222T182324:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0046     0.99995      1.0002           1      1.0001
+STD:20180222T182324:global_function_wrapper>             k_minibatch = 117
+STD:20180222T182639:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T182639:global_function_wrapper>                   n_log = 87
+STD:20180222T182639:global_function_wrapper>                     n_x = 1
+STD:20180222T182639:global_function_wrapper>  scalar_accuracy_metric = 1.7823
+STD:20180222T182639:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0048     0.99995      1.0002           1      1.0001
+STD:20180222T182639:global_function_wrapper>             k_minibatch = 117
+STD:20180222T182951:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T182951:global_function_wrapper>                   n_log = 88
+STD:20180222T182951:global_function_wrapper>                     n_x = 1
+STD:20180222T182951:global_function_wrapper>  scalar_accuracy_metric = 1.7906
+STD:20180222T182951:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99985      1.0002           1      1.0001
+STD:20180222T182951:global_function_wrapper>             k_minibatch = 117
+STD:20180222T183312:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T183312:global_function_wrapper>                   n_log = 89
+STD:20180222T183312:global_function_wrapper>                     n_x = 1
+STD:20180222T183312:global_function_wrapper>  scalar_accuracy_metric = 1.7863
+STD:20180222T183312:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047      1.0001      1.0002           1      1.0001
+STD:20180222T183312:global_function_wrapper>             k_minibatch = 117
+STD:20180222T183631:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T183631:global_function_wrapper>                   n_log = 90
+STD:20180222T183631:global_function_wrapper>                     n_x = 1
+STD:20180222T183631:global_function_wrapper>  scalar_accuracy_metric = 1.7867
+STD:20180222T183631:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0001           1      1.0001
+STD:20180222T183631:global_function_wrapper>             k_minibatch = 117
+STD:20180222T184019:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T184019:global_function_wrapper>                   n_log = 91
+STD:20180222T184019:global_function_wrapper>                     n_x = 1
+STD:20180222T184019:global_function_wrapper>  scalar_accuracy_metric = 1.7749
+STD:20180222T184019:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0003           1      1.0001
+STD:20180222T184019:global_function_wrapper>             k_minibatch = 117
+STD:20180222T184322:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T184322:global_function_wrapper>                   n_log = 92
+STD:20180222T184322:global_function_wrapper>                     n_x = 1
+STD:20180222T184322:global_function_wrapper>  scalar_accuracy_metric = 1.7789
+STD:20180222T184322:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002     0.99993      1.0001
+STD:20180222T184322:global_function_wrapper>             k_minibatch = 117
+STD:20180222T184716:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T184716:global_function_wrapper>                   n_log = 93
+STD:20180222T184716:global_function_wrapper>                     n_x = 1
+STD:20180222T184716:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T184716:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002      1.0001      1.0001
+STD:20180222T184716:global_function_wrapper>             k_minibatch = 117
+STD:20180222T185033:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T185033:global_function_wrapper>                   n_log = 94
+STD:20180222T185033:global_function_wrapper>                     n_x = 1
+STD:20180222T185033:global_function_wrapper>  scalar_accuracy_metric = 1.7934
+STD:20180222T185033:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1     0.99998
+STD:20180222T185033:global_function_wrapper>             k_minibatch = 117
+STD:20180222T185401:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T185401:global_function_wrapper>                   n_log = 95
+STD:20180222T185401:global_function_wrapper>                     n_x = 1
+STD:20180222T185401:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T185401:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0002
+STD:20180222T185401:global_function_wrapper>             k_minibatch = 117
+STD:20180222T185706:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T185706:global_function_wrapper>                   n_log = 96
+STD:20180222T185706:global_function_wrapper>                     n_x = 1
+STD:20180222T185706:global_function_wrapper>  scalar_accuracy_metric = 1.93
+STD:20180222T185706:global_function_wrapper>                       x = 1.078      1.0512     0.97516     0.80102      1.0183      1.0143      1.0064      1.0159
+STD:20180222T185706:global_function_wrapper>             k_minibatch = 117
+STD:20180222T190039:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T190039:global_function_wrapper>                   n_log = 97
+STD:20180222T190039:global_function_wrapper>                     n_x = 1
+STD:20180222T190039:global_function_wrapper>  scalar_accuracy_metric = 1.7793
+STD:20180222T190039:global_function_wrapper>                       x = 0.99934      1.0003     0.99743      1.0044     0.99997      1.0002           1      1.0001
+STD:20180222T190039:global_function_wrapper>             k_minibatch = 117
+STD:20180222T190415:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T190415:global_function_wrapper>                   n_log = 98
+STD:20180222T190415:global_function_wrapper>                     n_x = 1
+STD:20180222T190415:global_function_wrapper>  scalar_accuracy_metric = 1.765
+STD:20180222T190415:global_function_wrapper>                       x = 0.99929      1.0003     0.99745      1.0045     0.99996      1.0002           1      1.0001
+STD:20180222T190415:global_function_wrapper>             k_minibatch = 117
+STD:20180222T190739:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T190739:global_function_wrapper>                   n_log = 99
+STD:20180222T190739:global_function_wrapper>                     n_x = 1
+STD:20180222T190739:global_function_wrapper>  scalar_accuracy_metric = 1.7819
+STD:20180222T190739:global_function_wrapper>                       x = 0.99926      1.0003     0.99746      1.0046     0.99996      1.0002           1      1.0001
+STD:20180222T190739:global_function_wrapper>             k_minibatch = 117
+STD:20180222T191056:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T191056:global_function_wrapper>                   n_log = 100
+STD:20180222T191056:global_function_wrapper>                     n_x = 1
+STD:20180222T191056:global_function_wrapper>  scalar_accuracy_metric = 1.793
+STD:20180222T191056:global_function_wrapper>                       x = 0.99944      1.0001     0.99738      1.0045     0.99997      1.0002           1      1.0001
+STD:20180222T191056:global_function_wrapper>             k_minibatch = 117
+STD:20180222T191424:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T191424:global_function_wrapper>                   n_log = 101
+STD:20180222T191424:global_function_wrapper>                     n_x = 1
+STD:20180222T191424:global_function_wrapper>  scalar_accuracy_metric = 1.7862
+STD:20180222T191424:global_function_wrapper>                       x = 0.99934      1.0002     0.99742      1.0046     0.99996      1.0002           1      1.0001
+STD:20180222T191424:global_function_wrapper>             k_minibatch = 117
+STD:20180222T191806:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T191806:global_function_wrapper>                   n_log = 102
+STD:20180222T191806:global_function_wrapper>                     n_x = 1
+STD:20180222T191806:global_function_wrapper>  scalar_accuracy_metric = 1.7945
+STD:20180222T191806:global_function_wrapper>                       x = 0.99929      1.0002     0.99744      1.0046     0.99996      1.0002           1      1.0001
+STD:20180222T191806:global_function_wrapper>             k_minibatch = 117
+STD:20180222T192121:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T192121:global_function_wrapper>                   n_log = 103
+STD:20180222T192121:global_function_wrapper>                     n_x = 1
+STD:20180222T192121:global_function_wrapper>  scalar_accuracy_metric = 1.788
+STD:20180222T192121:global_function_wrapper>                       x = 0.99927      1.0002     0.99745      1.0046     0.99995      1.0002           1      1.0001
+STD:20180222T192121:global_function_wrapper>             k_minibatch = 117
+STD:20180222T192430:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T192430:global_function_wrapper>                   n_log = 104
+STD:20180222T192430:global_function_wrapper>                     n_x = 1
+STD:20180222T192430:global_function_wrapper>  scalar_accuracy_metric = 1.7889
+STD:20180222T192430:global_function_wrapper>                       x = 0.99925      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T192430:global_function_wrapper>             k_minibatch = 117
+STD:20180222T192745:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T192745:global_function_wrapper>                   n_log = 105
+STD:20180222T192745:global_function_wrapper>                     n_x = 1
+STD:20180222T192745:global_function_wrapper>  scalar_accuracy_metric = 1.7869
+STD:20180222T192745:global_function_wrapper>                       x = 0.99925      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T192745:global_function_wrapper>             k_minibatch = 117
+STD:20180222T193055:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T193055:global_function_wrapper>                   n_log = 106
+STD:20180222T193055:global_function_wrapper>                     n_x = 1
+STD:20180222T193055:global_function_wrapper>  scalar_accuracy_metric = 1.7793
+STD:20180222T193055:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T193055:global_function_wrapper>             k_minibatch = 117
+STD:20180222T193419:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T193419:global_function_wrapper>                   n_log = 107
+STD:20180222T193419:global_function_wrapper>                     n_x = 1
+STD:20180222T193419:global_function_wrapper>  scalar_accuracy_metric = 1.7782
+STD:20180222T193419:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T193419:global_function_wrapper>             k_minibatch = 117
+STD:20180222T193756:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T193756:global_function_wrapper>                   n_log = 108
+STD:20180222T193756:global_function_wrapper>                     n_x = 1
+STD:20180222T193756:global_function_wrapper>  scalar_accuracy_metric = 1.774
+STD:20180222T193756:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T193756:global_function_wrapper>             k_minibatch = 117
+STD:20180222T194121:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T194121:global_function_wrapper>                   n_log = 109
+STD:20180222T194121:global_function_wrapper>                     n_x = 1
+STD:20180222T194121:global_function_wrapper>  scalar_accuracy_metric = 1.802
+STD:20180222T194121:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T194121:global_function_wrapper>             k_minibatch = 117
+STD:20180222T194457:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T194457:global_function_wrapper>                   n_log = 110
+STD:20180222T194457:global_function_wrapper>                     n_x = 1
+STD:20180222T194457:global_function_wrapper>  scalar_accuracy_metric = 1.8195
+STD:20180222T194457:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T194457:global_function_wrapper>             k_minibatch = 117
+STD:20180222T194817:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T194817:global_function_wrapper>                   n_log = 111
+STD:20180222T194817:global_function_wrapper>                     n_x = 1
+STD:20180222T194817:global_function_wrapper>  scalar_accuracy_metric = 1.7839
+STD:20180222T194817:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T194817:global_function_wrapper>             k_minibatch = 117
+STD:20180222T195134:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T195134:global_function_wrapper>                   n_log = 112
+STD:20180222T195134:global_function_wrapper>                     n_x = 1
+STD:20180222T195134:global_function_wrapper>  scalar_accuracy_metric = 1.7839
+STD:20180222T195134:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T195134:global_function_wrapper>             k_minibatch = 117
+STD:20180222T195506:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T195506:global_function_wrapper>                   n_log = 113
+STD:20180222T195506:global_function_wrapper>                     n_x = 1
+STD:20180222T195506:global_function_wrapper>  scalar_accuracy_metric = 1.7648
+STD:20180222T195506:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T195506:global_function_wrapper>             k_minibatch = 117
+STD:20180222T195838:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T195838:global_function_wrapper>                   n_log = 114
+STD:20180222T195838:global_function_wrapper>                     n_x = 1
+STD:20180222T195838:global_function_wrapper>  scalar_accuracy_metric = 1.8185
+STD:20180222T195838:global_function_wrapper>                       x = 0.99914      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T195838:global_function_wrapper>             k_minibatch = 117
+STD:20180222T200221:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T200221:global_function_wrapper>                   n_log = 115
+STD:20180222T200221:global_function_wrapper>                     n_x = 1
+STD:20180222T200221:global_function_wrapper>  scalar_accuracy_metric = 1.7769
+STD:20180222T200221:global_function_wrapper>                       x = 0.99934      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T200221:global_function_wrapper>             k_minibatch = 117
+STD:20180222T200541:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T200541:global_function_wrapper>                   n_log = 116
+STD:20180222T200541:global_function_wrapper>                     n_x = 1
+STD:20180222T200541:global_function_wrapper>  scalar_accuracy_metric = 1.7913
+STD:20180222T200541:global_function_wrapper>                       x = 0.99924      1.0001     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T200541:global_function_wrapper>             k_minibatch = 117
+STD:20180222T200854:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T200854:global_function_wrapper>                   n_log = 117
+STD:20180222T200854:global_function_wrapper>                     n_x = 1
+STD:20180222T200854:global_function_wrapper>  scalar_accuracy_metric = 1.7802
+STD:20180222T200854:global_function_wrapper>                       x = 0.99924      1.0003     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T200854:global_function_wrapper>             k_minibatch = 117
+STD:20180222T201228:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T201228:global_function_wrapper>                   n_log = 118
+STD:20180222T201228:global_function_wrapper>                     n_x = 1
+STD:20180222T201228:global_function_wrapper>  scalar_accuracy_metric = 1.7727
+STD:20180222T201228:global_function_wrapper>                       x = 0.99924      1.0002     0.99736      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T201228:global_function_wrapper>             k_minibatch = 117
+STD:20180222T201543:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T201543:global_function_wrapper>                   n_log = 119
+STD:20180222T201543:global_function_wrapper>                     n_x = 1
+STD:20180222T201543:global_function_wrapper>  scalar_accuracy_metric = 1.7941
+STD:20180222T201543:global_function_wrapper>                       x = 0.99924      1.0002     0.99756      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T201543:global_function_wrapper>             k_minibatch = 117
+STD:20180222T201858:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T201858:global_function_wrapper>                   n_log = 120
+STD:20180222T201858:global_function_wrapper>                     n_x = 1
+STD:20180222T201858:global_function_wrapper>  scalar_accuracy_metric = 1.7825
+STD:20180222T201858:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0046     0.99995      1.0002           1      1.0001
+STD:20180222T201858:global_function_wrapper>             k_minibatch = 117
+STD:20180222T202205:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T202205:global_function_wrapper>                   n_log = 121
+STD:20180222T202205:global_function_wrapper>                     n_x = 1
+STD:20180222T202205:global_function_wrapper>  scalar_accuracy_metric = 1.7823
+STD:20180222T202205:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0048     0.99995      1.0002           1      1.0001
+STD:20180222T202205:global_function_wrapper>             k_minibatch = 117
+STD:20180222T202522:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T202522:global_function_wrapper>                   n_log = 122
+STD:20180222T202522:global_function_wrapper>                     n_x = 1
+STD:20180222T202522:global_function_wrapper>  scalar_accuracy_metric = 1.7906
+STD:20180222T202522:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99985      1.0002           1      1.0001
+STD:20180222T202522:global_function_wrapper>             k_minibatch = 117
+STD:20180222T202845:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T202845:global_function_wrapper>                   n_log = 123
+STD:20180222T202845:global_function_wrapper>                     n_x = 1
+STD:20180222T202845:global_function_wrapper>  scalar_accuracy_metric = 1.7863
+STD:20180222T202845:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047      1.0001      1.0002           1      1.0001
+STD:20180222T202845:global_function_wrapper>             k_minibatch = 117
+STD:20180222T203205:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T203205:global_function_wrapper>                   n_log = 124
+STD:20180222T203205:global_function_wrapper>                     n_x = 1
+STD:20180222T203205:global_function_wrapper>  scalar_accuracy_metric = 1.7867
+STD:20180222T203205:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0001           1      1.0001
+STD:20180222T203205:global_function_wrapper>             k_minibatch = 117
+STD:20180222T203556:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T203556:global_function_wrapper>                   n_log = 125
+STD:20180222T203556:global_function_wrapper>                     n_x = 1
+STD:20180222T203556:global_function_wrapper>  scalar_accuracy_metric = 1.7749
+STD:20180222T203556:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0003           1      1.0001
+STD:20180222T203556:global_function_wrapper>             k_minibatch = 117
+STD:20180222T203906:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T203906:global_function_wrapper>                   n_log = 126
+STD:20180222T203906:global_function_wrapper>                     n_x = 1
+STD:20180222T203906:global_function_wrapper>  scalar_accuracy_metric = 1.7789
+STD:20180222T203906:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002     0.99993      1.0001
+STD:20180222T203906:global_function_wrapper>             k_minibatch = 117
+STD:20180222T204303:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T204303:global_function_wrapper>                   n_log = 127
+STD:20180222T204303:global_function_wrapper>                     n_x = 1
+STD:20180222T204303:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T204303:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002      1.0001      1.0001
+STD:20180222T204303:global_function_wrapper>             k_minibatch = 117
+STD:20180222T204637:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T204637:global_function_wrapper>                   n_log = 128
+STD:20180222T204637:global_function_wrapper>                     n_x = 1
+STD:20180222T204637:global_function_wrapper>  scalar_accuracy_metric = 1.7753
+STD:20180222T204637:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1     0.99998
+STD:20180222T204637:global_function_wrapper>             k_minibatch = 117
+STD:20180222T205004:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T205004:global_function_wrapper>                   n_log = 129
+STD:20180222T205004:global_function_wrapper>                     n_x = 1
+STD:20180222T205004:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T205004:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0002
+STD:20180222T205004:global_function_wrapper>             k_minibatch = 117
+STD:20180222T205351:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T205351:global_function_wrapper>                   n_log = 130
+STD:20180222T205351:global_function_wrapper>                     n_x = 1
+STD:20180222T205351:global_function_wrapper>  scalar_accuracy_metric = 1.906
+STD:20180222T205351:global_function_wrapper>                       x = 1.2985      1.2477      0.9104      1.0275      1.0501      1.0563     0.95938      1.0001
+STD:20180222T205351:global_function_wrapper>             k_minibatch = 117
+STD:20180222T205722:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T205722:global_function_wrapper>                   n_log = 131
+STD:20180222T205722:global_function_wrapper>                     n_x = 1
+STD:20180222T205722:global_function_wrapper>  scalar_accuracy_metric = 1.7648
+STD:20180222T205722:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T205722:global_function_wrapper>             k_minibatch = 117
+STD:20180222T210048:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T210048:global_function_wrapper>                   n_log = 132
+STD:20180222T210048:global_function_wrapper>                     n_x = 1
+STD:20180222T210048:global_function_wrapper>  scalar_accuracy_metric = 1.8185
+STD:20180222T210048:global_function_wrapper>                       x = 0.99914      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T210048:global_function_wrapper>             k_minibatch = 117
+STD:20180222T210433:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T210433:global_function_wrapper>                   n_log = 133
+STD:20180222T210433:global_function_wrapper>                     n_x = 1
+STD:20180222T210433:global_function_wrapper>  scalar_accuracy_metric = 1.7769
+STD:20180222T210433:global_function_wrapper>                       x = 0.99934      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T210433:global_function_wrapper>             k_minibatch = 117
+STD:20180222T210748:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T210748:global_function_wrapper>                   n_log = 134
+STD:20180222T210748:global_function_wrapper>                     n_x = 1
+STD:20180222T210748:global_function_wrapper>  scalar_accuracy_metric = 1.7913
+STD:20180222T210748:global_function_wrapper>                       x = 0.99924      1.0001     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T210748:global_function_wrapper>             k_minibatch = 117
+STD:20180222T211100:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T211100:global_function_wrapper>                   n_log = 135
+STD:20180222T211100:global_function_wrapper>                     n_x = 1
+STD:20180222T211100:global_function_wrapper>  scalar_accuracy_metric = 1.7802
+STD:20180222T211100:global_function_wrapper>                       x = 0.99924      1.0003     0.99746      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T211100:global_function_wrapper>             k_minibatch = 117
+STD:20180222T211435:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T211435:global_function_wrapper>                   n_log = 136
+STD:20180222T211435:global_function_wrapper>                     n_x = 1
+STD:20180222T211435:global_function_wrapper>  scalar_accuracy_metric = 1.7727
+STD:20180222T211435:global_function_wrapper>                       x = 0.99924      1.0002     0.99736      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T211435:global_function_wrapper>             k_minibatch = 117
+STD:20180222T211745:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T211745:global_function_wrapper>                   n_log = 137
+STD:20180222T211745:global_function_wrapper>                     n_x = 1
+STD:20180222T211745:global_function_wrapper>  scalar_accuracy_metric = 1.7941
+STD:20180222T211745:global_function_wrapper>                       x = 0.99924      1.0002     0.99756      1.0047     0.99995      1.0002           1      1.0001
+STD:20180222T211745:global_function_wrapper>             k_minibatch = 117
+STD:20180222T212100:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T212100:global_function_wrapper>                   n_log = 138
+STD:20180222T212100:global_function_wrapper>                     n_x = 1
+STD:20180222T212100:global_function_wrapper>  scalar_accuracy_metric = 1.7825
+STD:20180222T212100:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0046     0.99995      1.0002           1      1.0001
+STD:20180222T212100:global_function_wrapper>             k_minibatch = 117
+STD:20180222T212410:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T212410:global_function_wrapper>                   n_log = 139
+STD:20180222T212410:global_function_wrapper>                     n_x = 1
+STD:20180222T212410:global_function_wrapper>  scalar_accuracy_metric = 1.7823
+STD:20180222T212410:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0048     0.99995      1.0002           1      1.0001
+STD:20180222T212410:global_function_wrapper>             k_minibatch = 117
+STD:20180222T212725:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T212725:global_function_wrapper>                   n_log = 140
+STD:20180222T212725:global_function_wrapper>                     n_x = 1
+STD:20180222T212725:global_function_wrapper>  scalar_accuracy_metric = 1.7906
+STD:20180222T212725:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99985      1.0002           1      1.0001
+STD:20180222T212725:global_function_wrapper>             k_minibatch = 117
+STD:20180222T213048:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T213048:global_function_wrapper>                   n_log = 141
+STD:20180222T213048:global_function_wrapper>                     n_x = 1
+STD:20180222T213048:global_function_wrapper>  scalar_accuracy_metric = 1.7863
+STD:20180222T213048:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047      1.0001      1.0002           1      1.0001
+STD:20180222T213048:global_function_wrapper>             k_minibatch = 117
+STD:20180222T213404:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T213404:global_function_wrapper>                   n_log = 142
+STD:20180222T213404:global_function_wrapper>                     n_x = 1
+STD:20180222T213404:global_function_wrapper>  scalar_accuracy_metric = 1.7867
+STD:20180222T213404:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0001           1      1.0001
+STD:20180222T213404:global_function_wrapper>             k_minibatch = 117
+STD:20180222T213755:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T213755:global_function_wrapper>                   n_log = 143
+STD:20180222T213755:global_function_wrapper>                     n_x = 1
+STD:20180222T213755:global_function_wrapper>  scalar_accuracy_metric = 1.7749
+STD:20180222T213755:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0003           1      1.0001
+STD:20180222T213755:global_function_wrapper>             k_minibatch = 117
+STD:20180222T214103:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T214103:global_function_wrapper>                   n_log = 144
+STD:20180222T214103:global_function_wrapper>                     n_x = 1
+STD:20180222T214103:global_function_wrapper>  scalar_accuracy_metric = 1.7789
+STD:20180222T214103:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002     0.99993      1.0001
+STD:20180222T214103:global_function_wrapper>             k_minibatch = 117
+STD:20180222T214451:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T214451:global_function_wrapper>                   n_log = 145
+STD:20180222T214451:global_function_wrapper>                     n_x = 1
+STD:20180222T214451:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T214451:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002      1.0001      1.0001
+STD:20180222T214451:global_function_wrapper>             k_minibatch = 117
+STD:20180222T214833:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T214833:global_function_wrapper>                   n_log = 146
+STD:20180222T214833:global_function_wrapper>                     n_x = 1
+STD:20180222T214833:global_function_wrapper>  scalar_accuracy_metric = 1.7753
+STD:20180222T214833:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1     0.99998
+STD:20180222T214833:global_function_wrapper>             k_minibatch = 117
+STD:20180222T215201:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T215201:global_function_wrapper>                   n_log = 147
+STD:20180222T215201:global_function_wrapper>                     n_x = 1
+STD:20180222T215201:global_function_wrapper>  scalar_accuracy_metric = 1.7803
+STD:20180222T215201:global_function_wrapper>                       x = 0.99924      1.0002     0.99746      1.0047     0.99995      1.0002           1      1.0002
+STD:20180222T215201:global_function_wrapper>             k_minibatch = 117
+STD:20180222T215542:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T215542:global_function_wrapper>                   n_log = 148
+STD:20180222T215542:global_function_wrapper>                     n_x = 1
+STD:20180222T215542:global_function_wrapper>  scalar_accuracy_metric = 2.057
+STD:20180222T215542:global_function_wrapper>                       x = 1.2985      1.1445     0.91126      1.0588      1.0506      1.0501     0.95837      1.0001
+STD:20180222T215542:global_function_wrapper>             k_minibatch = 117
+STD:20180222T215912:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T215912:global_function_wrapper>                   n_log = 149
+STD:20180222T215912:global_function_wrapper>                     n_x = 1
+STD:20180222T215912:global_function_wrapper>  scalar_accuracy_metric = 1.6948
+STD:20180222T215912:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T215912:global_function_wrapper>             k_minibatch = 117
+STD:20180222T220303:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T220303:global_function_wrapper>                   n_log = 150
+STD:20180222T220303:global_function_wrapper>                     n_x = 1
+STD:20180222T220303:global_function_wrapper>  scalar_accuracy_metric = 1.9132
+STD:20180222T220303:global_function_wrapper>                       x = 1.1488      1.0724     0.95436      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T220303:global_function_wrapper>             k_minibatch = 117
+STD:20180222T220657:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T220657:global_function_wrapper>                   n_log = 151
+STD:20180222T220657:global_function_wrapper>                     n_x = 1
+STD:20180222T220657:global_function_wrapper>  scalar_accuracy_metric = 1.9071
+STD:20180222T220657:global_function_wrapper>                       x = 1.149      1.0724     0.95436      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T220657:global_function_wrapper>             k_minibatch = 117
+STD:20180222T221042:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T221042:global_function_wrapper>                   n_log = 152
+STD:20180222T221042:global_function_wrapper>                     n_x = 1
+STD:20180222T221042:global_function_wrapper>  scalar_accuracy_metric = 1.9988
+STD:20180222T221042:global_function_wrapper>                       x = 1.1489      1.0722     0.95436      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T221042:global_function_wrapper>             k_minibatch = 117
+STD:20180222T221420:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T221420:global_function_wrapper>                   n_log = 153
+STD:20180222T221420:global_function_wrapper>                     n_x = 1
+STD:20180222T221420:global_function_wrapper>  scalar_accuracy_metric = 1.9798
+STD:20180222T221420:global_function_wrapper>                       x = 1.1489      1.0725     0.95436      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T221420:global_function_wrapper>             k_minibatch = 117
+STD:20180222T221751:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T221751:global_function_wrapper>                   n_log = 154
+STD:20180222T221751:global_function_wrapper>                     n_x = 1
+STD:20180222T221751:global_function_wrapper>  scalar_accuracy_metric = 1.915
+STD:20180222T221751:global_function_wrapper>                       x = 1.1489      1.0724     0.95426      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T221751:global_function_wrapper>             k_minibatch = 117
+STD:20180222T222133:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T222133:global_function_wrapper>                   n_log = 155
+STD:20180222T222133:global_function_wrapper>                     n_x = 1
+STD:20180222T222133:global_function_wrapper>  scalar_accuracy_metric = 1.9099
+STD:20180222T222133:global_function_wrapper>                       x = 1.1489      1.0724     0.95446      1.0317      1.0253      1.0252      0.9792      1.0001
+STD:20180222T222133:global_function_wrapper>             k_minibatch = 117
+STD:20180222T222452:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T222452:global_function_wrapper>                   n_log = 156
+STD:20180222T222452:global_function_wrapper>                     n_x = 1
+STD:20180222T222452:global_function_wrapper>  scalar_accuracy_metric = 1.6978
+STD:20180222T222452:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0316      1.0253      1.0252      0.9792      1.0001
+STD:20180222T222452:global_function_wrapper>             k_minibatch = 117
+STD:20180222T222858:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T222858:global_function_wrapper>                   n_log = 157
+STD:20180222T222858:global_function_wrapper>                     n_x = 1
+STD:20180222T222858:global_function_wrapper>  scalar_accuracy_metric = 1.9463
+STD:20180222T222858:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0318      1.0253      1.0252      0.9792      1.0001
+STD:20180222T222858:global_function_wrapper>             k_minibatch = 117
+STD:20180222T223239:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T223239:global_function_wrapper>                   n_log = 158
+STD:20180222T223239:global_function_wrapper>                     n_x = 1
+STD:20180222T223239:global_function_wrapper>  scalar_accuracy_metric = 1.9043
+STD:20180222T223239:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0252      1.0252      0.9792      1.0001
+STD:20180222T223239:global_function_wrapper>             k_minibatch = 117
+STD:20180222T223600:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T223600:global_function_wrapper>                   n_log = 159
+STD:20180222T223600:global_function_wrapper>                     n_x = 1
+STD:20180222T223600:global_function_wrapper>  scalar_accuracy_metric = 1.9388
+STD:20180222T223600:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0254      1.0252      0.9792      1.0001
+STD:20180222T223600:global_function_wrapper>             k_minibatch = 117
+STD:20180222T224019:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T224019:global_function_wrapper>                   n_log = 160
+STD:20180222T224019:global_function_wrapper>                     n_x = 1
+STD:20180222T224019:global_function_wrapper>  scalar_accuracy_metric = 1.9251
+STD:20180222T224019:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0251      0.9792      1.0001
+STD:20180222T224019:global_function_wrapper>             k_minibatch = 117
+STD:20180222T224403:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T224403:global_function_wrapper>                   n_log = 161
+STD:20180222T224403:global_function_wrapper>                     n_x = 1
+STD:20180222T224403:global_function_wrapper>  scalar_accuracy_metric = 1.9028
+STD:20180222T224403:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0253      0.9792      1.0001
+STD:20180222T224403:global_function_wrapper>             k_minibatch = 117
+STD:20180222T224734:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T224734:global_function_wrapper>                   n_log = 162
+STD:20180222T224734:global_function_wrapper>                     n_x = 1
+STD:20180222T224734:global_function_wrapper>  scalar_accuracy_metric = 1.9109
+STD:20180222T224734:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0252      0.9791      1.0001
+STD:20180222T224734:global_function_wrapper>             k_minibatch = 117
+STD:20180222T225109:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T225109:global_function_wrapper>                   n_log = 163
+STD:20180222T225109:global_function_wrapper>                     n_x = 1
+STD:20180222T225109:global_function_wrapper>  scalar_accuracy_metric = 1.8967
+STD:20180222T225109:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0252      0.9793      1.0001
+STD:20180222T225109:global_function_wrapper>             k_minibatch = 117
+STD:20180222T225502:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T225502:global_function_wrapper>                   n_log = 164
+STD:20180222T225502:global_function_wrapper>                     n_x = 1
+STD:20180222T225502:global_function_wrapper>  scalar_accuracy_metric = 1.9282
+STD:20180222T225502:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0252      0.9792     0.99998
+STD:20180222T225502:global_function_wrapper>             k_minibatch = 117
+STD:20180222T225832:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T225832:global_function_wrapper>                   n_log = 165
+STD:20180222T225832:global_function_wrapper>                     n_x = 1
+STD:20180222T225832:global_function_wrapper>  scalar_accuracy_metric = 1.6944
+STD:20180222T225832:global_function_wrapper>                       x = 1.1489      1.0724     0.95436      1.0317      1.0253      1.0252      0.9792      1.0002
+STD:20180222T225832:global_function_wrapper>             k_minibatch = 117
+STD:20180222T230244:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T230244:global_function_wrapper>                   n_log = 166
+STD:20180222T230244:global_function_wrapper>                     n_x = 1
+STD:20180222T230244:global_function_wrapper>  scalar_accuracy_metric = 1.828
+STD:20180222T230244:global_function_wrapper>                       x = 1.2852      1.2989     0.88349     0.98417       1.065      1.0692     0.94665      1.0001
+STD:20180222T230244:global_function_wrapper>             k_minibatch = 117
+STD:20180222T230630:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T230630:global_function_wrapper>                   n_log = 167
+STD:20180222T230630:global_function_wrapper>                     n_x = 1
+STD:20180222T230630:global_function_wrapper>  scalar_accuracy_metric = 1.8434
+STD:20180222T230630:global_function_wrapper>                       x = 1.217      1.1856     0.91892      1.0079      1.0452      1.0472     0.96293      1.0001
+STD:20180222T230630:global_function_wrapper>             k_minibatch = 117
+STD:20180222T231010:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T231010:global_function_wrapper>                   n_log = 168
+STD:20180222T231010:global_function_wrapper>                     n_x = 1
+STD:20180222T231010:global_function_wrapper>  scalar_accuracy_metric = 1.7711
+STD:20180222T231010:global_function_wrapper>                       x = 1.183       1.129     0.93664      1.0198      1.0352      1.0362     0.97106      1.0001
+STD:20180222T231010:global_function_wrapper>             k_minibatch = 117
+STD:20180222T231406:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T231406:global_function_wrapper>                   n_log = 169
+STD:20180222T231406:global_function_wrapper>                     n_x = 1
+STD:20180222T231406:global_function_wrapper>  scalar_accuracy_metric = 1.9405
+STD:20180222T231406:global_function_wrapper>                       x = 1.1659      1.1007      0.9455      1.0258      1.0303      1.0307     0.97513      1.0001
+STD:20180222T231406:global_function_wrapper>             k_minibatch = 117
+STD:20180222T231737:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T231737:global_function_wrapper>                   n_log = 170
+STD:20180222T231737:global_function_wrapper>                     n_x = 1
+STD:20180222T231737:global_function_wrapper>  scalar_accuracy_metric = 1.8527
+STD:20180222T231737:global_function_wrapper>                       x = 1.2992      1.1394      0.8753     0.97051      1.0274      1.0351     0.97861      1.0001
+STD:20180222T231737:global_function_wrapper>             k_minibatch = 117
+STD:20180222T232118:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T232118:global_function_wrapper>                   n_log = 171
+STD:20180222T232118:global_function_wrapper>                     n_x = 1
+STD:20180222T232118:global_function_wrapper>  scalar_accuracy_metric = 1.829
+STD:20180222T232118:global_function_wrapper>                       x = 1.2114      1.1031     0.92241     0.96291      1.0253      1.0298     0.97933      1.0001
+STD:20180222T232118:global_function_wrapper>             k_minibatch = 117
+STD:20180222T232438:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T232438:global_function_wrapper>                   n_log = 172
+STD:20180222T232438:global_function_wrapper>                     n_x = 1
+STD:20180222T232438:global_function_wrapper>  scalar_accuracy_metric = 1.8475
+STD:20180222T232438:global_function_wrapper>                       x = 1.154      1.0784     0.95286     0.97426      1.0243      1.0262     0.97966      1.0001
+STD:20180222T232438:global_function_wrapper>             k_minibatch = 117
+STD:20180222T232825:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T232825:global_function_wrapper>                   n_log = 173
+STD:20180222T232825:global_function_wrapper>                     n_x = 1
+STD:20180222T232825:global_function_wrapper>  scalar_accuracy_metric = 1.8492
+STD:20180222T232825:global_function_wrapper>                       x = 1.1493      1.0745     0.95477      1.0027      1.0247      1.0255     0.97945      1.0001
+STD:20180222T232825:global_function_wrapper>             k_minibatch = 117
+STD:20180222T233220:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T233220:global_function_wrapper>                   n_log = 174
+STD:20180222T233220:global_function_wrapper>                     n_x = 1
+STD:20180222T233220:global_function_wrapper>  scalar_accuracy_metric = 1.9068
+STD:20180222T233220:global_function_wrapper>                       x = 1.1491      1.0734     0.95456      1.0172       1.025      1.0254     0.97932      1.0001
+STD:20180222T233220:global_function_wrapper>             k_minibatch = 117
+STD:20180222T233558:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T233558:global_function_wrapper>                   n_log = 175
+STD:20180222T233558:global_function_wrapper>                     n_x = 1
+STD:20180222T233558:global_function_wrapper>  scalar_accuracy_metric = 1.9248
+STD:20180222T233558:global_function_wrapper>                       x = 1.149      1.0729     0.95446      1.0245      1.0252      1.0253     0.97926      1.0001
+STD:20180222T233558:global_function_wrapper>             k_minibatch = 117
+STD:20180222T234001:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T234001:global_function_wrapper>                   n_log = 176
+STD:20180222T234001:global_function_wrapper>                     n_x = 1
+STD:20180222T234001:global_function_wrapper>  scalar_accuracy_metric = 1.6451
+STD:20180222T234001:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T234001:global_function_wrapper>             k_minibatch = 117
+STD:20180222T234413:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T234413:global_function_wrapper>                   n_log = 177
+STD:20180222T234413:global_function_wrapper>                     n_x = 1
+STD:20180222T234413:global_function_wrapper>  scalar_accuracy_metric = 1.9018
+STD:20180222T234413:global_function_wrapper>                       x = 1.1488      1.0726     0.95441      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T234413:global_function_wrapper>             k_minibatch = 117
+STD:20180222T234732:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T234732:global_function_wrapper>                   n_log = 178
+STD:20180222T234732:global_function_wrapper>                     n_x = 1
+STD:20180222T234732:global_function_wrapper>  scalar_accuracy_metric = 1.6639
+STD:20180222T234732:global_function_wrapper>                       x = 1.149      1.0726     0.95441      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T234732:global_function_wrapper>             k_minibatch = 117
+STD:20180222T235049:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T235049:global_function_wrapper>                   n_log = 179
+STD:20180222T235049:global_function_wrapper>                     n_x = 1
+STD:20180222T235049:global_function_wrapper>  scalar_accuracy_metric = 2.0035
+STD:20180222T235049:global_function_wrapper>                       x = 1.1489      1.0725     0.95441      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T235049:global_function_wrapper>             k_minibatch = 117
+STD:20180222T235439:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T235439:global_function_wrapper>                   n_log = 180
+STD:20180222T235439:global_function_wrapper>                     n_x = 1
+STD:20180222T235439:global_function_wrapper>  scalar_accuracy_metric = 1.9107
+STD:20180222T235439:global_function_wrapper>                       x = 1.1489      1.0727     0.95441      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T235439:global_function_wrapper>             k_minibatch = 117
+STD:20180222T235834:global_function_wrapper> --- New simulation profile requested ---
+STD:20180222T235834:global_function_wrapper>                   n_log = 181
+STD:20180222T235834:global_function_wrapper>                     n_x = 1
+STD:20180222T235834:global_function_wrapper>  scalar_accuracy_metric = 1.7323
+STD:20180222T235834:global_function_wrapper>                       x = 1.1489      1.0726     0.95431      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180222T235834:global_function_wrapper>             k_minibatch = 117
+STD:20180223T000219:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T000219:global_function_wrapper>                   n_log = 182
+STD:20180223T000219:global_function_wrapper>                     n_x = 1
+STD:20180223T000219:global_function_wrapper>  scalar_accuracy_metric = 1.6481
+STD:20180223T000219:global_function_wrapper>                       x = 1.1489      1.0726     0.95451      1.0281      1.0252      1.0252     0.97923      1.0001
+STD:20180223T000219:global_function_wrapper>             k_minibatch = 117
+STD:20180223T000557:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T000557:global_function_wrapper>                   n_log = 183
+STD:20180223T000557:global_function_wrapper>                     n_x = 1
+STD:20180223T000557:global_function_wrapper>  scalar_accuracy_metric = 1.9005
+STD:20180223T000557:global_function_wrapper>                       x = 1.1489      1.0726     0.95441       1.028      1.0252      1.0252     0.97923      1.0001
+STD:20180223T000557:global_function_wrapper>             k_minibatch = 117
+STD:20180223T000917:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T000917:global_function_wrapper>                   n_log = 184
+STD:20180223T000917:global_function_wrapper>                     n_x = 1
+STD:20180223T000917:global_function_wrapper>  scalar_accuracy_metric = 1.9122
+STD:20180223T000917:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0282      1.0252      1.0252     0.97923      1.0001
+STD:20180223T000917:global_function_wrapper>             k_minibatch = 117
+STD:20180223T001238:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T001238:global_function_wrapper>                   n_log = 185
+STD:20180223T001238:global_function_wrapper>                     n_x = 1
+STD:20180223T001238:global_function_wrapper>  scalar_accuracy_metric = 1.6632
+STD:20180223T001238:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0251      1.0252     0.97923      1.0001
+STD:20180223T001238:global_function_wrapper>             k_minibatch = 117
+STD:20180223T001619:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T001619:global_function_wrapper>                   n_log = 186
+STD:20180223T001619:global_function_wrapper>                     n_x = 1
+STD:20180223T001619:global_function_wrapper>  scalar_accuracy_metric = 1.6352
+STD:20180223T001619:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0253      1.0252     0.97923      1.0001
+STD:20180223T001619:global_function_wrapper>             k_minibatch = 117
+STD:20180223T001953:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T001953:global_function_wrapper>                   n_log = 187
+STD:20180223T001953:global_function_wrapper>                     n_x = 1
+STD:20180223T001953:global_function_wrapper>  scalar_accuracy_metric = 1.8907
+STD:20180223T001953:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0251     0.97923      1.0001
+STD:20180223T001953:global_function_wrapper>             k_minibatch = 117
+STD:20180223T002321:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T002321:global_function_wrapper>                   n_log = 188
+STD:20180223T002321:global_function_wrapper>                     n_x = 1
+STD:20180223T002321:global_function_wrapper>  scalar_accuracy_metric = 1.66
+STD:20180223T002321:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0253     0.97923      1.0001
+STD:20180223T002321:global_function_wrapper>             k_minibatch = 117
+STD:20180223T002659:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T002659:global_function_wrapper>                   n_log = 189
+STD:20180223T002659:global_function_wrapper>                     n_x = 1
+STD:20180223T002659:global_function_wrapper>  scalar_accuracy_metric = 1.6425
+STD:20180223T002659:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0252     0.97913      1.0001
+STD:20180223T002659:global_function_wrapper>             k_minibatch = 117
+STD:20180223T003036:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T003036:global_function_wrapper>                   n_log = 190
+STD:20180223T003036:global_function_wrapper>                     n_x = 1
+STD:20180223T003036:global_function_wrapper>  scalar_accuracy_metric = 1.8916
+STD:20180223T003036:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0252     0.97933      1.0001
+STD:20180223T003036:global_function_wrapper>             k_minibatch = 117
+STD:20180223T003358:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T003358:global_function_wrapper>                   n_log = 191
+STD:20180223T003358:global_function_wrapper>                     n_x = 1
+STD:20180223T003358:global_function_wrapper>  scalar_accuracy_metric = 1.8915
+STD:20180223T003358:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0252     0.97923     0.99998
+STD:20180223T003358:global_function_wrapper>             k_minibatch = 117
+STD:20180223T003754:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T003754:global_function_wrapper>                   n_log = 192
+STD:20180223T003754:global_function_wrapper>                     n_x = 1
+STD:20180223T003754:global_function_wrapper>  scalar_accuracy_metric = 1.9019
+STD:20180223T003754:global_function_wrapper>                       x = 1.1489      1.0726     0.95441      1.0281      1.0252      1.0252     0.97923      1.0002
+STD:20180223T003754:global_function_wrapper>             k_minibatch = 117
+STD:20180223T004148:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T004148:global_function_wrapper>                   n_log = 193
+STD:20180223T004148:global_function_wrapper>                     n_x = 1
+STD:20180223T004148:global_function_wrapper>  scalar_accuracy_metric = 1.8191
+STD:20180223T004148:global_function_wrapper>                       x = 1.1793      1.1399      1.2983     0.82227      1.0397      1.0423     0.96049      1.0001
+STD:20180223T004148:global_function_wrapper>             k_minibatch = 117
+STD:20180223T004557:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T004557:global_function_wrapper>                   n_log = 194
+STD:20180223T004557:global_function_wrapper>                     n_x = 1
+STD:20180223T004557:global_function_wrapper>  scalar_accuracy_metric = 1.6328
+STD:20180223T004557:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T004557:global_function_wrapper>             k_minibatch = 117
+STD:20180223T004910:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T004910:global_function_wrapper>                   n_log = 195
+STD:20180223T004910:global_function_wrapper>                     n_x = 1
+STD:20180223T004910:global_function_wrapper>  scalar_accuracy_metric = 1.6479
+STD:20180223T004910:global_function_wrapper>                       x = 1.149      1.0731     0.95699      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T004910:global_function_wrapper>             k_minibatch = 117
+STD:20180223T005244:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T005244:global_function_wrapper>                   n_log = 196
+STD:20180223T005244:global_function_wrapper>                     n_x = 1
+STD:20180223T005244:global_function_wrapper>  scalar_accuracy_metric = 1.9305
+STD:20180223T005244:global_function_wrapper>                       x = 1.1493      1.0731     0.95699      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T005244:global_function_wrapper>             k_minibatch = 117
+STD:20180223T005611:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T005611:global_function_wrapper>                   n_log = 197
+STD:20180223T005611:global_function_wrapper>                     n_x = 1
+STD:20180223T005611:global_function_wrapper>  scalar_accuracy_metric = 1.9082
+STD:20180223T005611:global_function_wrapper>                       x = 1.1491       1.073     0.95699      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T005611:global_function_wrapper>             k_minibatch = 117
+STD:20180223T010004:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T010004:global_function_wrapper>                   n_log = 198
+STD:20180223T010004:global_function_wrapper>                     n_x = 1
+STD:20180223T010004:global_function_wrapper>  scalar_accuracy_metric = 1.6292
+STD:20180223T010004:global_function_wrapper>                       x = 1.1491      1.0732     0.95699      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T010004:global_function_wrapper>             k_minibatch = 117
+STD:20180223T010348:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T010348:global_function_wrapper>                   n_log = 199
+STD:20180223T010348:global_function_wrapper>                     n_x = 1
+STD:20180223T010348:global_function_wrapper>  scalar_accuracy_metric = 1.6695
+STD:20180223T010348:global_function_wrapper>                       x = 1.1491      1.0731     0.95689      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T010348:global_function_wrapper>             k_minibatch = 117
+STD:20180223T010709:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T010709:global_function_wrapper>                   n_log = 200
+STD:20180223T010709:global_function_wrapper>                     n_x = 1
+STD:20180223T010709:global_function_wrapper>  scalar_accuracy_metric = 1.9169
+STD:20180223T010709:global_function_wrapper>                       x = 1.1491      1.0731     0.95709      1.0265      1.0253      1.0254     0.97909      1.0001
+STD:20180223T010709:global_function_wrapper>             k_minibatch = 117
+STD:20180223T011047:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T011047:global_function_wrapper>                   n_log = 201
+STD:20180223T011047:global_function_wrapper>                     n_x = 1
+STD:20180223T011047:global_function_wrapper>  scalar_accuracy_metric = 1.8988
+STD:20180223T011047:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0264      1.0253      1.0254     0.97909      1.0001
+STD:20180223T011047:global_function_wrapper>             k_minibatch = 117
+STD:20180223T011408:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T011408:global_function_wrapper>                   n_log = 202
+STD:20180223T011408:global_function_wrapper>                     n_x = 1
+STD:20180223T011408:global_function_wrapper>  scalar_accuracy_metric = 1.7499
+STD:20180223T011408:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0266      1.0253      1.0254     0.97909      1.0001
+STD:20180223T011408:global_function_wrapper>             k_minibatch = 117
+STD:20180223T011742:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T011742:global_function_wrapper>                   n_log = 203
+STD:20180223T011742:global_function_wrapper>                     n_x = 1
+STD:20180223T011742:global_function_wrapper>  scalar_accuracy_metric = 1.6493
+STD:20180223T011742:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0252      1.0254     0.97909      1.0001
+STD:20180223T011742:global_function_wrapper>             k_minibatch = 117
+STD:20180223T012110:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T012110:global_function_wrapper>                   n_log = 204
+STD:20180223T012110:global_function_wrapper>                     n_x = 1
+STD:20180223T012110:global_function_wrapper>  scalar_accuracy_metric = 1.9395
+STD:20180223T012110:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0254      1.0254     0.97909      1.0001
+STD:20180223T012110:global_function_wrapper>             k_minibatch = 117
+STD:20180223T012446:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T012446:global_function_wrapper>                   n_log = 205
+STD:20180223T012446:global_function_wrapper>                     n_x = 1
+STD:20180223T012446:global_function_wrapper>  scalar_accuracy_metric = 1.6727
+STD:20180223T012446:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0252     0.97909      1.0001
+STD:20180223T012446:global_function_wrapper>             k_minibatch = 117
+STD:20180223T012833:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T012833:global_function_wrapper>                   n_log = 206
+STD:20180223T012833:global_function_wrapper>                     n_x = 1
+STD:20180223T012833:global_function_wrapper>  scalar_accuracy_metric = 1.9014
+STD:20180223T012833:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0255     0.97909      1.0001
+STD:20180223T012833:global_function_wrapper>             k_minibatch = 117
+STD:20180223T013219:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T013219:global_function_wrapper>                   n_log = 207
+STD:20180223T013219:global_function_wrapper>                     n_x = 1
+STD:20180223T013219:global_function_wrapper>  scalar_accuracy_metric = 1.6464
+STD:20180223T013219:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0254     0.97899      1.0001
+STD:20180223T013219:global_function_wrapper>             k_minibatch = 117
+STD:20180223T013542:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T013542:global_function_wrapper>                   n_log = 208
+STD:20180223T013542:global_function_wrapper>                     n_x = 1
+STD:20180223T013542:global_function_wrapper>  scalar_accuracy_metric = 1.7574
+STD:20180223T013542:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0254     0.97919      1.0001
+STD:20180223T013542:global_function_wrapper>             k_minibatch = 117
+STD:20180223T013907:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T013907:global_function_wrapper>                   n_log = 209
+STD:20180223T013907:global_function_wrapper>                     n_x = 1
+STD:20180223T013907:global_function_wrapper>  scalar_accuracy_metric = 1.6538
+STD:20180223T013907:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0254     0.97909     0.99998
+STD:20180223T013907:global_function_wrapper>             k_minibatch = 117
+STD:20180223T014255:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T014255:global_function_wrapper>                   n_log = 210
+STD:20180223T014255:global_function_wrapper>                     n_x = 1
+STD:20180223T014255:global_function_wrapper>  scalar_accuracy_metric = 1.8864
+STD:20180223T014255:global_function_wrapper>                       x = 1.1491      1.0731     0.95699      1.0265      1.0253      1.0254     0.97909      1.0002
+STD:20180223T014255:global_function_wrapper>             k_minibatch = 117
+STD:20180223T014618:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T014618:global_function_wrapper>                   n_log = 211
+STD:20180223T014618:global_function_wrapper>                     n_x = 1
+STD:20180223T014618:global_function_wrapper>  scalar_accuracy_metric = 1.996
+STD:20180223T014618:global_function_wrapper>                       x = 1.181      1.2989      0.9893     0.88048     0.95061      1.0453      0.9428      1.0001
+STD:20180223T014618:global_function_wrapper>             k_minibatch = 117
+STD:20180223T014928:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T014928:global_function_wrapper>                   n_log = 212
+STD:20180223T014928:global_function_wrapper>                     n_x = 1
+STD:20180223T014928:global_function_wrapper>  scalar_accuracy_metric = 1.7852
+STD:20180223T014928:global_function_wrapper>                       x = 1.1651       1.186     0.97315     0.95351     0.98797      1.0353     0.96095      1.0001
+STD:20180223T014928:global_function_wrapper>             k_minibatch = 117
+STD:20180223T015336:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T015336:global_function_wrapper>                   n_log = 213
+STD:20180223T015336:global_function_wrapper>                     n_x = 1
+STD:20180223T015336:global_function_wrapper>  scalar_accuracy_metric = 1.788
+STD:20180223T015336:global_function_wrapper>                       x = 1.1571      1.1296     0.96507     0.99003      1.0067      1.0303     0.97002      1.0001
+STD:20180223T015336:global_function_wrapper>             k_minibatch = 117
+STD:20180223T015718:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T015718:global_function_wrapper>                   n_log = 214
+STD:20180223T015718:global_function_wrapper>                     n_x = 1
+STD:20180223T015718:global_function_wrapper>  scalar_accuracy_metric = 1.8262
+STD:20180223T015718:global_function_wrapper>                       x = 1.1531      1.1013     0.96103      1.0083       1.016      1.0278     0.97455      1.0001
+STD:20180223T015718:global_function_wrapper>             k_minibatch = 117
+STD:20180223T020044:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T020044:global_function_wrapper>                   n_log = 215
+STD:20180223T020044:global_function_wrapper>                     n_x = 1
+STD:20180223T020044:global_function_wrapper>  scalar_accuracy_metric = 1.6496
+STD:20180223T020044:global_function_wrapper>                       x = 1.1498      1.0793     0.95575      1.0262      1.0248      1.0256       0.978      1.0001
+STD:20180223T020044:global_function_wrapper>             k_minibatch = 117
+STD:20180223T020417:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T020417:global_function_wrapper>                   n_log = 216
+STD:20180223T020417:global_function_wrapper>                     n_x = 1
+STD:20180223T020417:global_function_wrapper>  scalar_accuracy_metric = 1.6449
+STD:20180223T020417:global_function_wrapper>                       x = 1.149      1.0761      0.9561      1.0276       1.025      1.0254     0.97862      1.0001
+STD:20180223T020417:global_function_wrapper>             k_minibatch = 117
+STD:20180223T020802:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T020802:global_function_wrapper>                   n_log = 217
+STD:20180223T020802:global_function_wrapper>                     n_x = 1
+STD:20180223T020802:global_function_wrapper>  scalar_accuracy_metric = 1.6412
+STD:20180223T020802:global_function_wrapper>                       x = 1.1485      1.0742     0.95629      1.0271      1.0252      1.0252     0.97902      1.0001
+STD:20180223T020802:global_function_wrapper>             k_minibatch = 117
+STD:20180223T021130:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T021130:global_function_wrapper>                   n_log = 218
+STD:20180223T021130:global_function_wrapper>                     n_x = 1
+STD:20180223T021130:global_function_wrapper>  scalar_accuracy_metric = 1.6447
+STD:20180223T021130:global_function_wrapper>                       x = 1.1488      1.0737     0.95664      1.0268      1.0253      1.0253     0.97905      1.0001
+STD:20180223T021130:global_function_wrapper>             k_minibatch = 117
+STD:20180223T021455:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T021455:global_function_wrapper>                   n_log = 219
+STD:20180223T021455:global_function_wrapper>                     n_x = 1
+STD:20180223T021455:global_function_wrapper>  scalar_accuracy_metric = 1.6437
+STD:20180223T021455:global_function_wrapper>                       x = 1.149      1.0734     0.95682      1.0267      1.0253      1.0253     0.97907      1.0001
+STD:20180223T021455:global_function_wrapper>             k_minibatch = 117
+STD:20180223T021835:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T021835:global_function_wrapper>                   n_log = 220
+STD:20180223T021835:global_function_wrapper>                     n_x = 1
+STD:20180223T021835:global_function_wrapper>  scalar_accuracy_metric = 1.6946
+STD:20180223T021835:global_function_wrapper>                       x = 1.1491      1.0733      0.9569      1.0266      1.0253      1.0253     0.97908      1.0001
+STD:20180223T021835:global_function_wrapper>             k_minibatch = 117
+STD:20180223T022230:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T022230:global_function_wrapper>                   n_log = 221
+STD:20180223T022230:global_function_wrapper>                     n_x = 1
+STD:20180223T022230:global_function_wrapper>  scalar_accuracy_metric = 1.638
+STD:20180223T022230:global_function_wrapper>                       x = 1.1491      1.0732     0.95695      1.0266      1.0253      1.0253     0.97908      1.0001
+STD:20180223T022230:global_function_wrapper>             k_minibatch = 117
+STD:20180223T022614:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T022614:global_function_wrapper>                   n_log = 222
+STD:20180223T022614:global_function_wrapper>                     n_x = 1
+STD:20180223T022614:global_function_wrapper>  scalar_accuracy_metric = 1.6725
+STD:20180223T022614:global_function_wrapper>                       x = 1.1491      1.0732     0.95697      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T022614:global_function_wrapper>             k_minibatch = 117
+STD:20180223T023004:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T023004:global_function_wrapper>                   n_log = 223
+STD:20180223T023004:global_function_wrapper>                     n_x = 1
+STD:20180223T023004:global_function_wrapper>  scalar_accuracy_metric = 1.6289
+STD:20180223T023004:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T023004:global_function_wrapper>             k_minibatch = 117
+STD:20180223T023338:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T023338:global_function_wrapper>                   n_log = 224
+STD:20180223T023338:global_function_wrapper>                     n_x = 1
+STD:20180223T023338:global_function_wrapper>  scalar_accuracy_metric = 1.664
+STD:20180223T023338:global_function_wrapper>                       x = 1.149      1.0731     0.95698      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T023338:global_function_wrapper>             k_minibatch = 117
+STD:20180223T023658:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T023658:global_function_wrapper>                   n_log = 225
+STD:20180223T023658:global_function_wrapper>                     n_x = 1
+STD:20180223T023658:global_function_wrapper>  scalar_accuracy_metric = 1.8919
+STD:20180223T023659:global_function_wrapper>                       x = 1.1492      1.0731     0.95698      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T023659:global_function_wrapper>             k_minibatch = 117
+STD:20180223T024047:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T024047:global_function_wrapper>                   n_log = 226
+STD:20180223T024047:global_function_wrapper>                     n_x = 1
+STD:20180223T024047:global_function_wrapper>  scalar_accuracy_metric = 1.6274
+STD:20180223T024047:global_function_wrapper>                       x = 1.1491       1.073     0.95698      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T024047:global_function_wrapper>             k_minibatch = 117
+STD:20180223T024417:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T024417:global_function_wrapper>                   n_log = 227
+STD:20180223T024417:global_function_wrapper>                     n_x = 1
+STD:20180223T024417:global_function_wrapper>  scalar_accuracy_metric = 1.6516
+STD:20180223T024417:global_function_wrapper>                       x = 1.1491      1.0732     0.95698      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T024417:global_function_wrapper>             k_minibatch = 117
+STD:20180223T024823:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T024823:global_function_wrapper>                   n_log = 228
+STD:20180223T024823:global_function_wrapper>                     n_x = 1
+STD:20180223T024823:global_function_wrapper>  scalar_accuracy_metric = 1.6448
+STD:20180223T024823:global_function_wrapper>                       x = 1.1491      1.0731     0.95688      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T024823:global_function_wrapper>             k_minibatch = 117
+STD:20180223T025207:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T025207:global_function_wrapper>                   n_log = 229
+STD:20180223T025207:global_function_wrapper>                     n_x = 1
+STD:20180223T025207:global_function_wrapper>  scalar_accuracy_metric = 1.9912
+STD:20180223T025207:global_function_wrapper>                       x = 1.1491      1.0731     0.95708      1.0266      1.0253      1.0253     0.97909      1.0001
+STD:20180223T025207:global_function_wrapper>             k_minibatch = 117
+STD:20180223T025546:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T025546:global_function_wrapper>                   n_log = 230
+STD:20180223T025546:global_function_wrapper>                     n_x = 1
+STD:20180223T025546:global_function_wrapper>  scalar_accuracy_metric = 1.6631
+STD:20180223T025546:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0264      1.0253      1.0253     0.97909      1.0001
+STD:20180223T025546:global_function_wrapper>             k_minibatch = 117
+STD:20180223T025915:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T025915:global_function_wrapper>                   n_log = 231
+STD:20180223T025915:global_function_wrapper>                     n_x = 1
+STD:20180223T025915:global_function_wrapper>  scalar_accuracy_metric = 1.9904
+STD:20180223T025915:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0267      1.0253      1.0253     0.97909      1.0001
+STD:20180223T025915:global_function_wrapper>             k_minibatch = 117
+STD:20180223T030236:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T030236:global_function_wrapper>                   n_log = 232
+STD:20180223T030236:global_function_wrapper>                     n_x = 1
+STD:20180223T030236:global_function_wrapper>  scalar_accuracy_metric = 1.6551
+STD:20180223T030236:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0252      1.0253     0.97909      1.0001
+STD:20180223T030236:global_function_wrapper>             k_minibatch = 117
+STD:20180223T030635:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T030635:global_function_wrapper>                   n_log = 233
+STD:20180223T030635:global_function_wrapper>                     n_x = 1
+STD:20180223T030635:global_function_wrapper>  scalar_accuracy_metric = 1.6508
+STD:20180223T030635:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0254      1.0253     0.97909      1.0001
+STD:20180223T030635:global_function_wrapper>             k_minibatch = 117
+STD:20180223T030954:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T030954:global_function_wrapper>                   n_log = 234
+STD:20180223T030954:global_function_wrapper>                     n_x = 1
+STD:20180223T030954:global_function_wrapper>  scalar_accuracy_metric = 1.6358
+STD:20180223T030954:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0252     0.97909      1.0001
+STD:20180223T030954:global_function_wrapper>             k_minibatch = 117
+STD:20180223T031325:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T031325:global_function_wrapper>                   n_log = 235
+STD:20180223T031325:global_function_wrapper>                     n_x = 1
+STD:20180223T031325:global_function_wrapper>  scalar_accuracy_metric = 1.7263
+STD:20180223T031325:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0255     0.97909      1.0001
+STD:20180223T031325:global_function_wrapper>             k_minibatch = 117
+STD:20180223T031648:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T031648:global_function_wrapper>                   n_log = 236
+STD:20180223T031648:global_function_wrapper>                     n_x = 1
+STD:20180223T031648:global_function_wrapper>  scalar_accuracy_metric = 1.6513
+STD:20180223T031648:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0253     0.97899      1.0001
+STD:20180223T031648:global_function_wrapper>             k_minibatch = 117
+STD:20180223T032031:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T032031:global_function_wrapper>                   n_log = 237
+STD:20180223T032031:global_function_wrapper>                     n_x = 1
+STD:20180223T032031:global_function_wrapper>  scalar_accuracy_metric = 1.9051
+STD:20180223T032031:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0253     0.97919      1.0001
+STD:20180223T032031:global_function_wrapper>             k_minibatch = 117
+STD:20180223T032403:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T032403:global_function_wrapper>                   n_log = 238
+STD:20180223T032403:global_function_wrapper>                     n_x = 1
+STD:20180223T032403:global_function_wrapper>  scalar_accuracy_metric = 1.9069
+STD:20180223T032403:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0253     0.97909     0.99998
+STD:20180223T032404:global_function_wrapper>             k_minibatch = 117
+STD:20180223T032743:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T032743:global_function_wrapper>                   n_log = 239
+STD:20180223T032743:global_function_wrapper>                     n_x = 1
+STD:20180223T032743:global_function_wrapper>  scalar_accuracy_metric = 1.6662
+STD:20180223T032743:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0266      1.0253      1.0253     0.97909      1.0002
+STD:20180223T032743:global_function_wrapper>             k_minibatch = 117
+STD:20180223T033311:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T033311:global_function_wrapper>                   n_log = 240
+STD:20180223T033311:global_function_wrapper>                     n_x = 1
+STD:20180223T033311:global_function_wrapper>  scalar_accuracy_metric = 2.1153
+STD:20180223T033311:global_function_wrapper>                       x = 1.0657      1.1942     0.93914      1.0063      1.0996      1.0487     0.95838      0.9992
+STD:20180223T033311:global_function_wrapper>             k_minibatch = 117
+STD:20180223T033703:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T033703:global_function_wrapper>                   n_log = 241
+STD:20180223T033703:global_function_wrapper>                     n_x = 1
+STD:20180223T033703:global_function_wrapper>  scalar_accuracy_metric = 1.9039
+STD:20180223T033703:global_function_wrapper>                       x = 1.1491      1.0732     0.95698      1.0265      1.0253      1.0254     0.97908      1.0001
+STD:20180223T033703:global_function_wrapper>             k_minibatch = 117
+STD:20180223T034108:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T034108:global_function_wrapper>                   n_log = 242
+STD:20180223T034108:global_function_wrapper>                     n_x = 1
+STD:20180223T034108:global_function_wrapper>  scalar_accuracy_metric = 1.6435
+STD:20180223T034108:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0265      1.0253      1.0253     0.97909      1.0001
+STD:20180223T034108:global_function_wrapper>             k_minibatch = 117
+STD:20180223T034454:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T034454:global_function_wrapper>                   n_log = 243
+STD:20180223T034454:global_function_wrapper>                     n_x = 1
+STD:20180223T034454:global_function_wrapper>  scalar_accuracy_metric = 1.6567
+STD:20180223T034454:global_function_wrapper>                       x = 1.1491      1.0731     0.95698      1.0265      1.0253      1.0253     0.97909      1.0001
+STD:20180223T034454:global_function_wrapper>             k_minibatch = 117
+STD:20180223T034842:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T034842:global_function_wrapper>                   n_log = 244
+STD:20180223T034842:global_function_wrapper>                     n_x = 1
+STD:20180223T034842:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T034842:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T034842:global_function_wrapper>             k_minibatch = 117
+STD:20180223T035224:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T035224:global_function_wrapper>                   n_log = 245
+STD:20180223T035224:global_function_wrapper>                     n_x = 1
+STD:20180223T035224:global_function_wrapper>  scalar_accuracy_metric = 1.6222
+STD:20180223T035224:global_function_wrapper>                       x = 1.149      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T035224:global_function_wrapper>             k_minibatch = 117
+STD:20180223T035602:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T035602:global_function_wrapper>                   n_log = 246
+STD:20180223T035602:global_function_wrapper>                     n_x = 1
+STD:20180223T035602:global_function_wrapper>  scalar_accuracy_metric = 1.6399
+STD:20180223T035602:global_function_wrapper>                       x = 1.1492      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T035602:global_function_wrapper>             k_minibatch = 117
+STD:20180223T035933:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T035933:global_function_wrapper>                   n_log = 247
+STD:20180223T035933:global_function_wrapper>                     n_x = 1
+STD:20180223T035933:global_function_wrapper>  scalar_accuracy_metric = 1.6467
+STD:20180223T035933:global_function_wrapper>                       x = 1.1491       1.073     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T035933:global_function_wrapper>             k_minibatch = 117
+STD:20180223T040318:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T040318:global_function_wrapper>                   n_log = 248
+STD:20180223T040318:global_function_wrapper>                     n_x = 1
+STD:20180223T040318:global_function_wrapper>  scalar_accuracy_metric = 1.6435
+STD:20180223T040318:global_function_wrapper>                       x = 1.1491      1.0732     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T040318:global_function_wrapper>             k_minibatch = 117
+STD:20180223T040640:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T040640:global_function_wrapper>                   n_log = 249
+STD:20180223T040640:global_function_wrapper>                     n_x = 1
+STD:20180223T040640:global_function_wrapper>  scalar_accuracy_metric = 1.6683
+STD:20180223T040640:global_function_wrapper>                       x = 1.1491      1.0731     0.95687      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T040640:global_function_wrapper>             k_minibatch = 117
+STD:20180223T041023:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T041023:global_function_wrapper>                   n_log = 250
+STD:20180223T041023:global_function_wrapper>                     n_x = 1
+STD:20180223T041023:global_function_wrapper>  scalar_accuracy_metric = 1.6713
+STD:20180223T041023:global_function_wrapper>                       x = 1.1491      1.0731     0.95707      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T041023:global_function_wrapper>             k_minibatch = 117
+STD:20180223T041359:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T041359:global_function_wrapper>                   n_log = 251
+STD:20180223T041359:global_function_wrapper>                     n_x = 1
+STD:20180223T041359:global_function_wrapper>  scalar_accuracy_metric = 1.6621
+STD:20180223T041359:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0264      1.0253      1.0253     0.97908      1.0001
+STD:20180223T041359:global_function_wrapper>             k_minibatch = 117
+STD:20180223T041715:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T041715:global_function_wrapper>                   n_log = 252
+STD:20180223T041715:global_function_wrapper>                     n_x = 1
+STD:20180223T041715:global_function_wrapper>  scalar_accuracy_metric = 1.9065
+STD:20180223T041715:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0266      1.0253      1.0253     0.97908      1.0001
+STD:20180223T041715:global_function_wrapper>             k_minibatch = 117
+STD:20180223T042054:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T042054:global_function_wrapper>                   n_log = 253
+STD:20180223T042054:global_function_wrapper>                     n_x = 1
+STD:20180223T042054:global_function_wrapper>  scalar_accuracy_metric = 1.9006
+STD:20180223T042054:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0252      1.0253     0.97908      1.0001
+STD:20180223T042054:global_function_wrapper>             k_minibatch = 117
+STD:20180223T042441:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T042441:global_function_wrapper>                   n_log = 254
+STD:20180223T042441:global_function_wrapper>                     n_x = 1
+STD:20180223T042441:global_function_wrapper>  scalar_accuracy_metric = 1.9037
+STD:20180223T042441:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0254      1.0253     0.97908      1.0001
+STD:20180223T042441:global_function_wrapper>             k_minibatch = 117
+STD:20180223T042846:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T042846:global_function_wrapper>                   n_log = 255
+STD:20180223T042846:global_function_wrapper>                     n_x = 1
+STD:20180223T042846:global_function_wrapper>  scalar_accuracy_metric = 2.0147
+STD:20180223T042846:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0252     0.97908      1.0001
+STD:20180223T042846:global_function_wrapper>             k_minibatch = 117
+STD:20180223T043235:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T043235:global_function_wrapper>                   n_log = 256
+STD:20180223T043235:global_function_wrapper>                     n_x = 1
+STD:20180223T043235:global_function_wrapper>  scalar_accuracy_metric = 1.9144
+STD:20180223T043235:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0254     0.97908      1.0001
+STD:20180223T043235:global_function_wrapper>             k_minibatch = 117
+STD:20180223T043607:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T043607:global_function_wrapper>                   n_log = 257
+STD:20180223T043607:global_function_wrapper>                     n_x = 1
+STD:20180223T043607:global_function_wrapper>  scalar_accuracy_metric = 1.6473
+STD:20180223T043607:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97898      1.0001
+STD:20180223T043607:global_function_wrapper>             k_minibatch = 117
+STD:20180223T043947:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T043947:global_function_wrapper>                   n_log = 258
+STD:20180223T043947:global_function_wrapper>                     n_x = 1
+STD:20180223T043947:global_function_wrapper>  scalar_accuracy_metric = 1.9004
+STD:20180223T043947:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97918      1.0001
+STD:20180223T043947:global_function_wrapper>             k_minibatch = 117
+STD:20180223T044312:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T044312:global_function_wrapper>                   n_log = 259
+STD:20180223T044312:global_function_wrapper>                     n_x = 1
+STD:20180223T044312:global_function_wrapper>  scalar_accuracy_metric = 1.9213
+STD:20180223T044312:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908     0.99998
+STD:20180223T044312:global_function_wrapper>             k_minibatch = 117
+STD:20180223T044637:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T044637:global_function_wrapper>                   n_log = 260
+STD:20180223T044637:global_function_wrapper>                     n_x = 1
+STD:20180223T044637:global_function_wrapper>  scalar_accuracy_metric = 1.9834
+STD:20180223T044637:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0002
+STD:20180223T044637:global_function_wrapper>             k_minibatch = 117
+STD:20180223T045150:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T045150:global_function_wrapper>                   n_log = 261
+STD:20180223T045150:global_function_wrapper>                     n_x = 1
+STD:20180223T045150:global_function_wrapper>  scalar_accuracy_metric = 1.5922
+STD:20180223T045150:global_function_wrapper>                       x = 0.93563      1.1586      1.0814     0.88776      1.0996      1.0659     0.93697      1.0055
+STD:20180223T045150:global_function_wrapper>             k_minibatch = 117
+STD:20180223T045507:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T045507:global_function_wrapper>                   n_log = 262
+STD:20180223T045507:global_function_wrapper>                     n_x = 1
+STD:20180223T045507:global_function_wrapper>  scalar_accuracy_metric = 1.6372
+STD:20180223T045507:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T045507:global_function_wrapper>             k_minibatch = 117
+STD:20180223T045839:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T045839:global_function_wrapper>                   n_log = 263
+STD:20180223T045839:global_function_wrapper>                     n_x = 1
+STD:20180223T045839:global_function_wrapper>  scalar_accuracy_metric = 1.6401
+STD:20180223T045839:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T045839:global_function_wrapper>             k_minibatch = 117
+STD:20180223T050216:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T050216:global_function_wrapper>                   n_log = 264
+STD:20180223T050216:global_function_wrapper>                     n_x = 1
+STD:20180223T050216:global_function_wrapper>  scalar_accuracy_metric = 1.641
+STD:20180223T050216:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T050216:global_function_wrapper>             k_minibatch = 117
+STD:20180223T050611:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T050611:global_function_wrapper>                   n_log = 265
+STD:20180223T050611:global_function_wrapper>                     n_x = 1
+STD:20180223T050611:global_function_wrapper>  scalar_accuracy_metric = 1.627
+STD:20180223T050611:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T050611:global_function_wrapper>             k_minibatch = 117
+STD:20180223T050953:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T050954:global_function_wrapper>                   n_log = 266
+STD:20180223T050954:global_function_wrapper>                     n_x = 1
+STD:20180223T050954:global_function_wrapper>  scalar_accuracy_metric = 1.6276
+STD:20180223T050954:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T050954:global_function_wrapper>             k_minibatch = 117
+STD:20180223T051333:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T051333:global_function_wrapper>                   n_log = 267
+STD:20180223T051333:global_function_wrapper>                     n_x = 1
+STD:20180223T051333:global_function_wrapper>  scalar_accuracy_metric = 1.6369
+STD:20180223T051333:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T051333:global_function_wrapper>             k_minibatch = 117
+STD:20180223T051710:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T051710:global_function_wrapper>                   n_log = 268
+STD:20180223T051710:global_function_wrapper>                     n_x = 1
+STD:20180223T051710:global_function_wrapper>  scalar_accuracy_metric = 1.8977
+STD:20180223T051710:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T051710:global_function_wrapper>             k_minibatch = 117
+STD:20180223T052031:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T052031:global_function_wrapper>                   n_log = 269
+STD:20180223T052031:global_function_wrapper>                     n_x = 1
+STD:20180223T052031:global_function_wrapper>  scalar_accuracy_metric = 1.7486
+STD:20180223T052031:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T052031:global_function_wrapper>             k_minibatch = 117
+STD:20180223T052418:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T052418:global_function_wrapper>                   n_log = 270
+STD:20180223T052418:global_function_wrapper>                     n_x = 1
+STD:20180223T052418:global_function_wrapper>  scalar_accuracy_metric = 1.6402
+STD:20180223T052418:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T052418:global_function_wrapper>             k_minibatch = 117
+STD:20180223T052733:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T052733:global_function_wrapper>                   n_log = 271
+STD:20180223T052733:global_function_wrapper>                     n_x = 1
+STD:20180223T052733:global_function_wrapper>  scalar_accuracy_metric = 1.6659
+STD:20180223T052733:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T052733:global_function_wrapper>             k_minibatch = 117
+STD:20180223T053052:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T053052:global_function_wrapper>                   n_log = 272
+STD:20180223T053052:global_function_wrapper>                     n_x = 1
+STD:20180223T053052:global_function_wrapper>  scalar_accuracy_metric = 1.6659
+STD:20180223T053052:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T053052:global_function_wrapper>             k_minibatch = 117
+STD:20180223T053436:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T053436:global_function_wrapper>                   n_log = 273
+STD:20180223T053436:global_function_wrapper>                     n_x = 1
+STD:20180223T053436:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T053436:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T053436:global_function_wrapper>             k_minibatch = 117
+STD:20180223T053819:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T053819:global_function_wrapper>                   n_log = 274
+STD:20180223T053819:global_function_wrapper>                     n_x = 1
+STD:20180223T053819:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T053819:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T053819:global_function_wrapper>             k_minibatch = 117
+STD:20180223T054154:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T054154:global_function_wrapper>                   n_log = 275
+STD:20180223T054154:global_function_wrapper>                     n_x = 1
+STD:20180223T054154:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T054154:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T054154:global_function_wrapper>             k_minibatch = 117
+STD:20180223T054542:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T054542:global_function_wrapper>                   n_log = 276
+STD:20180223T054542:global_function_wrapper>                     n_x = 1
+STD:20180223T054542:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T054542:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T054542:global_function_wrapper>             k_minibatch = 117
+STD:20180223T054925:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T054925:global_function_wrapper>                   n_log = 277
+STD:20180223T054925:global_function_wrapper>                     n_x = 1
+STD:20180223T054925:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T054925:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T054925:global_function_wrapper>             k_minibatch = 117
+STD:20180223T055305:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T055305:global_function_wrapper>                   n_log = 278
+STD:20180223T055305:global_function_wrapper>                     n_x = 1
+STD:20180223T055305:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T055305:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T055305:global_function_wrapper>             k_minibatch = 117
+STD:20180223T055648:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T055648:global_function_wrapper>                   n_log = 279
+STD:20180223T055648:global_function_wrapper>                     n_x = 1
+STD:20180223T055648:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T055648:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T055648:global_function_wrapper>             k_minibatch = 117
+STD:20180223T060033:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T060033:global_function_wrapper>                   n_log = 280
+STD:20180223T060033:global_function_wrapper>                     n_x = 1
+STD:20180223T060033:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T060033:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T060033:global_function_wrapper>             k_minibatch = 117
+STD:20180223T060420:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T060420:global_function_wrapper>                   n_log = 281
+STD:20180223T060420:global_function_wrapper>                     n_x = 1
+STD:20180223T060420:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T060420:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T060420:global_function_wrapper>             k_minibatch = 117
+STD:20180223T060758:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T060758:global_function_wrapper>                   n_log = 282
+STD:20180223T060758:global_function_wrapper>                     n_x = 1
+STD:20180223T060758:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T060758:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T060758:global_function_wrapper>             k_minibatch = 117
+STD:20180223T061147:global_function_wrapper> --- New simulation profile requested ---
+STD:20180223T061147:global_function_wrapper>                   n_log = 283
+STD:20180223T061147:global_function_wrapper>                     n_x = 1
+STD:20180223T061147:global_function_wrapper>  scalar_accuracy_metric = 1.6218
+STD:20180223T061147:global_function_wrapper>                       x = 1.1491      1.0731     0.95697      1.0265      1.0253      1.0253     0.97908      1.0001
+STD:20180223T061147:global_function_wrapper>             k_minibatch = 117
+STD:20180223T061147:lg> Done with minimization problem.
+STD:20180223T062355:lg> Saved after deterministic gradient descent to file : run_over_database_alfa20_gradient_20180223T062354.mat

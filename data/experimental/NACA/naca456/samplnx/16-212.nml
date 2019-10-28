@@ -1,0 +1,23 @@
+NACA 16-212
+The NACA 16-series airfoil family is a special case of the 4-digit
+modified family. 16-series airfoils have a leading edge radius index 
+of 4 and max. thickness at 0.5 of chord. 
+So 16-012 is really the same as 0012-45.
+The third digit, 2, is the design CL of the mean line (in tenths)
+Always use the six-series mean line with a=1.0 with 16-series airfoils.
+
+Fourth and fifth digits indicate max t/c=12 percent
+The 4 in the -45 is the leading-edge radius index number
+The 5 in -45 is the location of max thickness, in tenths of chord.
+
+
+&NACA
+ NAME    = 'NACA 16-212      (thickness same as 0012-45)',
+ PROFILE = '4M',
+ TOC     = 0.12,
+ leIndex = 4,
+ xmaxt   = 0.5,   
+ CAMBER  = '6',
+ A       = 1.0,
+ CL      = 0.2,/
+

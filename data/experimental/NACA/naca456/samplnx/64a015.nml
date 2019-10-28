@@ -1,0 +1,10 @@
+NACA 64A015
+First three characters: 64A series thickness
+Fourth character: no camber (CL design=0)
+Last two digits: 15 percent t/c
+&NACA
+  name    = 'NACA 64A015',
+  profile = '64A',
+  toc     = .15,
+  camber  = '0'/
+

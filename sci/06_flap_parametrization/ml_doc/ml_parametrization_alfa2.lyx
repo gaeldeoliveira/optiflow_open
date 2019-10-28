@@ -1,0 +1,235 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Quantification of code accuracy
+\end_layout
+
+\begin_layout Standard
+The accuracy of numerical predictions is quantified with a Least Squares
+ norm regularized for the extent of data coverage.
+ Here is an example for lift polars, where 
+\begin_inset Formula $C_{l}^{exp}$
+\end_inset
+
+ denotes the measured lift coefficient and 
+\begin_inset Formula $C_{l}^{sim}$
+\end_inset
+
+ denotes the simulated value:
+\begin_inset Formula 
+\[
+\epsilon_{i}^{C_{l}}=\left(\alpha_{max}-\alpha_{min}\right)^{-1}\left(\int_{\alpha_{min}}^{\alpha_{max}}\left(C_{l}^{sim}-C_{l}^{exp}\right)^{2}d\alpha\right)^{\frac{1}{2}}
+\]
+
+\end_inset
+
+The same approach is adopted for drag and moment coefficient polars, when
+ available.
+ A similar norm is adopted for boundary layer runs, but the integration
+ proceeds along the streamwise coordinate until the end of the dataset at
+ 
+\begin_inset Formula $x=L$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\epsilon_{i}^{\theta}=\frac{1}{L}\left(\int_{0}^{L}\left(\theta_{\left(x\right)}^{sim}-\theta_{\left(x\right)}^{exp}\right)^{2}dx\right)^{\frac{1}{2}}
+\]
+
+\end_inset
+
+Error measures for each quantity are then defined 
+\end_layout
+
+\begin_layout Section
+Parametrization of the Skin Friction Relation
+\end_layout
+
+\begin_layout Standard
+The skin friction closure relation is a function of the form:
+\begin_inset Formula 
+\[
+C_{f}=f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}
+\]
+
+\end_inset
+
+This function has three key features:
+\end_layout
+
+\begin_layout Enumerate
+It tends to infinity as H approaches one:
+\begin_inset Formula 
+\[
+\lim_{H\rightarrow1}C_{f}=+\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+It is positive for share factors below separation 
+\begin_inset Formula $H<H_{sep}$
+\end_inset
+
+ and negative afterwards:
+\begin_inset Formula 
+\[
+\exists H_{sep}=f_{\left(Re_{\theta}\right)}\::\:\begin{cases}
+C_{f}>0 & H<H_{sep}\\
+C_{f}<0 & H>H_{sep}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+And it tends to a nearly constant value in deep separation:
+\begin_inset Formula 
+\[
+\exists C_{f}^{dsep}=f_{\left(Re_{\theta}\right)}\::\:\lim_{H\rightarrow\infty}C_{f\left(H,Re_{\theta}\right)}=C_{f}^{dsep}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Values of the shape factor at which separation occurs 
+\begin_inset Formula $\left(H_{sep}\right)$
+\end_inset
+
+ and the skin friction in deeply separated 
+\begin_inset Formula $C_{f}^{dsep}$
+\end_inset
+
+ flows are not precisely known.
+ A good parametrization must let them be varied by the minimization algorithm,
+ and that is indirectly achieved by the following  expression:
+\begin_inset Formula 
+\[
+C_{f\left(H,Re_{\theta},A_{i}\right)}^{mod}=S_{\left(H,Re_{\theta},A_{i}\right)}^{dim}\left(f_{\left(H,Re_{\theta}\right)}^{C_{f}^{0}}+\delta^{C_{f}}\right)-\delta^{C_{f}}\text{\qquad,\quad\delta^{C_{f}}\in\mathbb{R}}
+\]
+
+\end_inset
+
+Where 
+\begin_inset Formula $\delta^{C_{f}}$
+\end_inset
+
+ is a constant property of the parametrization that enables variations in
+ the shape factor at which the onset of separation occurs, whereas the general
+ shape of the closure relation is taylored by the 
+\begin_inset Formula $S_{\left(\right)}^{dim}$
+\end_inset
+
+.
+ The dimensional shape function maps the region for which the closure relation
+ is being taylored into a unit square, over which shape of the curve is
+ taylored with a classic Bernstein polynomial approach.
+ 
+\begin_inset Formula 
+\[
+S_{\left(H,Re_{\theta},A_{i}\right)}^{dim}=S_{\left(\eta_{\left(H\right)}^{H},\eta_{\left(Re_{\theta}\right)}^{RT},A_{i}\right)}^{adim.}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\qquad with\quad\eta^{H}=\begin{cases}
+0 & H<u_{ub}\\
+\frac{H-H_{lb}}{H_{ub}-H_{lb}} & otherwise\\
+1 & H>u_{ub}
+\end{cases}\qquad and\quad\eta^{Re_{\theta}}=\begin{cases}
+0 & Re<u_{ub}\\
+\ln\left(\frac{Re}{Re_{min}}\right)/\ln\left(\frac{Re_{max}}{Re_{min}}\right) & otherwise\\
+1 & H>u_{ub}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

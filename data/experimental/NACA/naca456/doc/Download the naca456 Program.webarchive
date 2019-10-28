@@ -1,0 +1,272 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameO!<!DOCTYPE html><html lang="en-us"><!-- www.pdas.com/naca456download.html  -  called from naca456.html --><head>
+<meta charset="utf-8">
+<title>Download the naca456 Program</title>
+<meta name="generator" content="EditPad">
+<meta name="author" content="Ralph Carmichael">
+<meta name="description" content="Download the naca456 program">
+<meta name="keywords" content="download, zip, public domain, PDAS">
+<link rel="stylesheet" href="pdas.css" type="text/css">
+<link rel="stylesheet" href="pdasp.css" type="text/css" media="print">
+</head>
+
+<body class="naca456download">
+<div class="crumb">
+<a href="index.html">PDAS home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt;
+<a href="naca456.html">NACA Airfoils</a> &gt; 
+NACA456 download</div>
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+<div id="header">
+<h1>Download the NACA456 Program</h1>
+</div>
+
+
+
+<ul>
+<li>Go to the page of <a href="naca456refs.html">references for the NACA456</a> program.</li>
+<li><a href="packages/naca456.zip">Download naca456.zip</a>.</li>
+</ul>
+
+<p>
+The archive file naca456.zip contains the files:</p>
+<table class="archivelist">
+<tbody><tr><td> readme.txt   </td><td> General description of naca456. </td></tr>
+<tr><td> naca456.f90  </td><td> the main program source code</td></tr>
+<tr><td> nacax.f90    </td><td> the source code to the module of auxiliary code</td></tr>
+<tr><td> splprocs.f90 </td><td> the source code for the spline procedures</td></tr>
+<tr><td> epspsi.f90   </td><td> the data module defining the epsilon and psi functions</td></tr>
+<tr><td> avd.f90      </td><td> the source code for the program that makes web pages
+                 in HTML with the data from Abbott and von Doenhoff</td></tr>
+<tr><td> input.txt    </td><td> instructions for preparing input for naca456</td></tr>
+<tr><td> ver6.zip     </td><td> the source code, instructions and examples as
+                 distributed in versions 1-6 of the PDAS CD-ROM.
+                 This includes source code from both of the Ladson-Brooks programs.</td></tr>
+<tr><td> airfols.zip  </td><td> The source code and sample cases for Airfols, the 1996 NASA program</td></tr>
+<tr><td> samples.zip  </td><td> a selection of test cases (input and output)</td></tr>
+<tr><td> samplnx.zip  </td><td> all of the above test cases with Unix end-of-line (ZIP)</td></tr>
+</tbody></table>
+
+
+<p>To compile this program for your computer, use the command</p>
+<p class="input">   gfortran  naca456.f90 -o naca456.exe </p>
+<p>Linux and Macintosh users may prefer to omit the .exe on the file name.
+All of the auxiliary modules will be included automatically.</p>
+
+<p>To launch the program, type</p>
+<p class="input"> naca456</p>
+<p>at the command line.
+This program asks for the name of the input file. This must be
+a file written as described in the file input.txt
+which uses namelist input. </p>
+
+<p>The program produces a file called naca.out that printed or scrolled
+to your screen and a file called naca.gnu that may be plotted.
+Using gnuplot, you plot the airfoil shape with</p>
+<p class="input">   gnuplot&gt; plot 'naca.gnu' with lines </p>
+
+<p>The default setting for gnuplot will expand the vertical scale to fit
+the screen. This is useful for seeing the curvature, etc. of the airfoil
+and I usually take a look at most airfoils with this expanded scale.
+But you probably want to see the airfoil in true proportions. Say</p>
+<p class="input">   gnuplot&gt; set size ratio -1 </p>
+<p> and you will get a short but wide window with the correct proportions.</p>
+<p>Alternately, you may command</p>
+<p class="input">   gnuplot&gt; set yrange [-0.5:0.5]
+   gnuplot&gt; set size square</p>
+
+<p>
+It is best if you compile the programs using your Fortran compiler with the appropriate
+options for your computer system. If you do not wish to do this, you may 
+<a href="packages/naca456exec.zip">download naca456exec.zip</a> containing the files
+naca456.exe, naca456.mac, and naca456.lnx, the executable program for Windows, Mac OS X, and Linux, 
+each compiled generically for an Intel CPU.</p>
+
+<p>
+If you download this program and find it useful, please make a contribution
+to enable Public Domain Aeronautical Software continue making
+open source software available to the engineering community.
+If you click on the button below, you may contribute $20 through
+the PayPal site.</p>
+
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="X2RJNMP7XAMHQ">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+<footer>
+<a href="order.html">Order a copy</a> of all the programs from
+<cite>Public Domain Computer Programs for the Aeronautical Engineer.</cite>
+<address>
+Last updated: 12 July 2017 by Ralph Carmichael,
+ <a href="mailto:pdaerowebmaster@gmail.com">pdaerowebmaster AT gmail DOT com</a>
+</address>
+</footer>
+
+<div class="crumb">
+<a href="index.html">PDAS home</a> &gt; 
+<a href="contents16.html">Contents</a> &gt;
+<a href="naca456.html">NACA Airfoils</a> &gt; 
+NACA456 download</div>
+
+<div class="newbanner">Public Domain Aeronautical Software (PDAS) &nbsp;</div>
+
+</body></html>Ytext/htmlUUTF-8_(http://www.pdas.com/naca456download.htmlP¤Ô_WebResourceResponseO	9/* Style sheet for PDAS pages called for display */
+/* Last modified: 13 July 2017 */
+body {margin: 5px; color: black; background: white;
+ font-family: Arial,helvetica,sans-serif;}
+
+h1,h2,h3,h4,h5,h6 { font-family: arial,helvetica,univers,sans-serif;
+                    font-weight: bold; background:white}
+h1 {text-align: center}
+h1 {font-size: 2.0em; color: #0000d0; margin-top: 0.5em;}
+h2 {font-size: 1.5em; color: #0000a0} 
+h3 {font-size: 1.5em; color: #000080}
+h4 {font-size: 1.25em; color: #000060}
+h5 {font-size: 1em; color: #000040}
+h6 {font-size:  0.75em; color: #000020}
+
+div.picasso {text-align: center;}
+p.cosmic {font-style: italic;}
+p.equation {text-align: center; font-family: monospace; white-space: pre}
+p.input {font-family:monospace; white-space: pre}
+div.equation {text-align: center; font-family: monospace; white-space: pre}
+p.quote {margin-left: 5em;}
+p.q {font-size: 1em; font-weight: bold}
+p.a {font-size: 1em; font-weight: normal}
+p.code {font-family:monospace; white-space: pre; font-size: 0.7em; }
+div.wip {font-size:smaller; font-style:italic;}
+span.wip {font-size:smaller; font-style:italic;}
+
+ul.cosmic {font-style: italic;}
+ol.cosmic {font-style: italic;}
+
+table {border-collapse: collapse}
+table.centered {text-align: center}
+table.eq {width: 100%;}
+table.archivelist {margin-left: 3em; font-size: 90%; }
+
+td {border: 1px solid black; padding: 1px 5px 1px 20px;}
+td.center {text-align:center}
+td.right {text-align:right}
+td.eqno {width: 1em;}
+
+address {background: white; color: black; line-height: 1em;}
+
+a:hover {background: yellow; color: black;}
+
+nav {margin: 0.25em;}
+div.crumb {margin: 0.25em;}
+div.section {font-size: 1.25em; font-weight: bold;}
+div.newbanner {width: 100%; background: blue; color: white;
+  font-size: 120%;
+  font-family: Verdana,Arial,Helvetica, sans-serif; text-align: right;}
+div#header {width: 100%; border-bottom: 3px solid blue;
+   padding-top: 3px; padding-bottom: 3px; }
+div#footer {width: 100%; font-size: 90%; 
+   border-top: 3px solid red; border-bottom: 3px solid red;
+   padding-top: 3px; padding-bottom: 3px;}
+
+footer {width: 100%; font-size: 90%; 
+   border-top: 3px solid red; border-bottom: 3px solid red;
+   padding-top: 3px; padding-bottom: 3px;}
+
+img {float: right;}
+img#valid401 {position: absolute; right: 0; border: 0;}
+img#validxhtml {position: absolute; right: 0; border: 0;}
+
+Xtext/css_http://www.pdas.com/pdas.cssO bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯#)*0123KLMNOPQRSTUVWXYZ[\]aU$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_http://www.pdas.com/pdas.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿¾p¾®¼„ ÈÓ456@JWNS.keysZNS.objects©789:;<=>?€	€
+€€€€€€€©ACDEFGHI€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnection_›Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e-p1 FrontPage/5.0.2.2635 PHP/4.4.2 mod_jk/1.2.15 mod_python/3.1.4 Python/2.2.2 mod_perl/2.0.2 Perl/v5.8.8Xtext/css_"d2ab64-939-1e13be40"_Thu, 13 Jul 2017 22:04:33 GMT_Fri, 17 Nov 2017 01:12:46 GMTUbytesT2361_timeout=10, max=999ZKeep-AliveÒ+,^__NSMutableDictionary£^`/\NSDictionaryÒ+,bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ° ² ´ ¶ ¸ º ¼ ¾ Å Í Ù Û İ ß ş )246=EPZ\^`bdfhjlvxz|~€‚„†ˆŠ‘£±¶ÄÓŞé‡¨Èèîó	/3@EY]q‘”ª             j              ¬ÔO×/* Style sheet for PDAS pages called for printing */
+/* Last modified: 13 July 2017 */
+body {margin: 5px; color: black; background: white;
+   font-family: "Times New Roman",Times,serif;}
+
+h1,h2,h3,h4,h5,h6 { font-family: arial,helvetica,univers,sans-serif;
+                    font-weight: bold; background: white; color: black;}
+h1 {font-size: 2.0em; margin-top: 0.5em; text-align: center;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.25em; }
+h5 {font-size: 1em; }
+h6 {font-size:  0.75em; }
+
+a:link {color: black; background: white;}
+a:visited { color: black; background: white;}
+
+div.picasso {text-align: center;}
+p.input {font-family:monospace; white-space: pre;}
+p.cosmic {font-style: italic;}
+p.equation {text-align: center; font-family: monospace; white-space: pre;}
+div.equation {text-align: center}
+p.quote {margin-left: 5em;}
+p.q {font-size: 1em; font-weight: bold}
+p.a {font-size: 1em; font-weight: normal}
+p.code {font-family:monospace; white-space: pre; font-size: 0.7em; }
+span.wip {font-size:smaller; font-style:italic;}
+
+ul.cosmic {font-style: italic;}
+ol.cosmic {font-style: italic;}
+
+table {border-collapse: collapse}
+table.eq {width: 100%;}
+table.centered {text-align: center}
+table.archivelist {margin-left: 3em; font-size: 90%; }
+
+td {border: 1px solid black; padding: 1px 5px 1px 20px;}
+td.center {text-align: center}
+td.right {text-align: right}
+td.eqno {width: 1em;}
+
+address {background: white; color: black;}
+
+nav {margin: 0.25em;}
+div.crumb {margin: 0.25em;}
+div.section {font-size: 1.25em; font-weight: bold;}
+div.newbanner {width: 90%; background: white; color: black;
+  padding-right: 1em; border: 1px solid black;
+  margin-left: 1em; margin-right: 1em;  
+  font-size: 120%;
+  display: none;
+  font-family: Verdana,Arial,Helvetica,sans-serif; text-align: right;}
+
+div#header {width: 100%; border-bottom: 2px solid black;
+   padding-top: 3px; padding-bottom: 3px; }
+div#footer {width: 100%; font-size: 90%; 
+   border-top: 2px solid black; border-bottom: 2px solid black;
+   padding-top: 3px; padding-bottom: 3px; }
+
+footer {width: 100%; font-size: 90%; 
+   border-top: 2px solid black; border-bottom: 2px solid black;
+   padding-top: 3px; padding-bottom: 3px;}
+
+img {float: right;}
+img#validxhtml {display: none;}
+
+_http://www.pdas.com/pdasp.cssO¢bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯#)*0123KLMNOPQRSTUVWXYZ[\]aU$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_http://www.pdas.com/pdasp.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿¾p¾®İœ ÈÓ456@JWNS.keysZNS.objects©789:;<=>?€	€
+€€€€€€€©ACDEFGHI€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnection_›Apache/2.0.54 (Unix) mod_ssl/2.0.54 OpenSSL/0.9.7e-p1 FrontPage/5.0.2.2635 PHP/4.4.2 mod_jk/1.2.15 mod_python/3.1.4 Python/2.2.2 mod_perl/2.0.2 Perl/v5.8.8Xtext/css_"d2ab66-8d7-1e230080"_Thu, 13 Jul 2017 22:04:34 GMT_Fri, 17 Nov 2017 01:12:46 GMTUbytesT2263_timeout=10, max=1000ZKeep-AliveÒ+,^__NSMutableDictionary£^`/\NSDictionaryÒ+,bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ° ² ´ ¶ ¸ º ¼ ¾ Å Í Ù Û İ ß ÿ!*357>FQ[]_acegikmwy{}ƒ…‡‰‹’Ÿ¤²·ÅÔßêˆ‘©Ééïô15BG[_s“–¬             j              ®ÔO±GIF89a“ / ÷ÿ ‡hD1{q¿úB½½¼—ÑıãÍö~ FÂx±éê HƒÖ/$
+ÿÜŠöœÇÉÛ&0t,V­ì§Äìb¨çÚ§0»¨˜'y×ëµ4ÃÉÌÈ¾ÁÂóº6ûZÿ×yıÂ8×Šô Ï šÄíøŠ,š£¨µ‹(ÿÊMú°q×éùFFGüÕ´«Ôôãäí‘Xš   ¶ÙõqwÆF›äùOuYdÍ£§Å588WZZ ¤ã<xÑ©²·Nbm’½ëá¬2lšŞcjnGP‰fŸáq¥â•r!İ©1ÿª şşş¥!H2ŠÜvƒ‰şÎ\ÌĞÕ³¶ÏûÊTZE}¦âşaşÆC dŠËœ-ÛİãÊñµµµù  Y{òóõb“ÛW‹Ø$&(å°3ñ¹<ôøûúÊŸ[–Ş ˆ½“™º rqß”¶çœ›²æÿÒh‚±ç~»íìíóøùú ©êh´ìY{ÃŠ¼ëcKÃÜõø1|­æı¥ò¥ÌğUälÑ÷yB}ÔZb–¯Êî
+\Ë»¢S 
+;?AéëìO¥é#/ÓÕãr¨å.‚Ú¹éemkQşòç³»Àö¡1zÕ€Œ’’¶ôõ÷bÍ)pUÈ ¡ßîİßé NÅq½ñÓÚŞD†Í»é“¢…‹±ŠÃñ{‚«²Ïğù¾7ÿÆ=m{d™Şc »¾Ô 8Oì ]±íöÀ@ûÀ8ûüıúúü\<’á iúÈK‹Âîÿüøæèéw¡à%˜2<|ÿ²¿  ¶¶¶şÃ9³³³ôÁH£}$úÀ7ôÆZûÇO}_q~„b·ğU<œ‰v'oĞ™¸çø‹™¾222Bİ´‰«>uş÷ñ>‘ßf€Î«°Êb@}PÛ2Ö¤/ÿ ×¥0°·» rÓ½¹¶†·êÈ#LLNO¾y&w°×O¼­ ó ı\Êÿ¡ E_ls¡šhâåæ zª ®ğ¼²ª¢«¯/rÑ6~×,,-ÿÿÿ   ÿÄ9   !ù  ÿ ,    “ / @ÿ ÿ	H° Áƒ›œ ¢ªX1ıIœ8ñ¡Cˆ-Z¤˜¢Ã9RÔR£**'š \É²¥Ë—e‰œ93J¿~F@Â@³§O‰0pøIT¤,˜H“ºZT¤M şfÙdPÌÎ¡Èú1ğ¦_#‰ úÑğÇ¬3&úXv,Ø~Ïšöä ´®İ•EŠMöA®ß¿€?Ì
+š÷®áYˆ)^Ì¸qã,/ŞœL¹²åÉ’/±¼ù2A2I-"Ú–0ºpÁOLš<É–MPM¸sëŞ½;‹—Yø	o×#~€)Rô B y¸€á
+Ò‚_–Ìıì 	§ »‚Sş8ÿ˜ä@Ï[ûaïWÈ»‚vçÄX’c“ıMñ(d´D5…,L@G‹Œ0DkHƒÆt!ˆ½ÜAüÂ?\ğr?¼ĞCK6Iğ-\\qb¬ÀaHåE€Å(ãŒ5ÑD.,æøöÔDôcY7i„\İdGı€ãZ1°’ 4¢U cqd VBX1è(&B>ğDã™h6…c¶éæ›pÆ	\-Ø@Íü´`†"Ü<„+¤Pó?®Ø0¨uØÙ!wİqÒÁSŒç€Gh`fQ†„ŞµƒM„RŸ}qœ¡ß@|¸ŸÜa
+	¤ÿĞFCğ1*kH‘ Rˆˆ'Ò²Á8—8áDµŒ³A$+ 
+Ç“>x œpØf«í¶Â]—éd¥ £:†Ü€¸†ìC®
+*¤·ŞM_ Ã¼@¨€C½è”bA5øá¯˜ŒÉ šŒÀÁ'ŒÀ„Üb»‹c @Â„`q"§APPÁ†l,¤Jš$ËuÒ	³A¿)Ë	%Ç,ó	GµÌâ1³Èø#À3fÉœÌ16ß…A_1ş(‘•È¤µ•?VÙ‘äWş„åDÔ±¥D@{éOjE…RfÑvÁÔ_6Yq Éf #QWT[í=Ûÿ‰V¥26àş İgıÅ›h³è=Ê,ù_`øĞøå˜g®ùæœw\Ã gë­@”Äá¤¾Ç:zsD0xs)¦¤SVˆ0áì¡E8J¨cOqØSÆ+•}FA,r|âÌ'rÄBA}Xc>”P’O5¼SCl‡zÖ¶ôyòP)Oàò@ ™¸"œ<À CJ·‰ŠÀi£N1y”‚`åMõÛƒw`áPÍ¡ £ŠC|A»Œ€XøÀ‚$€èAÑ…^°â?ÈU>6Ğc;¨J „Uì@$øÃ4±ÂJ0¡‰À?ÂÇ’Ï	§—Ñ%ÿFô†Ô"	\ …p¸PD}k2@‚¦ˆ„ ÌX´Åÿh™VcŠÂ(Ä+êQ†2æ§xakÈ‡E¡iÂ„
+ix‚øA/ÖĞ)tÏ{ØÊ†P€±Œ¹1Id"!ó®›¤g3Fˆ$NÒ£'rÆ‘8Éä¾²€Nzr€¥FIÊR–²6·ÑM9îÁB¸Ò°Œe,¯ñ›Ë-¤	ğ@vÉË^úò—À¦0‡IÌ]æ²	(éœa\ä˜Mî™D9 €#eÂ
+Ëp&4·Y”,ƒeÖdÉ1–ÁÍrÊeDçA”!“¤eçÇÏúá5’ÉBê4Hæÿ#zŞm3N*`‡  io`  z5H© è.ÕÄeoQhD#˜0ä³ <Ò™?%òzb ’¨šZ’d‡¡ü)õú	®M"3­)r#0}” H…H½T„›X!-kÙ[v>Ğ•²éÍ0B JšÔ®MÄ&¨C QSÀ¤âl?ÜÜÙˆÃeç `kÄà†ÔÔ·Œe¦ BÏ’š¿­…Vb ¸#Æ…u “\2ÆZäL$©X[àë—bøõ¯)“9';X²ñ89ÊN®ğA0“
+¡¨M­jWËÚÖºöµ°-jCÚÚÿÚö¶¸Í­nwk@†Îï2B!
+ÑŠBD èF7aÖSÕ2h`Üa¼bUˆÇ06)Ğˆ&±(hn¡š`“h3úv[£[‰{ß+:ì¡¹óô')=è¡î²dì×X|ÃÛ@ ©
+çşƒ,€ÁªX€¸a4*F° ¢i˜€€5„ˆ¾Úâ¡|ù‘„+á´80l0cKd"hA'p'„(¾“QÔıÀ‰üíoRGğ•DàP L`¶À BºĞLq,¸!æàC±ˆ	ü ”½°ãH,âÿL€°QT38À ‘ÂU”`†(6p-áØ §€@,‹7t"¸0C'äˆ@(ÈLf‘¥¿I'É[´¯0Øv<y÷Ù„,k,A2èÌA‡,Â‹hCX†3ÿ ^ø¼@paÍÈÀ/JğçJHb3@A6*á„qàcÍ„°
+-œ dâ—‚<¸¿ ØàÅŠ ü„é›D wáØ;: `˜çéˆê’‰ìáß{À†¨r@ğMT’¹ #.„EäaB€8+ÈĞ…hô…ĞĞ¤aB'Fq$©1ñ¡¾4Âq# /;”5ªdcõ?.SŠØ!’F(Å¡/îşƒ@'‡>òĞ†6m D>zÑÁ^£áéO_ È™ˆÍ c3dKz{òl×’vØÇ>nP/Üàbÿ‚!¾Pv™[¦Õ0„¸È÷}¢ç˜ŞÁ÷ØÌæï€'È|ùñ°ˆÍ †øÅO±k$  ;Yimage/gif_=https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gifO÷bplist00ÔnoX$versionX$objectsY$archiverT$top † ¯!#)*0123OPQRSTUVWXYZ[\]^_`abcdeiU$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ € €€€Ó$%'(WNS.base[NS.relative€ €€_=https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gifÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿¾p¾®ô ÈÓ456BNWNS.keysZNS.objects«789:;<=>?@A€	€
+€€€€€€€€€«CEFGHIJKLM€€€€€€€€€€€€VPragma\Content-TypeVServer]Last-ModifiedZSet-CookieSp3pTDate]Accept-Ranges^Content-LengthWExpires]Cache-ControlXno-cacheYimage/gifVApache_Mon, 06 Nov 2017 20:41:51 GMT_QPYPF=CT; expires=Fri, 15-Dec-2017 01:18:36 GMT; path=/; domain=.paypalobjects.com_4CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"_Fri, 17 Nov 2017 01:18:36 GMTUbytesT2993_Fri, 17 Nov 2017 01:18:36 GMT_max-age=0, no-cache, no-storeÒ+,fg_NSMutableDictionary£fh/\NSDictionaryÒ+,jk_NSHTTPURLResponse£lm/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑpq_WebResourceResponse€    # - 2 7 [ a |  ƒ † ‰ Œ  “ š    £ ¦ © « ­ ¯ ± ³ ´ ¶ ¸ º ¼ ¾ À Â É Ñ İ ß á ã#(3<BENWY[bjuƒ…‡‰‹‘“•—£¥§©«­¯±³µ·¹»ÂÏÖäïóø+4>Ee¹ğ;[`vz‡Œ ¤¸ÆØÛñ             r              óÔ !O+GIF89a  €ÿ ÀÀÀ   !ù    ,       D ;_3https://www.paypalobjects.com/en_US/i/scr/pixel.gifOëbplist00ÔnoX$versionX$objectsY$archiverT$top † ¯!#)*0123OPQRSTUVWXYZ[\]^_`abcdeiU$nullİ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ € €€€Ó$%'(WNS.base[NS.relative€ €€_3https://www.paypalobjects.com/en_US/i/scr/pixel.gifÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¿¾p¾¯
+ ÈÓ456BNWNS.keysZNS.objects«789:;<=>?@A€	€
+€€€€€€€€€«CEFGHIJKLM€€€€€€€€€€€€VPragma\Content-TypeVServer]Last-ModifiedZSet-CookieSp3pTDate]Accept-Ranges^Content-LengthWExpires]Cache-ControlXno-cacheYimage/gifVApache_Mon, 06 Nov 2017 20:40:38 GMT_QPYPF=CT; expires=Fri, 15-Dec-2017 01:18:36 GMT; path=/; domain=.paypalobjects.com_4CP="NON DSP ADM DEV PSD OUR IND STP PHY PRE NAV UNI"_Fri, 17 Nov 2017 01:18:36 GMTUbytesR43_Fri, 17 Nov 2017 01:18:36 GMT_max-age=0, no-cache, no-storeÒ+,fg_NSMutableDictionary£fh/\NSDictionaryÒ+,jk_NSHTTPURLResponse£lm/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑpq_WebResourceResponse€    # - 2 7 [ a |  ƒ † ‰ Œ  “ š    £ ¦ © « ­ ¯ ± ³ ´ ¶ ¸ º ¼ ¾ À Â É Ñ İ ß á ã)28;DMOQX`kwy{}ƒ…‡‰‹™›Ÿ¡£¥§©«­¯±¸ÅÌÚåéîü!*4;[¯æ/OTjn{€”˜¬ºÌÏå             r              ç    1 < N d ‚ ‘ ¨Í×İ	-js’$6$?--:1à1é==¨=èBãBìCCP             "              H?

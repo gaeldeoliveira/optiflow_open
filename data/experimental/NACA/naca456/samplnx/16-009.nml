@@ -1,0 +1,21 @@
+NACA 16-009
+The NACA 16-series airfoil family is a special case of the 4-digit
+modified family. 16-series airfoils have a leading edge radius index 
+of 4 and max. thickness at 0.5 of chord. 
+So 16-009 is really the same as 0009-45.
+This is a symmetrical four digit modified section.
+First two digits indicate no camber
+Third and fourth digits indicate max t/c=9 percent
+The 4 in the -45 is the leading-edge radius index number
+The 5 in -45 is the location of max thickness, in tenths of chord.
+
+This example shows use of denCode=3 to get a very dense output.
+
+&NACA
+   denCode=3,
+   name     = 'NACA 16-009 (same as 0009-45)',
+   profile  = '4M',
+   toc      = 0.09,
+   leRadius = 4,
+   xmaxt    = 0.5,
+   camber   = '0'/

@@ -1,0 +1,15 @@
+NACA 23015
+Combines a 230 mean line with a 0015 thickness (four digit). 
+The first digit, 2, means the mean line has a design lift coeff=0.3
+The second digit, 3, means the max camber is at 15% chord
+The third digit, 0, meand the mean line is non-reflexed
+The fourth and fifth digits, 12, mean the max. thickness is 0.12 chord
+
+&NACA
+  name    = 'NACA 23015',
+  profile = '4',
+  toc = 0.15,
+  camber  = '3',
+  cl=0.3,
+  xmaxc=0.15/
+  

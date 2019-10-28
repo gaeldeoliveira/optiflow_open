@@ -1,0 +1,12 @@
+NACA 66-021 Airfoil
+The basic 66 series thickness profile, scaled to 21 percent
+First two digits: 66 series thickness
+Middle digit: no camber (CL-design=0)
+Last two digits: max t/c = 21%
+Abbott & von Doenhoff, page 379
+&NACA
+  name    = 'NACA 66-021',
+  profile = '66',
+  toc     = 0.21,  
+  camber  = '0'/
+

@@ -1,0 +1,13 @@
+NACA 4421
+This is a 0021 thickness (four digit) with a 44 camber line. 
+A 44 camber line has 4% max camber at 40% chord.
+Abbott & von Doenhoff, page 413
+
+&NACA
+ name    = 'NACA 4421',
+ denCode = 1,
+ profile = '4',
+ toc     = 0.21,
+ camber  = '2',
+ cmax    = 0.04,
+ xmaxc   = 0.4/

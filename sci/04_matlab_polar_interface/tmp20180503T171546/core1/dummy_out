@@ -1,0 +1,924 @@
+ =======================================================
+    RFOILSUCPLASMA Version  3.0
+    Gael de Oliveira, Ricardo Pereira 
+ 
+    based on RFOILSUC V2.0 (Actiflow Edition)
+ 
+ =======================================================
+
+   QUIT  Exit program
+   OPER  Direct operating point(s)
+   MDES  Complex mapping design routine
+   QDES  Surface speed design routine
+   GDES  Geometry design routine
+   SAVE  Write airfoil to generic disk file
+   ISAV  Write airfoil to ISES coordinate file
+   LOAD  Read buffer airfoil from generic disk file
+   ILOA  Read buffer airfoil from ISES coordinate file
+   NORM  Switch toggle for buffer airfoil normalization
+   NAC5  Set approx. NACA 5-digit airfoil and buffer airfoil
+   PANE  Regenerate paneled airfoil from buffer airfoil
+   SHOW  Show airfoil paneling
+   PPAR  Change airfoil paneling parameters and re-panel
+   SIZE  Change plot size
+   NAME  Change airfoil name
+
+
+  RFOILSUC
+   c>
+
+ Enter filename
+   f>
+ tmp20180503T171546/core1/xfin   
+
+ Enter airfoil name
+   f>
+
+ Number of input coordinate points: 160
+ Counterclockwise ordering
+ Blunt trailing edge
+
+ Paneling parameters used:
+ Number of panel nodes     160
+ Panel bunching parameter   0.800
+ TE/LE panel density ratio  0.300
+ Refined area/LE panel density ratio   0.200
+ Suction  side refined area x/c limits 1.000 1.000
+ Pressure side refined area x/c limits 1.000 1.000
+
+ Maximum panel corner angle =  6.944  at  i,x,y =  73   0.0019   0.0114
+
+
+  RFOILSUC
+   c>
+
+  OPERi
+   c>
+ Enter chord Reynolds number
+   r>
+   1600000.0000000000     
+
+  OPERv
+   c>
+ M    command not recognized.  Type a "?" for list
+
+  OPERv
+   c>
+  0.0 command not recognized.  Type a "?" for list
+
+  OPERv
+   c>
+ ITER command not recognized.  Type a "?" for list
+
+  OPERv
+   c>
+  030 command not recognized.  Type a "?" for list
+
+  OPERv
+   c>
+ Diagnostic Output MUTED (optimization mode)
+
+  OPERv
+   c>
+
+
+ LINEAR amplification growth assumed
+ Re        =  1600000.  (fixed Re)
+ Xtr/c     =  1.0000    suction  side
+ Xtr/c     =  1.0000    pressure side
+ Ncrit     =  9.0000   ( 0.070 % turb. level )
+ Vacc      =  0.0500
+ Parameters for rotational effects:
+ f0        =  1.0000
+ c/r       =  0.0000
+ c/Rtip    =  0.0000
+ rf1       =  1.0000
+ rf2       =  1.0000
+ rf3       =  0.0000
+ Adjustment of some functions in Rfoil depending on Hk 
+ l_sc      =       F   (Toggle SLCC function) 
+ l_cf      =       T   (Toggle Cf_turb function) 
+ Adjustment of some parameters affecting suction treatment 
+ l_cq       =       T (Toggle l_cq_extension flag) 
+ lcfk       =       F (FALSE = cf_merchant ,  TRUE = cf_kays )
+ r_cf       =  1.0000 (Change ratio_cfsuc value)   
+ r_cq       =  1.0000 (Change ratio_cqsuc value)   
+ abs        =  0.0100  (Change ABS_VSUC_MAX value)   
+ Trip Wire as equivalent blowing : 
+ DTRIP     = 0.00035    Trip Wire Diameter
+ Xtr2/c    =  1.0010    suction  side
+ Xtr2/c    =  1.0010    pressure side
+ BMAX      =  0.0100    Max Blowing intensity
+ OVER      =       T    Override orginal fixed transition whenever xtr2 < 1
+ DXTR      =  0.0100    Distance at which forced transition is applied before trip wire blowing
+ Adjustment of some parameters affecting forced transition 
+ str       =  1.0000 Change ST_RATIO value (multiplying initial turbulen shear stress level in BL)   
+ Convergence and output criteria : 
+ LEPS       =       T (FALSE = single IO ,  TRUE = double IO )
+ EPSV       =  0.0001 (Convergence criteria for VISCAL)   
+
+
+ ..VPAR
+   c>
+ Enter critical amplification ratio
+   r>
+
+ ..VPAR
+   c>
+ Enter suction  side Xtr/c
+   r>
+ Enter pressure side Xtr/c
+   r>
+
+ ..VPAR
+   c>
+
+  OPERv
+   c>
+
+ TPP     =  0.0060 Actuator Thickness (over chord)
+ LPP     =  0.1950 Actuator Lenght (over chord)
+ XPP     =  0.6500 Actuator Start (over chord)
+ FTP     = -0.0000 Single Force Coefficient (C_FTP in report)
+ ISPP    =       1 Plasma Actuator Side (1=top, 2=bottom)
+ CFC     =  1.0000 CF Correction (0.0=off, 1.0=min, pi/2=max)
+ CEIP    =  1.0000 CEI Closure Adjustment (1.0=reference)
+ DIAG              Display Diagnostics
+
+ .PSET
+   c>
+ Thickness (over Chord) of DBD Actuator
+   r>
+
+ .PSET
+   c>
+ Lenght    (over Chord) of DBD Actuator
+   r>
+
+ .PSET
+   c>
+ Stance    (over Chord) of DBD Actuator
+   r>
+
+ .PSET
+   c>
+ Strenght (coefficient) of DBD Actuator
+   r>
+
+ .PSET
+   c>
+ Change actuator side to (1=top,2=bot)
+   i>
+
+ .PSET
+   c>
+ Activation (factor) of Cf Correction
+   r>
+
+ .PSET
+   c>
+ CEI Closure Adjustment (1.0=theorethical)
+   r>
+
+ .PSET
+   c>
+
+  OPERv
+   c>
+
+ Enter polar save filename OR <return>
+   f>
+  
+ New polar save file available
+
+ Enter polar dump filename OR <return>
+   f>
+ version: 
+   3.0000000000000000     
+  
+ New polar dump file available
+  
+ Auto polar accumulation enabled to available save and/or dump files
+  
+
+  OPERv
+   c>
+ Enter first alfa value (deg)
+   r>
+ Enter last  alfa value (deg)
+   r>
+ Enter alfa increment   (deg)
+   r>
+ Calculating unit vorticity distributions ...
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  
+ Initializing BL ...
+    side            1  ...
+    side            2  ...
+   6   rms: 0.2092E-04   max: -.3574E-03   D at   50  1
+       a =  0.000       CL =  0.4268
+      Cm = -0.1273      CD =  0.00826     CDp =  0.00302
+
+ CL =  0.427    Cd =  0.00826    Cm = -0.1273
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.8195E-05   max: -.9798E-04   D at    8  1
+       a =  0.500       CL =  0.4898
+      Cm = -0.1289      CD =  0.00839     CDp =  0.00311
+
+ CL =  0.490    Cd =  0.00839    Cm = -0.1289
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1010E-04   max: -.1637E-03   D at   46  2
+       a =  1.000       CL =  0.5542
+      Cm = -0.1307      CD =  0.00840     CDp =  0.00315
+
+ CL =  0.554    Cd =  0.00840    Cm = -0.1307
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   3   rms: 0.4593E-04   max: 0.4689E-03   D at    4  2
+       a =  1.500       CL =  0.6175
+      Cm = -0.1323      CD =  0.00848     CDp =  0.00323
+
+ CL =  0.618    Cd =  0.00848    Cm = -0.1323
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.7689E-05   max: -.8637E-04   D at    8  1
+       a =  2.000       CL =  0.6790
+      Cm = -0.1335      CD =  0.00867     CDp =  0.00339
+
+ CL =  0.679    Cd =  0.00867    Cm = -0.1335
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.8829E-04   max: -.1417E-02   D at   46  2
+       a =  2.500       CL =  0.7428
+      Cm = -0.1352      CD =  0.00869     CDp =  0.00346
+
+ CL =  0.743    Cd =  0.00869    Cm = -0.1352
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   3   rms: 0.7134E-04   max: 0.7454E-03   D at    4  2
+       a =  3.000       CL =  0.8053
+      Cm = -0.1366      CD =  0.00879     CDp =  0.00359
+
+ CL =  0.805    Cd =  0.00879    Cm = -0.1366
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1172E-04   max: -.1402E-03   D at    8  1
+       a =  3.500       CL =  0.8656
+      Cm = -0.1375      CD =  0.00903     CDp =  0.00378
+
+ CL =  0.866    Cd =  0.00903    Cm = -0.1375
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.3017E-04   max: -.5310E-03   D at   44  2
+       a =  4.000       CL =  0.9277
+      Cm = -0.1388      CD =  0.00912     CDp =  0.00392
+
+ CL =  0.928    Cd =  0.00912    Cm = -0.1388
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.6982E-05   max: -.6713E-04   D at    6  1
+       a =  4.500       CL =  0.9896
+      Cm = -0.1400      CD =  0.00921     CDp =  0.00407
+
+ CL =  0.990    Cd =  0.00921    Cm = -0.1400
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.2493E-05   max: 0.2446E-04   D at    8  1
+       a =  5.000       CL =  1.0482
+      Cm = -0.1407      CD =  0.00951     CDp =  0.00433
+
+ CL =  1.048    Cd =  0.00951    Cm = -0.1407
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.6973E-04   max: -.1025E-02   D at   53  1
+       a =  5.500       CL =  1.1096
+      Cm = -0.1417      CD =  0.00958     CDp =  0.00444
+
+ CL =  1.110    Cd =  0.00958    Cm = -0.1417
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.4690E-05   max: -.6755E-04   D at   53  1
+       a =  6.000       CL =  1.1690
+      Cm = -0.1425      CD =  0.00979     CDp =  0.00464
+
+ CL =  1.169    Cd =  0.00979    Cm = -0.1425
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.7017E-05   max: -.1105E-03   D at   53  1
+       a =  6.500       CL =  1.2271
+      Cm = -0.1431      CD =  0.01005     CDp =  0.00490
+
+ CL =  1.227    Cd =  0.01005    Cm = -0.1431
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1998E-05   max: -.1823E-04   D at   52  1
+       a =  7.000       CL =  1.2835
+      Cm = -0.1433      CD =  0.01040     CDp =  0.00520
+
+ CL =  1.283    Cd =  0.01040    Cm = -0.1433
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1018E-04   max: -.1491E-03   D at   42  2
+       a =  7.500       CL =  1.3330
+      Cm = -0.1424      CD =  0.01113     CDp =  0.00573
+
+ CL =  1.333    Cd =  0.01113    Cm = -0.1424
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.2762E-04   max: -.3866E-03   D at   47  1
+       a =  8.000       CL =  1.3722
+      Cm = -0.1400      CD =  0.01236     CDp =  0.00670
+
+ CL =  1.372    Cd =  0.01236    Cm = -0.1400
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.3718E-05   max: 0.2618E-04   D at   42  2
+       a =  8.500       CL =  1.3960
+      Cm = -0.1350      CD =  0.01405     CDp =  0.00808
+
+ CL =  1.396    Cd =  0.01405    Cm = -0.1350
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.1920E-04   max: -.3453E-03   C at   40  1
+       a =  9.000       CL =  1.3995
+      Cm = -0.1267      CD =  0.01593     CDp =  0.00975
+
+ CL =  1.400    Cd =  0.01593    Cm = -0.1267
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.7654E-04   max: -.1125E-02   C at   37  1
+       a =  9.500       CL =  1.4014
+      Cm = -0.1196      CD =  0.01844     CDp =  0.01212
+
+ CL =  1.401    Cd =  0.01844    Cm = -0.1196
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   6   rms: 0.1699E-04   max: -.3230E-03   C at   35  1
+       a = 10.000       CL =  1.3979
+      Cm = -0.1137      CD =  0.02173     CDp =  0.01538
+
+ CL =  1.398    Cd =  0.02173    Cm = -0.1137
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   6   rms: 0.1197E-04   max: -.1212E-03   C at   34  1
+       a = 10.500       CL =  1.3879
+      Cm = -0.1089      CD =  0.02613     CDp =  0.01982
+
+ CL =  1.388    Cd =  0.02613    Cm = -0.1089
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   6   rms: 0.4657E-04   max: -.2376E-03   D at   83  2
+       a = 11.000       CL =  1.3691
+      Cm = -0.1053      CD =  0.03198     CDp =  0.02575
+
+ CL =  1.369    Cd =  0.03198    Cm = -0.1053
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   7   rms: 0.6922E-04   max: 0.5249E-03   D at   33  1
+       a = 11.500       CL =  1.3453
+      Cm = -0.1028      CD =  0.03886     CDp =  0.03276
+
+ CL =  1.345    Cd =  0.03886    Cm = -0.1028
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.9001E-04   max: -.6787E-03   C at   32  1
+       a = 12.000       CL =  1.3153
+      Cm = -0.1008      CD =  0.04649     CDp =  0.04055
+
+ CL =  1.315    Cd =  0.04649    Cm = -0.1008
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  11   rms: 0.9170E-04   max: -.7407E-03   C at   31  1
+       a = 12.500       CL =  1.2788
+      Cm = -0.0993      CD =  0.05484     CDp =  0.04909
+
+ CL =  1.279    Cd =  0.05484    Cm = -0.0993
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  11   rms: 0.9483E-04   max: 0.5681E-03   D at   84  2
+       a = 13.000       CL =  1.2516
+      Cm = -0.0988      CD =  0.06280     CDp =  0.05722
+
+ CL =  1.252    Cd =  0.06280    Cm = -0.0988
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  12   rms: 0.5060E-04   max: 0.3187E-03   D at   85  2
+       a = 13.500       CL =  1.2266
+      Cm = -0.0990      CD =  0.07102     CDp =  0.06560
+
+ CL =  1.227    Cd =  0.07102    Cm = -0.0990
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  11   rms: 0.7236E-04   max: 0.4463E-03   D at   85  2
+       a = 14.000       CL =  1.2100
+      Cm = -0.0998      CD =  0.07879     CDp =  0.07349
+
+ CL =  1.210    Cd =  0.07879    Cm = -0.0998
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.8304E-04   max: 0.5220E-03   D at   86  2
+       a = 14.500       CL =  1.1995
+      Cm = -0.1009      CD =  0.08618     CDp =  0.08099
+
+ CL =  1.200    Cd =  0.08618    Cm = -0.1009
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.7793E-04   max: 0.5110E-03   D at   86  2
+       a = 15.000       CL =  1.1913
+      Cm = -0.1023      CD =  0.09344     CDp =  0.08831
+
+ CL =  1.191    Cd =  0.09344    Cm = -0.1023
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.8343E-04   max: 0.5552E-03   D at   85  2
+       a = 15.500       CL =  1.1898
+      Cm = -0.1039      CD =  0.10015     CDp =  0.09511
+
+ CL =  1.190    Cd =  0.10015    Cm = -0.1039
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.6206E-04   max: 0.4408E-03   D at   86  2
+       a = 16.000       CL =  1.1896
+      Cm = -0.1060      CD =  0.10699     CDp =  0.10206
+
+ CL =  1.190    Cd =  0.10699    Cm = -0.1060
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  11   rms: 0.5593E-04   max: 0.3925E-03   D at   86  2
+       a = 16.500       CL =  1.1916
+      Cm = -0.1083      CD =  0.11359     CDp =  0.10878
+
+ CL =  1.192    Cd =  0.11359    Cm = -0.1083
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  11   rms: 0.6995E-04   max: 0.4428E-03   D at   42  2
+       a = 17.000       CL =  1.1962
+      Cm = -0.1107      CD =  0.11989     CDp =  0.11516
+
+ CL =  1.196    Cd =  0.11989    Cm = -0.1107
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  10   rms: 0.9422E-04   max: 0.6058E-03   D at   41  2
+       a = 17.500       CL =  1.1992
+      Cm = -0.1136      CD =  0.12650     CDp =  0.12184
+
+ CL =  1.199    Cd =  0.12650    Cm = -0.1136
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.7864E-04   max: 0.6455E-03   D at   41  2
+       a = 18.000       CL =  1.2065
+      Cm = -0.1166      CD =  0.13263     CDp =  0.12807
+
+ CL =  1.207    Cd =  0.13263    Cm = -0.1166
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.8760E-04   max: 0.6388E-03   D at   86  2
+       a = 18.500       CL =  1.2138
+      Cm = -0.1202      CD =  0.13914     CDp =  0.13468
+
+ CL =  1.214    Cd =  0.13914    Cm = -0.1202
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.6504E-04   max: 0.5550E-03   D at   42  2
+       a = 19.000       CL =  1.2194
+      Cm = -0.1244      CD =  0.14597     CDp =  0.14161
+
+ CL =  1.219    Cd =  0.14597    Cm = -0.1244
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   8   rms: 0.2759E-04   max: -.2510E-03   D at   42  2
+       a = 19.500       CL =  1.2206
+      Cm = -0.1295      CD =  0.15357     CDp =  0.14933
+
+ CL =  1.221    Cd =  0.15357    Cm = -0.1295
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.9418E-04   max: 0.7177E-03   D at   41  2
+       a = 20.000       CL =  1.2293
+      Cm = -0.1341      CD =  0.16029     CDp =  0.15617
+
+ CL =  1.229    Cd =  0.16029    Cm = -0.1341
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+
+  OPERv
+   c>
+
+
+ LINEAR amplification growth assumed
+ Re        =  1600000.  (fixed Re)
+ Xtr/c     =  0.9900    suction  side
+ Xtr/c     =  0.9900    pressure side
+ Ncrit     =  9.0000   ( 0.070 % turb. level )
+ Vacc      =  0.0500
+ Parameters for rotational effects:
+ f0        =  1.0000
+ c/r       =  0.0000
+ c/Rtip    =  0.0000
+ rf1       =  1.0000
+ rf2       =  1.0000
+ rf3       =  0.0000
+ Adjustment of some functions in Rfoil depending on Hk 
+ l_sc      =       F   (Toggle SLCC function) 
+ l_cf      =       T   (Toggle Cf_turb function) 
+ Adjustment of some parameters affecting suction treatment 
+ l_cq       =       T (Toggle l_cq_extension flag) 
+ lcfk       =       F (FALSE = cf_merchant ,  TRUE = cf_kays )
+ r_cf       =  1.0000 (Change ratio_cfsuc value)   
+ r_cq       =  1.0000 (Change ratio_cqsuc value)   
+ abs        =  0.0100  (Change ABS_VSUC_MAX value)   
+ Trip Wire as equivalent blowing : 
+ DTRIP     = 0.00035    Trip Wire Diameter
+ Xtr2/c    =  1.0010    suction  side
+ Xtr2/c    =  1.0010    pressure side
+ BMAX      =  0.0100    Max Blowing intensity
+ OVER      =       T    Override orginal fixed transition whenever xtr2 < 1
+ DXTR      =  0.0100    Distance at which forced transition is applied before trip wire blowing
+ Adjustment of some parameters affecting forced transition 
+ str       =  1.0000 Change ST_RATIO value (multiplying initial turbulen shear stress level in BL)   
+ Convergence and output criteria : 
+ LEPS       =       T (FALSE = single IO ,  TRUE = double IO )
+ EPSV       =  0.0001 (Convergence criteria for VISCAL)   
+
+
+ ..VPAR
+   c>
+ BLs will be initialized on next point
+
+ ..VPAR
+   c>
+
+  OPERv
+   c>
+ Enter first alfa value (deg)
+   r>
+ Enter last  alfa value (deg)
+   r>
+ Enter alfa increment   (deg)
+   r>
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  
+ Initializing BL ...
+    side            1  ...
+    side            2  ...
+   6   rms: 0.8334E-05   max: -.1083E-03   D at   47  2
+       a = -0.500       CL =  0.3618
+      Cm = -0.1252      CD =  0.00825     CDp =  0.00300
+
+ CL =  0.362    Cd =  0.00825    Cm = -0.1252
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.4115E-04   max: -.6349E-03   D at   47  2
+       a = -1.000       CL =  0.2972
+      Cm = -0.1233      CD =  0.00824     CDp =  0.00300
+
+ CL =  0.297    Cd =  0.00824    Cm = -0.1233
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.7325E-05   max: -.8080E-04   D at    8  2
+       a = -1.500       CL =  0.2327
+      Cm = -0.1213      CD =  0.00817     CDp =  0.00298
+
+ CL =  0.233    Cd =  0.00817    Cm = -0.1213
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1060E-04   max: -.1106E-03   D at   48  2
+       a = -2.000       CL =  0.1668
+      Cm = -0.1190      CD =  0.00820     CDp =  0.00303
+
+ CL =  0.167    Cd =  0.00820    Cm = -0.1190
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.4035E-04   max: -.6562E-03   D at   48  1
+       a = -2.500       CL =  0.1013
+      Cm = -0.1167      CD =  0.00819     CDp =  0.00306
+
+ CL =  0.101    Cd =  0.00819    Cm = -0.1167
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.9236E-05   max: 0.9889E-04   D at    9  2
+       a = -3.000       CL =  0.0342
+      Cm = -0.1140      CD =  0.00827     CDp =  0.00317
+
+ CL =  0.034    Cd =  0.00827    Cm = -0.1140
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.1983E-04   max: -.3020E-03   D at   48  1
+       a = -3.500       CL = -0.0322
+      Cm = -0.1115      CD =  0.00830     CDp =  0.00325
+
+ CL = -0.032    Cd =  0.00830    Cm = -0.1115
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.7151E-05   max: -.7880E-04   D at    8  2
+       a = -4.000       CL = -0.1015
+      Cm = -0.1081      CD =  0.00846     CDp =  0.00345
+
+ CL = -0.101    Cd =  0.00846    Cm = -0.1081
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.6601E-04   max: -.6862E-03   D at   48  1
+       a = -4.500       CL = -0.1697
+      Cm = -0.1050      CD =  0.00856     CDp =  0.00362
+
+ CL = -0.170    Cd =  0.00856    Cm = -0.1050
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.4761E-04   max: -.4733E-03   D at   47  1
+       a = -5.000       CL = -0.2448
+      Cm = -0.0998      CD =  0.00893     CDp =  0.00404
+
+ CL = -0.245    Cd =  0.00893    Cm = -0.0998
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.6774E-04   max: 0.5844E-03   D at   81  2
+       a = -5.500       CL = -0.3181
+      Cm = -0.0950      CD =  0.00923     CDp =  0.00445
+
+ CL = -0.318    Cd =  0.00923    Cm = -0.0950
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   4   rms: 0.9005E-04   max: -.7598E-03   D at   83  2
+       a = -6.000       CL = -0.3962
+      Cm = -0.0886      CD =  0.00978     CDp =  0.00508
+
+ CL = -0.396    Cd =  0.00978    Cm = -0.0886
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.1402E-04   max: 0.9258E-04   D at   86  2
+       a = -6.500       CL = -0.4737
+      Cm = -0.0819      CD =  0.01042     CDp =  0.00580
+
+ CL = -0.474    Cd =  0.01042    Cm = -0.0819
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.4416E-04   max: 0.3124E-03   D at   88  2
+       a = -7.000       CL = -0.5511
+      Cm = -0.0748      CD =  0.01126     CDp =  0.00672
+
+ CL = -0.551    Cd =  0.01126    Cm = -0.0748
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.1460E-04   max: -.1071E-03   D at   89  2
+       a = -7.500       CL = -0.6268
+      Cm = -0.0669      CD =  0.01247     CDp =  0.00799
+
+ CL = -0.627    Cd =  0.01247    Cm = -0.0669
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.2720E-04   max: -.2324E-03   D at   91  2
+       a = -8.000       CL = -0.6941
+      Cm = -0.0600      CD =  0.01387     CDp =  0.00948
+
+ CL = -0.694    Cd =  0.01387    Cm = -0.0600
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   6   rms: 0.5732E-04   max: 0.3670E-03   D at   92  2
+       a = -8.500       CL = -0.7488
+      Cm = -0.0543      CD =  0.01567     CDp =  0.01136
+
+ CL = -0.749    Cd =  0.01567    Cm = -0.0543
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.4102E-04   max: 0.2346E-03   D at   95  2
+       a = -9.000       CL = -0.7686
+      Cm = -0.0527      CD =  0.01824     CDp =  0.01399
+
+ CL = -0.769    Cd =  0.01824    Cm = -0.0527
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.8742E-04   max: 0.4424E-03   D at   95  2
+       a = -9.500       CL = -0.7783
+      Cm = -0.0528      CD =  0.02101     CDp =  0.01681
+
+ CL = -0.778    Cd =  0.02101    Cm = -0.0528
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.5890E-04   max: 0.3004E-03   D at  101  2
+       a =-10.000       CL = -0.7900
+      Cm = -0.0528      CD =  0.02372     CDp =  0.01960
+
+ CL = -0.790    Cd =  0.02372    Cm = -0.0528
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   5   rms: 0.2005E-04   max: 0.1567E-03   D at  104  2
+       a =-10.500       CL = -0.7995
+      Cm = -0.0525      CD =  0.02680     CDp =  0.02276
+
+ CL = -0.800    Cd =  0.02680    Cm = -0.0525
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   8   rms: 0.4176E-04   max: 0.2790E-03   D at  104  2
+       a =-11.000       CL = -0.8080
+      Cm = -0.0521      CD =  0.03020     CDp =  0.02624
+
+ CL = -0.808    Cd =  0.03020    Cm = -0.0521
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   7   rms: 0.1718E-04   max: 0.1223E-03   D at  105  2
+       a =-11.500       CL = -0.8098
+      Cm = -0.0515      CD =  0.03428     CDp =  0.03040
+
+ CL = -0.810    Cd =  0.03428    Cm = -0.0515
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   8   rms: 0.7111E-04   max: 0.5692E-03   D at  105  2
+       a =-12.000       CL = -0.8150
+      Cm = -0.0507      CD =  0.03833     CDp =  0.03455
+
+ CL = -0.815    Cd =  0.03833    Cm = -0.0507
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   9   rms: 0.3944E-04   max: 0.3019E-03   D at  106  2
+       a =-12.500       CL = -0.8202
+      Cm = -0.0498      CD =  0.04255     CDp =  0.03892
+
+ CL = -0.820    Cd =  0.04255    Cm = -0.0498
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   7   rms: 0.9778E-04   max: 0.7953E-03   C at   59  1
+       a =-13.000       CL = -0.8192
+      Cm = -0.0492      CD =  0.04729     CDp =  0.04390
+
+ CL = -0.819    Cd =  0.04729    Cm = -0.0492
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+  15   rms: 0.6507E-04   max: 0.5049E-03   D at  108  2
+       a =-13.500       CL = -0.8053
+      Cm = -0.0469      CD =  0.05405     CDp =  0.05082
+
+ CL = -0.805    Cd =  0.05405    Cm = -0.0469
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   8   rms: 0.4814E-04   max: 0.4221E-03   D at  109  2
+       a =-14.000       CL = -0.8005
+      Cm = -0.0449      CD =  0.06015     CDp =  0.05688
+
+ CL = -0.800    Cd =  0.06015    Cm = -0.0449
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   7   rms: 0.2366E-04   max: 0.1594E-03   D at   38  2
+       a =-14.500       CL = -0.7978
+      Cm = -0.0427      CD =  0.06620     CDp =  0.06291
+
+ CL = -0.798    Cd =  0.06620    Cm = -0.0427
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+   7   rms: 0.4328E-04   max: 0.3639E-03   D at  110  2
+       a =-15.000       CL = -0.7975
+      Cm = -0.0403      CD =  0.07232     CDp =  0.06902
+
+ CL = -0.798    Cd =  0.07232    Cm = -0.0403
+ Save file point written to tmp20180503T171546/core1/plr   
+ Dump file point written to tmp20180503T171546/core1/dump  
+
+  OPERv
+   c>
+
+  RFOILSUC
+   c>
+
+  RFOILSUC
+   c>

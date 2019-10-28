@@ -1,0 +1,12 @@
+NACA 64-010 Airfoil
+The basic 64 series thickness profile, scaled to 10 percent
+First two digits: 64 series thickness
+Middle digit: no camber (CL-design=0)
+Last two digits: max t/c = 10%
+Abbott & von Doenhoff, page 349 
+&NACA
+  name    = 'NACA 64-010',
+  profile = '64',
+  toc     = 0.1,  
+  camber  = '0'/
+

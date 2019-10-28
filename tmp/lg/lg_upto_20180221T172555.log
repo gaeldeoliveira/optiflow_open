@@ -1,0 +1,7 @@
+STD:20180221T172118:lg> ---- START NEW LOG BOOK AFTER REQUEST ----
+STD:20180221T172118:lg> ---- request issuer: run_over_database_alfa20
+STD:20180221T172232:global_function_wrapper> --- New simulation profile requested ---
+STD:20180221T172232:global_function_wrapper>                   n_log = 3
+STD:20180221T172232:global_function_wrapper>                     n_x = 1
+STD:20180221T172232:global_function_wrapper>  scalar_accuracy_metric = 29.2472
+STD:20180221T172232:global_function_wrapper>                       x = 1  1  1  1  1  1  1  1

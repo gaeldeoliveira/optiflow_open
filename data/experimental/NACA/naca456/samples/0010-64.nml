@@ -1,0 +1,14 @@
+NACA 0010-64
+This is a symmetrical four digit modified section.
+First two digits indicate no camber
+Third and fourth digits indicate max t/c=10 percent
+The 6 in the -64 is the leading-edge radius index number
+The 4 in -64 is the location of max thickness, in tenths of chord.
+
+&NACA
+  name    = 'NACA 0010-64',
+  profile = '4M',
+  toc = 0.10,
+  leIndex=6,
+  xmaxt=0.4,
+  camber  = '0'/

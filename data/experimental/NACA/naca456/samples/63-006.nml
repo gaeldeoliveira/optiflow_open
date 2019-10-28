@@ -1,0 +1,12 @@
+NACA 63-006 Airfoil
+The basic 63 series thickness profile, scaled to 6 percent
+First two digits: 63 series thickness
+Middle digit: no camber (CL-design=0)
+Last two digits: max t/c = 6%
+ 
+&NACA
+  name    = 'NACA 63-006',
+  profile = '63',
+  toc     = .06,  
+  camber  = '0'/
+

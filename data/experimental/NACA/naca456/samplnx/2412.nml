@@ -1,0 +1,13 @@
+NACA 2412
+This is a 0012 thickness (four digit) with a 24 camber line. 
+A 24 camber line has 2% max camber at 40% chord.
+Abbott & von Doenhoff, page 410
+
+&NACA
+ name    = 'NACA 2412',
+ denCode = 1,
+ profile = '4',
+ toc     = 0.12,
+ camber  = '2',
+ cmax    = 0.02,
+ xmaxc   = 0.4/

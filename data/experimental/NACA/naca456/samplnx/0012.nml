@@ -1,0 +1,9 @@
+NACA 0012 - four digit airfoil
+First two digits indicate no camber
+Last two digits indicate max t/c=12 percent
+A very popular thickness distribution.
+&NACA
+   name    = 'NACA 0012',
+   profile = '4',
+   toc = 0.12,   
+   camber  = '0'/

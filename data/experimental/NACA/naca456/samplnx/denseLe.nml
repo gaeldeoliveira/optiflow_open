@@ -1,0 +1,15 @@
+This sample input is for someone who wants a lot
+of points near the leading edge of a NACA 63A210 Airfoil
+First three characters: 63A series thickness
+Fourth character: no camber (CL design=0)
+Last two digits: 10 percent t/c
+Abbott & von Doenhoff, p. 343
+&NACA
+  name    = 'NACA 63A210',
+  profile = '63a',
+  toc     = 0.10,
+  camber  = '6',
+  cl      = 0.2,
+  denCode = 0,
+  xTable = 1E-5,2E-5,3E-5,4E-5,5E-5,6E-5,7E-5,8E-5,9E-5,1E-4/
+

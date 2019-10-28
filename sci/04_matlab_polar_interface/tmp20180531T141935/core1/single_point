@@ -1,0 +1,35 @@
+LOAD 
+tmp20180531T141935/core1/xfin
+ 
+OPER
+VISC 
+1.6000e+06 
+M 
+ 0.0000e+00 
+ITER 
+ 0300 
+MUTE 
+VPAR
+N 
+ 9.0000e+00 
+XTR 
+ 9.9000e-01 
+ 9.9000e-01 
+
+PACC
+tmp20180531T141935/core1/plr
+tmp20180531T141935/core1/dump
+ASEQ 
+0 
+20 
+0.5 
+VPAR 
+INIT 
+
+ASEQ 
+-0.5 
+-15 
+-0.5 
+
+
+QUIT

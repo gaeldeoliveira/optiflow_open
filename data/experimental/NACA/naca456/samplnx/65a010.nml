@@ -1,0 +1,13 @@
+NACA 65A010 Airfoil
+First three characters: 65A series thickness
+Fourth character: no camber (CL design=0)
+Last two digits: 10 percent t/c
+Abbott & von Doenhoff, p. 369
+
+&NACA
+  name    = 'NACA 65A010',
+  profile = '65a',
+  toc     = 0.10,
+  camber  = '0',
+  denCode = 1/
+

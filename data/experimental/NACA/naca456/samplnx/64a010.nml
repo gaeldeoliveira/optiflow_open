@@ -1,0 +1,13 @@
+NACA 64A010 Airfoil
+First three characters: 64A series thickness
+Fourth character: no camber (CL design=0)
+Last two digits: 10 percent t/c
+Abbott & von Doenhoff, p. 356
+  book page is labelled incorrectly in some printings
+&NACA
+  name    = 'NACA 64A010',
+  profile = '64a',
+  toc     = 0.10,
+  camber  = '0',
+  denCode = 1/
+

@@ -1,0 +1,13 @@
+NACA 1408
+This is a 0008 thickness (four digit) with a 14 camber line. 
+A 14 camber line has 1% max camber at 40% chord.
+Abbott & von Doenhoff, page 408
+
+&NACA
+ name    = 'NACA 1408',
+ denCode = 1,
+ profile = '4',
+ toc     = 0.08,
+ camber  = '2',
+ cmax    = 0.01,
+ xmaxc   = 0.4/

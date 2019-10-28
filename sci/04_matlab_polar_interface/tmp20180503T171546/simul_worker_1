@@ -1,0 +1,6 @@
+#!/bin/bash 
+# Paralel Airfoil Optimization System - Gael de Oliveira 
+# Automatically Generated BASH script by the Simulation Worker Class 
+ 
+./../../bin/rfoilsucplasma  <  ./tmp20180503T171546/core1/single_point  >  ./tmp20180503T171546/core1/dummy_out & 
+wait   
